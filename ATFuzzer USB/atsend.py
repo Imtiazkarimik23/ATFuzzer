@@ -11,6 +11,20 @@ import signal
 from datetime import datetime
 from datetime import timedelta
 from stat import S_ISCHR
+import socket, subprocess
+import time
+import bluetooth
+size = 99999
+
+# --- list of MAC address of the target devices --- #
+#serverMACAddress = '18:E2:C2:5E:29:1C' #S3
+#serverMACAddress = '50:55:27:5f:16:7d' #Nexus5
+#serverMACAddress = '94:8B:C1:43:0E:C4' #S8plus
+#serverMACAddress = '40:4E:36:AF:01:94' #htc
+#serverMACAddress = 'e4:90:7e:ee:2b:84' #nexus6
+#serverMACAddress = '04:B1:67:57:58:B9' #xiaomi
+serverMACAddress = '14:A5:1A:48:0A:2D' #huwaei
+
 
 try:
     import readline
@@ -58,7 +72,6 @@ def recv():
             continue
 
         # clean up the output for comparison
-
         line_clean = line.strip('\r\n')
 
         lines += [line]
@@ -184,6 +197,40 @@ def send_at_command(ser, cmd):
     print end - start
     return lines
 
+
+def bluetooth_send(cmd):
+	'''
+	True - sending failed
+	False - sending successful
+	'''
+	data = "NULL"
+	backlog = 1
+	cmd2 = str(cmd)
+	try:
+		s = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+		s.connect((serverMACAddress, port))
+		#s.bind((serverMACAddress, port))
+		#s.listen(backlog)
+	except Exception as e:
+		print "error occured"
+		print e
+		s.close()
+		subprocess.call("sudo /etc/init.d/bluetooth restart",shell=True)
+		time.sleep(15)
+		#send_blue(cmd)
+	try:
+		s.send(cmd +"\r\r")
+		data=s.recv(size)
+		print data
+		time.sleep(5)
+		s.close()
+		return data
+		#return
+	except:
+		subprocess.call("sudo /etc/init.d/bluetooth restart",shell=True)
+		time.sleep(15)
+		#send_blue(cmd)
+	
 
 def at_connect(dev, baud=DEFAULT_BAUD):
     try:
@@ -329,7 +376,61 @@ def write_on_logcat(stime, ftime):
     f.close()
 
 
-def fuzz(cmd, device, port=None):
+def bluetooth_fuzz(cmd):
+	retList = []
+	flag = 0
+	timer_for_check = 50
+	cmd = str("AT"+cmd)
+	print cmd
+	start = time.time()
+	stime = datetime.now()
+	print stime
+	try:
+		r = bluetooth_send(cmd)
+	except serial.serialutil.SerialException as e:
+		print e	
+	end = time.time()
+	total_time = (end-start)/len(cmd)	# normalize the total time based on the command length
+	ftime = datetime.now() + timedelta(minutes=1)
+	retList.append(total_time)
+	print "Input: "+cmd+" Output: "+str(r)
+	if r is None:
+		retList.append(flag)
+		return retList
+
+	r = str(r).rstrip("\r\n")
+	if "ERROR" not in r:
+		print r + "in"
+		flag = 1
+		retList.append(flag)
+		#time.sleep(15)
+		return retList
+
+	for _ in range(timer_for_check):
+		command = 'adb shell dumpsys telephony.registry'.split()
+		output = ""
+		for line in run_command(command):
+			output+=line
+
+		flag1 = check_sim_connectivity(output)
+		flag2 = check_internet_connectivity(output)
+		time.sleep(0.5)
+		if flag1==1 or flag2==1:
+			print "in here"
+			flag =1
+			print "flag is now " +str(flag)
+			time.sleep(5)
+			break
+		else:
+			print "flag is now yo" +str(flag)
+
+	retList.append(flag)
+	print retList
+	return retList
+
+
+
+def usb_fuzz(cmd, device, port=None):
     print 'test '+cmd
     cmd = cmd.replace("AT","")
     cmd = "AT"+cmd
@@ -354,13 +455,13 @@ def fuzz(cmd, device, port=None):
     except serial.serialutil.SerialException as e:
         if device == 'samsungNote2' or device == 'samsungGalaxyS3' or device == "LGg3":
             try:
-                return fuzz(cmd, device, port)
+                return usb_fuzz(cmd, device, port)
             except:
                 pass
         print e
         mfuzz_port.close()
         reboot_env(device)
-        return fuzz(cmd, device, port)
+        return usb_fuzz(cmd, device, port)
 
     r = recv()
     end = time.time()
@@ -408,99 +509,11 @@ def fuzz(cmd, device, port=None):
     return retList
 
 
-def fuzz_message(cmd, device, cmgf_flag=1, port=None):
-    retList = []
-    flag = 0
-    time.sleep(5)
-    # Open the serial port
-    init_mfuzz_port(device, port)
-    print 'Serial port: ', mfuzz_port.port
-    logging.info("port is opened for %s" % mfuzz_port.port)
-
-    # Fuzz
-    timer_for_check = 20
-    print ' - phone number set:\t', cmd[0]
-    print ' - message content:\t', cmd[1]
-    start = time.time()
-    stime = datetime.now()
-    print stime
-    try:
-        # text/pdu format
-        send('AT+CMGF=' + str(cmgf_flag))
-        r = recv()
-        print ' - AT+CMGF reply:\t', r
-        if 'OK\r' not in r:
-            fuzz_message(cmd, device, cmgf_flag, port)
-
-        send(cmd[0])  # send the first part of the command with the phone number
-        print ' - AT+CMGS reply:\t', recv()
-
-        send(cmd[1])  # send the actual message
-        print ' - Message reply:\t', recv()
-    except serial.serialutil.SerialException as e:
-        if device == 'samsungNote2' or device == 'samsungGalaxyS3' or device == "LGg3":
-            try:
-                return fuzz_message(cmd, device, cmgf_flag, port)
-            except:
-                pass
-        print e
-        mfuzz_port.close()
-        reboot_env(device)
-        return fuzz_message(cmd, device, cmgf_flag, port)
-
-    end = time.time()
-    total_time = (end - start) / (len(cmd[0]) + len(cmd[1]))  # normalize the total time based on the command length
-    ftime = datetime.now() + timedelta(minutes=1)
-    retList.append(total_time)
-
-    for _ in range(timer_for_check):
-        # test_adb_process()
-        # if device == 'nexus5':
-        #	write_on_logcat(stime, ftime)
-
-        command = ['adb', 'shell', 'dumpsys', 'telephony.registry']
-        output = ''
-        for line in run_command(command):
-            output += line
-
-        flag1 = check_sim_connectivity(output)
-        flag2 = check_internet_connectivity(output)
-        time.sleep(0.1)
-        if flag1 == 1 or flag2 == 1:
-            flag = 1
-            print "flag is now " + str(flag)
-            time.sleep(10)
-            break
-        else:
-            print "flag is now " + str(flag)
-
-    retList.append(flag)
-    print retList
-    mfuzz_port.close()
-    logging.info("port is closed")
-    return retList
-
-
 def main():
-    fuzz("ATD123", 'test_dev')
+    usb_fuzz("ATD123", 'test_dev')
     # logging.info("atsend/mfuzz ends...")
     print '\n--- Test Completed ---\n'
 
 
-def sms_test():
-    init_mfuzz_port(None, None)
-
-    phone_number = '4632048034'
-    send('AT+CMGF=1')
-    print 'Reply: ' + str(recv())
-    send('AT+CMGS="' + phone_number + '"\r\n')
-    print 'Reply: ' + str(recv())
-    send('HI\x1A')
-    print 'Reply: ' + str(recv())
-
-    print '\n--- Test Completed ---'
-
-
 if __name__ == "__main__":
     main()
-# sms_test()
