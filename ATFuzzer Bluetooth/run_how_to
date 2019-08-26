@@ -1,0 +1,1 @@
+sudo ./grammarFuzzer.py <grammar name>  <device name> 
