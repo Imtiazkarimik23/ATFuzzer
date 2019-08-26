@@ -27,12 +27,27 @@ def main():
             ' > 1 - No feedback fuzz\n' \
             ' > 2 - No crossover fuzz\n' \
             ' > 3 - No mutation fuzz\n'
+
         fuzz_type = int(input(s))
+        while (fuzz_type not in [0, 1, 2, 3]):
+            print '\nOption not valid, try again!'
+            fuzz_type = int(input(s))
+
+        s = '\n --- Select which channel you want to use ---\n' \
+            ' > b - Bluetooth\n' \
+            ' > u - USB\n' \
+            ' > t - Test execution'
+
+        fuzzer_channel = raw_input(s)
+        while (fuzzer_channel not in ['b' , 'u', 't']):
+            print '\nOption not valid, try again!'
+            fuzzer_channel = raw_input(s)
+
 
         if input_grams == 'multi':
-            multiGrammarFuzzer.main(input_device, fuzz_type, input_port)
+            multiGrammarFuzzer.main(fuzzer_channel, input_device, fuzz_type, input_port)
         else:
-            grammarFuzzer.main(input_grams, input_device, fuzz_type, input_port)
+            grammarFuzzer.main(fuzzer_channel, input_grams, input_device, fuzz_type, input_port)
 
 
 if __name__ == '__main__':

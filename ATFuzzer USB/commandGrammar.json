@@ -6,6 +6,11 @@
             "cmd": "+CGSN"
         },
 
+        "+CIND": {
+            "struct": ["cmd"],
+            "cmd": "+CIND?"
+        },
+
          "+CGMR": {
             "struct": ["cmd"],
             "cmd": "+CGMR"
@@ -630,7 +635,7 @@
         },
 
         "+CRSM": {
-            "struct": ["cmd", "equal","command", "fileid", "P1","P2","P3"],
+            "struct": ["cmd", "equal", "command", "fileid", "P1","P2","P3"],
             "cmd": "+CRSM",
             "equal": "=",
             "arg": ["command","fileid", "P1","P2","P3"],

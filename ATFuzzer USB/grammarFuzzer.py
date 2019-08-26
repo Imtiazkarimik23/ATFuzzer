@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python2.7
 
 import sys
@@ -11,11 +12,14 @@ import time
 from atsend import fuzz, fuzz_message
 from collections import deque
 from grammarModifier import *
+#from numpy import setdiff1d
+#from atsend import fuzz, fuzz_message, fuzz_blue
 
 
 log_file = 'log/grammarFuzzer_log.json'
 
 # Global variables
+fuzz_channel = 'unknown'        # it may be USB or Bluetooth                   
 fuzz_type = 0
 move_command = 0
 device = 'unknown'
@@ -124,6 +128,17 @@ def select_population(scores):
 
 
 def evaluate_command(cmd, sms_flag=None):
+    '''
+    if fuzz_channel == 'b'
+        return bluetooth_fuzz(cmd, device, port)
+    elif fuzz_channel == 'u'
+        return usb_fuzz(cmd, device, port)
+    elif fuzz_channel == 't' # only for test purpose
+        return [random.random()*5, utility.flip_coin(10)] 
+    else:
+        print '\nInvalid fuzzer channel! Restart execution and follow the instructions\n'
+        sys.exit()
+    '''
     return fuzz(cmd, device, port) if sms_flag is None else fuzz_message(cmd, device, sms_flag, port)
 
 
@@ -152,7 +167,6 @@ def evaluate_grammar(cmd_gramm):
         #print cmd
         cmd_window.append(cmd)
         result = evaluate_command(cmd, cmd_gramm['cmgf_flag']) if cmd_gramm['cmd'] == '+CMGS' else evaluate_command(cmd)
-        #result = [random.random()*5, utility.flip_coin(10)] # only for test purpose
         timing.append(result[0])
         if result[1] == 1:
             save_grammar(cmd_gramm, cmd)
@@ -215,7 +229,9 @@ def evaluate_grammars(input_grams):
             print('__________________________________________________\n')
 
 
-def main(input_grams, input_device, type_of_fuzz, input_port):
+def main(channel, input_grams, input_device, type_of_fuzz, input_port):
+    global fuzz_channel
+    fuzz_channel = channel
     global device
     device = input_device
     global fuzz_type
@@ -238,5 +254,5 @@ def main(input_grams, input_device, type_of_fuzz, input_port):
 
 
 if __name__ == '__main__':
-    main('ATD', 'test_dev', 0, None)
+    main('test', 'ATD', 'test_dev', 0, None)
 

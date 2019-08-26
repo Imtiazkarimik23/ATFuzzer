@@ -14,6 +14,7 @@ import utility
 log_file = 'log/grammarFuzzer_log.json'
 
 # Global variables
+fuzz_channel = 'unknown'        # it may be USB or Bluetooth 
 fuzz_type = 0
 move_command = 0
 device = 'unknown'
@@ -39,7 +40,7 @@ def read_conf():
 
 def save_current_state():
     data = {
-        'current_current_population': current_population,
+        'current_population': current_population,
         'current_set': current_set,
         'stored_set': stored_set
     }
@@ -138,6 +139,17 @@ def create_population(gram_sets, diversification_factor=1):
 
 
 def evaluate_command(cmd, sms_flag=None):
+    '''
+    if fuzz_channel == 'b'
+        return bluetooth_fuzz(cmd, device, port)
+    elif fuzz_channel == 'u'
+        return usb_fuzz(cmd, device, port)
+    elif fuzz_channel == 't' # only for test purpose
+        return [random.random()*5, utility.flip_coin(10)] 
+    else:
+        print '\nInvalid fuzzer channel! Restart execution and follow the instructions\n'
+        sys.exit()
+    '''
     return fuzz(cmd, device, port) if sms_flag is None else fuzz_message(cmd, device, sms_flag, port)
 
 
@@ -249,7 +261,9 @@ def evaluate_grammars():
     fuzz_multi_grams()
 
 
-def main(input_device, type_of_fuzz, input_port):
+def main(channel, input_device, type_of_fuzz, input_port):
+    global fuzz_channel
+    fuzz_channel = channel
     global device
     device = input_device
     global fuzz_type
@@ -274,4 +288,4 @@ def main(input_device, type_of_fuzz, input_port):
 
 
 if __name__ == '__main__':
-    main('test_dev', 0, None)
+    main('usb', 'test_dev', 0, None)
