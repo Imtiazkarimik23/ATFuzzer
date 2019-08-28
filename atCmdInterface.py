@@ -50,13 +50,13 @@ format_string = ["<value>", "%d", "%u", "%s", "%c", "%x", "<n>", "<index>", "<ar
 debug_cmd_gen = True
 
 
-# Description:
+#
 def create_serial(port, baud):
     # print("Creating serial port %s @ %d baud" % (port, baud))
     return serial.Serial(port, baud, timeout=DEFAULT_TIMEOUT)
 
 
-# Description:
+# Function to manage the reply from the target device
 def recv():
     my_poll = 0
     lines = []
@@ -76,9 +76,7 @@ def recv():
 
         # clean up the output for comparison
         line_clean = line.strip('\r\n')
-
         lines += [line]
-        # print line_clean
 
         # a terminal response. end NOW
         if 'ERROR' == line_clean:
@@ -96,10 +94,6 @@ def recv():
         else:
             continue
 
-    # "Do you know how fast you were going?"
-    # if time.time() - start_time < 1.0:
-    # time.sleep(2)
-
     # post-processing
     lines2 = []
     for l in lines:
@@ -110,7 +104,7 @@ def recv():
     return lines2
 
 
-# Description:
+# Method to send an AT command through USB channel
 def send(cmd):
     '''
 	True - sending failed
@@ -120,12 +114,11 @@ def send(cmd):
     mfuzz_port.write(cmd2 + '\r\r')
 
 
-# Description: 
-def bluetooth_send(cmd):
-	'''
-	True - sending failed
-	False - sending successful
-	'''
+# Method to send an AT command through Bluetooth channel 
+def bluetooth_send(cmd, port=None):
+    if port is None: 
+        port = 3
+    
 	data = "NULL"
 	backlog = 1
 	cmd2 = str(cmd)

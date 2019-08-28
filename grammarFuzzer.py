@@ -128,7 +128,7 @@ def select_population(scores):
 
 def evaluate_command(cmd, sms_flag=None):
     if fuzz_channel == 'b':
-        return bluetooth_fuzz(cmd)
+        return bluetooth_fuzz(cmd, port)
     elif fuzz_channel == 'u':
         return usb_fuzz(cmd, device, port)
     elif fuzz_channel == 't': # only for test purpose
