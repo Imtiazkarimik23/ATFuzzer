@@ -9,7 +9,7 @@ import utilityFunctions
 import logging
 import serial
 import socket
-#import bluetooth
+import bluetooth
 import subprocess
 from subprocess import Popen, PIPE
 from datetime import datetime, timedelta
