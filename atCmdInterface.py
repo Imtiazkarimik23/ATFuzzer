@@ -19,12 +19,12 @@ size = 99999
 
 # --- Bluetooth MAC address of the target device --- #
 #serverMACAddress = '18:E2:C2:5E:29:1C' #S3
-#serverMACAddress = '50:55:27:5f:16:7d' #Nexus5
+serverMACAddress = '50:55:27:5f:16:7d' #Nexus5
 #serverMACAddress = '94:8B:C1:43:0E:C4' #S8plus
 #serverMACAddress = '40:4E:36:AF:01:94' #htc
 #serverMACAddress = 'e4:90:7e:ee:2b:84' #nexus6
 #serverMACAddress = '04:B1:67:57:58:B9' #xiaomi
-serverMACAddress = '14:A5:1A:48:0A:2D' #huwaei
+#serverMACAddress = '14:A5:1A:48:0A:2D' #huwaei
 
 
 try:

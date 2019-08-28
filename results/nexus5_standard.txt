@@ -1,0 +1,1529 @@
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD231784591218541;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD|(]C&n;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD#D;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD6312545;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDd[&,D2
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD;s[@(P3.cZ)Msy3G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD472673882551184739;]xB!N#+|*
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.34463963585
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDuU5hzOI;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.24398096349
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDf]~;5#?H{;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.95386559944
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDeO1~-QqiREdl8bb:c/!Huw
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.95386559944
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD/J]M?JfPWw3\8^N:fD#|k
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.93270465892
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD909;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.93270465892
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDC,l9K{\c;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.81974860464
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDs;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.81974860464
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDk{'k;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.81974860464
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD!;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.726781935
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD768/;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.726781935
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD5186661207741Wp*?x2DQ=;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.05068121427
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD<R)c/x8;o;f7t-
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.05068121427
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDD'}=S7;PnZx-%rn
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.05068121427
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD_m;K59'fY|Be
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.9713408551
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD-;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.00378675939
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD[;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '`\\C[Taf"bb'], u'type': u'fixed'}
+	score: 1.94021416479
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDVI
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.86418787033
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD+SIo?{vN/;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 16, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.86418787033
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD;D2ZI;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.8593592182
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDWlG
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 16, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.10928016617
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDGEBb>lX1Nd;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.00750594754
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD%-B.2]}=HEM[keqX+5;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.81717535075
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDId;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '`\\C[Taf"bb'], u'type': u'fixed'}
+	score: 2.11849849438
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD6
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.90553417637
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD"2
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 32, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.85791442151
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDaqi+9pibd4-JN4$=m>H|VT1;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 16, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.85791442151
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD01sJW;I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 16, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.2244588466
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD.EtH&8q2U[=MLcq
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.13461898217
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDiW!G[h&;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.77530269494
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDqZDv\&`6
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.24402680881
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDl^
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '`\\C[Taf"bb'], u'type': u'fixed'}
+	score: 1.99731030195
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDoX1
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 16, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.98628822664
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD?g&/m"G$!;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.28362755434
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDK*olCF[
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.28362755434
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDq;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.28362755434
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD[;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.22190845233
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD:*dj/zT
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 8, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.22190845233
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD},Gx,;QUq
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD2017863205437
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD595144986612[kM;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD%~;HLocu~<i"@a;I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD11145423;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD5BwG}(FDG
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'h=[E.["[V@'], u'type': u'fixed'}
+	score: 2.28800395693
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDO};G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.71994438423
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD98722036
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J"], u'type': u'fixed'}
+	score: 1.63143817414
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD580410785740I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.09086259683
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDn*89E>A<e9m/l%G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'h=[E.["[V@'], u'type': u'fixed'}
+	score: 2.09086259683
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD/]Z(ONEI;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.07074016203
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD638056
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.03101320146
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD20988t[+Pd;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 2.03101320146
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD68535087vE,-:v_udP;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J"], u'type': u'fixed'}
+	score: 2.01738170046
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD395257
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.90471839792
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD,gUs$A'f.09S~Q2
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.90471839792
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD{Z1,xN7JXY2#Xs6?@$Wgww4p3*B~vJN[BS?Y"2FE8|?g88mmB[+Bn<Jpy[-QBzGA|PM3+
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.90471839792
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD>LvwyYddokJ6cv
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'h=[E.["[V@'], u'type': u'fixed'}
+	score: 1.68126503695
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDv9{rcdMg8I;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.65474800541
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD170245597I;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.75651431044
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD479978665;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.75651431044
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD645;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 4, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.75651431044
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD58G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.71175534303
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD558
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/"], u'type': u'fixed'}
+	score: 1.70656548883
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD697262706687;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/"], u'type': u'fixed'}
+	score: 1.70656548883
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD279192955;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/"], u'type': u'fixed'}
+	score: 1.94839126522
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD57Tl;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.81905068214
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD2
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.81604265785
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/", 'oU64mxd4!{'], u'type': u'fixed'}
+	score: 1.93625468121
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDk)eE1;oU64mxd4!{
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/"], u'type': u'fixed'}
+	score: 1.93625468121
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD2YYja4v+/'9`F8d;Lo!mP'lB8J
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 2, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.89655786674
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD42
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 2, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.89655786674
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD3
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.84188845754
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD\2?!W4O!;BF
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.9843246299
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD73
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.9843246299
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD8
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.9843246299
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDy7
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.92710157955
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD/-B_RNP;su.bR=hlVb@Z
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.92710157955
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDC8NCncRyh7`VC,dY2[6ab3f
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.92710157955
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDp2/&]c2ef";-mtM~S#\P<@wSGnW_~i
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.92710157955
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDZA!=x7
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.92710157955
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDi[ZUnN!YI.Hk5r3e(0
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 2.32271529829
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD,/L+8n5&+o\`%E1g.2~.J7X;w5"';H`!ZV.`t;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 2.32271529829
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD|l`w$Q9`PGR
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 2.2937707366
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD&=TA
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 2.2937707366
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDx9
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", "G'&0~]&DT/"], u'type': u'fixed'}
+	score: 2.18748946022
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDnIWkc6M]=|+yc2N@O1urljFi\f{%IYTO$%B";
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.77803589716
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDe~@\8q>G;eTJ;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.76168074733
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD6553
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.86152697482
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD3;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 8, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', "Lo!mP'lB8J", '@\\8q>G;eTJ'], u'type': u'fixed'}
+	score: 1.77303320773
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD70448953
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD101884228678645089170046648385965148;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD95061661425125622831824435344844;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD875518409798221904I;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', '=u>cuszVzG'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD4895845173870286G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.14174695407
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD497250866115662;I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.93309579177
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD17yB]i3id;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.88349298581
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD66085339688339
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 72, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.88349298581
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD9;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', '=u>cuszVzG'], u'type': u'fixed'}
+	score: 1.87292201233
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD505732508166403501207110;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.68809886773
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD424379316983036220;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'O!QBzdDyQY'], u'type': u'fixed'}
+	score: 2.26393740282
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD74369072946695
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'O!QBzdDyQY'], u'type': u'fixed'}
+	score: 2.26393740282
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD8G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 20, 'type': 'string'}
+	score: 1.96357813869
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD:_UMURngKb:&.!7-2:]*Z
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 10, 'type': 'string'}
+	score: 1.92172755309
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD26<3_{
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', '=u>cuszVzG'], u'type': u'fixed'}
+	score: 1.91437408782
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD2230286170606968448;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 20, 'type': 'string'}
+	score: 2.13384488867
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD`$[-G6o
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 2.07978402463
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD6655;N%F+$\-[v+jk^27hS^t9L$08aKJG+)~])P
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 2.07978402463
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD479691191;6ZPh538_l
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 5, 'type': 'string'}
+	score: 1.92798523093
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD6OSt;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.86663025163
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD~P]x/^1k-fjj]Iv!\ue#XQTWk@jd}txufT{\;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.86663025163
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD79047129707608231770060797325377706;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.88708880398
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD960B;uEpU:oW73J)w708;oLl^MCR3WzKh+O&
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.88708880398
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD3mn?s\)'d;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.99358019947
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD36877919326309C6Y(M]U$7<&&^tIR{v[@Y'<)}3\^;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.99066385246
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD72637A,9_;B,4d`
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.97660412586
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD366174005+Zk'x_3p`&
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 2, 'type': 'string'}
+	score: 1.8279360541
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD980990pr
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 2.20461423576
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD92;l[ExJXgmyKUnTM!.IF/rdE{Qu;q5aA6<267X*%#iH[*uOVXk8vP#(5NI<6R:*?+!BS}cwE}Ur
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 2.20461423576
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD67;[hsFi
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.93769002591
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD1495685445|,\^f)5u!aG_q#<NfuqVMR>EuaV;3qCb<{3`e16D7.q_G@2A1<DuI.rgWp?LVj
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.93769002591
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD1751560622872Xf5G^v1[bt-R[V@{?U,^
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 1.77823465268
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD830900268100864
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.70091569876
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD@6;)kVuA&_+g[;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 80, 'type': 'string'}
+	score: 2.20489886655
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD64496814
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {'length': 2, 'type': 'string'}
+	score: 2.19794751092
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDHmp;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.96603104885
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD2044544
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.96603104885
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD42080259
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 2.48532694084
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD670639
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.72642799302
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD1118728659423cpC'ul+&]Z=M
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 2, 'type': 'string'}
+	score: 1.72251216221
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATDA;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 2.41264856551
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD17821818921645218017703963937541
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 2.41264856551
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD311493594@.}}!NkH$&w<jz\cXbY
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {'length': 2, 'type': 'string'}
+	score: 1.90676529783
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD@f/;r
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {'length': 40, 'type': 'string'}
+	score: 1.54522431382
+	separator: 
+	arg: [u'number', u'flag']
+Command: ATD8
+
