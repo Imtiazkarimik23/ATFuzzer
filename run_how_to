@@ -1,5 +1,5 @@
 USAGE:
 
-./grammarFuzzer.py    <grammar1,grammar2,...,grammarN> OR "multi"    <device_name>    <port (optional)>
+sudo ./grammarFuzzer.py    <grammar1,grammar2,...,grammarN> OR "multi"    <device_name>    <port (optional)>
     
 note: with "multi" option the fuzzer will use line with multiple random commands as input'
