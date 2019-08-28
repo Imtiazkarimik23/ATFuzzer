@@ -95,7 +95,7 @@ def gen_command(cmd_gram):
         return gen_message_command(cmd_gram)
     else:
         gram_struct = cmd_gram['struct']
-        cmd = '' #AT'
+        cmd = ''
         previous_was_arg = 0
         for elem in gram_struct:
             term = gen_terminal(cmd_gram, elem)
@@ -122,9 +122,9 @@ if __name__ == '__main__':
     sample = random.sample(grammars.keys(), 20)
     gram_list = []
     for i in sample:
-        print i
+        print(i)
         gram = grammars[i]
         cmd = gen_command(gram)
         gram_list.append(str(cmd))
     for e in gram_list:
-        print e
+        print(e)

@@ -68,6 +68,16 @@ def print_grammars_in_set(gram_set):
         print gram
 
 
+def sorted_insert(gram_list, gram):
+    if len(gram_list) == 0:
+        gram_list.append(gram)
+    else:
+        for i in range(len(gram_list)):
+            if gram['score'] >= gram_list[i]['score']:
+                gram_list.insert(i, gram)
+                return
+        gram_list.append(gram)
+
 
 def set_sorted_insert(set_list, set_and_score):
     if len(set_list) == 0:
@@ -91,7 +101,16 @@ def gram_sorted_insert(gram_list, gram):
         gram_list.append(gram)
 
 
-def build_string_gram_cmd(gram_set, cmd):
+def build_string_gram_cmd(gram, cmd):
+    cmd_line = 'Command: ' + str(cmd) + '\n\n'
+    gram_line = 'Grammar:\n'
+    for field in gram:
+        value = 'AT' + str(gram[field]) if field == 'cmd' else str(gram[field])
+        gram_line += '\t' + str(field) + ': ' + value + '\n'
+    return gram_line + cmd_line
+
+
+def build_string_set_gram_cmd(gram_set, cmd):
     cmd_line = 'Commands: \n'
     for c in list(cmd):
         cmd_line += str(c) + '\n'

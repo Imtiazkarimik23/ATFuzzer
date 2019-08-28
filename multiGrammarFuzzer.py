@@ -3,21 +3,24 @@
 import sys
 import json
 import random
+import string
 import traceback
 import inputGen
+import utilityFunctions
 import time
-from atsend import fuzz, fuzz_message
+from atCmdInterface import usb_fuzz, bluetooth_fuzz, test_fuzz
 from collections import deque
 from grammarModifier import *
-import utility
+from numpy import setdiff1d
+
 
 log_file = 'log/grammarFuzzer_log.json'
 
 # Global variables
-fuzz_channel = 'unknown'        # it may be USB or Bluetooth 
-fuzz_type = 0
-move_command = 0
-device = 'unknown'
+fuzz_channel = 'unknown'        # it may be USB or Bluetooth                   
+fuzz_type = 0                   # fuzzing type: standard, w/o feedback, w/o crossover, w/o mutation 
+move_command = 0                # during the mutation with 0 the position of the command is fixed; with 1 it is variable
+device = 'unknown'              # device name (e.g. Nexus6P)
 port = None
 
 current_population = []         # list of current grammars/grammars sets in the population
@@ -26,7 +29,8 @@ current_set = []                # list of multiple grammars currently fuzzing
 standard_set = []               # list of standard versions of the grammars
 stored_set = []                 # list of sets of grammars that triggered an issue
 
-# execution parameters
+
+# --- EXECUTION PARAMETERS --- #
 ATTEMPTS = 10                   # number of iterations
 RESTART_TRESHOLD = 3            # number of repetetions of all the iterations
 INPUT_NUMBER = 5                # number of input generated for each grammar
@@ -56,7 +60,7 @@ def update_current(gram_set):
 def save_set(gram_set):
     if gram_set not in stored_set:
         stored_set.append(gram_set)
-    s = utility.build_string_gram_cmd(gram_set, cmd_window)
+    s = utilityFunctions.build_string_set_gram_cmd(gram_set, cmd_window)
     if fuzz_type == 0:
         fuzz_type_name = '_standard'
     elif fuzz_type == 1:
@@ -75,25 +79,25 @@ def save_set(gram_set):
 #   2. random modification of the given grammar by adding or deleting one element
 #   3. random modification of the given grammar to make it generate invalid commands
 def modify_grammar(gram):
-    cmd_gram = utility.copy_dict(gram)
+    cmd_gram = utilityFunctions.copy_dict(gram)
     ''' 
     global move_command
     if move_command == 0:
-        move_command = 1 if utility.flip_coin(10) == 1 else 0
+        move_command = 1 if utilityFunctions.flip_coin(10) == 1 else 0
     '''
     # 3 steps:
     # 1. random crossover
     # check if no crossover fuzzer
-    new_gram = utility.copy_dict(gram_crossover(cmd_gram, move_command)) if fuzz_type != 2 else utility.copy_dict(
+    new_gram = utilityFunctions.copy_dict(gram_crossover(cmd_gram, move_command)) if fuzz_type != 2 else utilityFunctions.copy_dict(
         cmd_gram)
 
     if fuzz_type != 3:  # check if no mutation fuzz
         # 2. random add or delete
-        if utility.flip_coin() == 1:
+        if utilityFunctions.flip_coin() == 1:
             gram_random_add_delete(new_gram, move_command)
 
         # 3. random valid/invalid
-        if utility.flip_coin() == 1:
+        if utilityFunctions.flip_coin() == 1:
             make_gram_invalid(new_gram)
 
     return new_gram
@@ -120,7 +124,7 @@ def modify_set(gram_set, diversification_factor):
             if new_gram not in standard_set and new_gram != previous_gram:
                 modified_set[generated].append(new_gram)
                 generated += 1
-                previous_gram = utility.copy_dict(new_gram)
+                previous_gram = utilityFunctions.copy_dict(new_gram)
 
     return modified_set
 
@@ -139,18 +143,16 @@ def create_population(gram_sets, diversification_factor=1):
 
 
 def evaluate_command(cmd, sms_flag=None):
-    '''
-    if fuzz_channel == 'b'
-        return bluetooth_fuzz(cmd, device, port)
-    elif fuzz_channel == 'u'
+    if fuzz_channel == 'b':
+        return bluetooth_fuzz(cmd)
+    elif fuzz_channel == 'u':
         return usb_fuzz(cmd, device, port)
-    elif fuzz_channel == 't' # only for test purpose
-        return [random.random()*5, utility.flip_coin(10)] 
+    elif fuzz_channel == 't': # only for test purpose
+        print(cmd)
+        return test_fuzz(cmd)
     else:
-        print '\nInvalid fuzzer channel! Restart execution and follow the instructions\n'
+        print('\nInvalid fuzzer channel! Restart execution and follow the instructions\n')
         sys.exit()
-    '''
-    return fuzz(cmd, device, port) if sms_flag is None else fuzz_message(cmd, device, sms_flag, port)
 
 
 def evaluate_set(gram_set):
@@ -161,17 +163,14 @@ def evaluate_set(gram_set):
         for g in gram_set:
             input_cmd += str(inputGen.gen_command(g)) + ';'
         input_cmd = input_cmd[:-1]
-        #print input_cmd
         cmd_window.append(input_cmd)
         result = evaluate_command(input_cmd)
-        #result = [random.random()*5, utility.flip_coin(10)]     # only for test purpose
-
+    
         timing.append(result[0])
         if result[1] == 1:
             save_set(gram_set)
             flag = 1
-    #print 'result: ', utility.average(timing), ', ', flag
-    return [utility.average(timing), flag]
+    return [utilityFunctions.average(timing), flag]
 
 
 def gram_setup(gram):
@@ -206,7 +205,6 @@ def select_population(scores):
     else:
         for scr in scores:
             set_score = scores[scr]
-            #print 'score : ' + str(set_score['score'])
             reply_time = set_score['score'][0]
             flag = set_score['score'][1]
             score = hyperparameters['time_weight'] * reply_time + hyperparameters['flag_weight'] * flag
@@ -214,7 +212,7 @@ def select_population(scores):
             #if previous_score != 0: (hyperparameters['curr_score_weight'] * score + hyperparameters['prev_score_weight'] * previous_score)
             # it takes into consideration the score of the previous iteration
             set_score['score'] = score
-            utility.set_sorted_insert(set_and_scores, set_score)
+            utilityFunctions.set_sorted_insert(set_and_scores, set_score)
 
         for set_score in set_and_scores:
             selected_sets.append(set_score['set'])
@@ -237,25 +235,25 @@ def fuzz_multi_grams():
             current_population = set_population
             j=0
             for gram_set in set_population:
-                #utility.print_grammars_in_set(gram_set)
+                #utilityFunctions.print_grammars_in_set(gram_set)
                 update_current(gram_set)
                 set_scores[j] = {}
                 set_scores[j]['set'] = gram_set
                 set_scores[j]['score'] = evaluate_set(gram_set)
                 j += 1
-                print '\n'
+                print('\n')
 
             selected_sets = select_population(set_scores)
             set_population = create_population(selected_sets, 2)
 
-        print 'Execution restart counter: ', count+1
-        print '__________________________________________________\n'
+        print('Execution restart counter: ', count+1)
+        print('__________________________________________________\n')
 
 
 def evaluate_grammars():
     grammars = read_conf()
     random_grammars = random.sample(grammars.keys(), CMD_NUMBER)
-    print 'Fuzzing grammars: ', str(random_grammars)
+    print('Fuzzing grammars: ', str(random_grammars))
     for g in random_grammars:
         current_set.append(grammars[g])
     fuzz_multi_grams()
@@ -275,15 +273,15 @@ def main(channel, input_device, type_of_fuzz, input_port):
     start_time = time.time()
     try:
         evaluate_grammars()
-        print '\nExecution time: ', (time.time() - start_time)
+        print('\nExecution time: ', (time.time() - start_time))
     except:
         exc_type, exc_value, exc_traceback = sys.exc_info()
         save_current_state()
         traceback.print_exception(exc_type, exc_value, exc_traceback)
-        print 'Current set: '
+        print('Current set: ')
         for g in current_set:
-            print g
-        print '\nExecution time: ', (time.time() - start_time)
+            print(g)
+        print('\nExecution time: ', (time.time() - start_time))
         sys.exit()
 
 

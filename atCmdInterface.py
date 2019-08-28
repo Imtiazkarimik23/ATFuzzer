@@ -1,22 +1,23 @@
 #!/usr/bin/env python2
 
 import sys
-import time
-import logging
-import serial
-import subprocess
-from subprocess import Popen, PIPE
 import os
 import signal
-from datetime import datetime
-from datetime import timedelta
-from stat import S_ISCHR
-import socket, subprocess
 import time
-import bluetooth
+import random
+import utility
+import logging
+import serial
+import socket
+#import bluetooth
+import subprocess
+from subprocess import Popen, PIPE
+from datetime import datetime, timedelta
+from stat import S_ISCHR
+
 size = 99999
 
-# --- list of MAC address of the target devices --- #
+# --- Bluetooth MAC address of the target device --- #
 #serverMACAddress = '18:E2:C2:5E:29:1C' #S3
 #serverMACAddress = '50:55:27:5f:16:7d' #Nexus5
 #serverMACAddress = '94:8B:C1:43:0E:C4' #S8plus
@@ -49,11 +50,13 @@ format_string = ["<value>", "%d", "%u", "%s", "%c", "%x", "<n>", "<index>", "<ar
 debug_cmd_gen = True
 
 
+# - CHECKED -
 def create_serial(port, baud):
     # print("Creating serial port %s @ %d baud" % (port, baud))
     return serial.Serial(port, baud, timeout=DEFAULT_TIMEOUT)
 
 
+# - CHECKED -
 def recv():
     my_poll = 0
     lines = []
@@ -107,6 +110,7 @@ def recv():
     return lines2
 
 
+# - CHECKED -
 def send(cmd):
     '''
 	True - sending failed
@@ -116,88 +120,7 @@ def send(cmd):
     mfuzz_port.write(cmd2 + '\r\r')
 
 
-def extend(cmds):
-    '''
-	Extend the cmd list
-	'''
-    cmds2 = []
-    for c in cmds:
-        cmds2.append(c)
-        if c.endswith("="):
-            cmds2.append(c[:-1])
-    return cmds2
-
-
-def check_internet_connectivity(output):
-    flag = 1
-    if "mDataConnectionState=2" in output:
-        return 0
-    # if "UMTS" in output:
-    # return 1
-    # if "GSM EDGE" in output:
-    # return 1
-    return flag
-
-
-def at_probe():
-    found = []
-    if environment == 'linux':
-        print('Probing for ttyACM devices...')
-        for i in range(10):
-            devname = '/dev/ttyACM%d' % i
-            if not os.path.exists(devname):
-                continue
-            mode = os.stat(devname).st_mode
-            if S_ISCHR(mode):
-                found += [devname]
-
-    elif environment == 'windows':
-        print('Probing for COM ports...')
-        for i in range(256):
-            port = 'COM%d' % i
-            try:
-                s = serial.Serial(port)
-                s.close()
-                found.append(port)
-            except (OSError, serial.SerialException):
-                pass
-    else:
-        raise Exception('EnvironmentError: unknow OS')
-    return found
-
-
-def send_at_command(ser, cmd):
-    start = time.time()
-    ser.write(cmd + "\r")
-    lines = []
-
-    while True:
-        line = ser.readline()
-
-        # timeout
-        if line == "":
-            break
-
-        # clean up the output (we dont want line endings)
-        line_clean = line.strip('\r\n')
-
-        lines += [line_clean]
-
-        if 'ERROR' == line_clean:
-            break
-        elif 'CME ERROR' in line_clean:
-            break
-        elif 'OK' == line_clean:
-            break
-        elif 'NO CARRIER' == line_clean:
-            break
-        elif 'ABORTED' == line_clean:
-            break
-    end = time.time()
-    print end - start
-    return lines
-
-
+# - CHECKED - 
 def bluetooth_send(cmd):
 	'''
 	True - sending failed
@@ -230,8 +153,95 @@ def bluetooth_send(cmd):
 		subprocess.call("sudo /etc/init.d/bluetooth restart",shell=True)
 		time.sleep(15)
 		#send_blue(cmd)
-	
 
+
+# - CHECKED -
+def extend(cmds):
+    '''
+	Extend the cmd list
+	'''
+    cmds2 = []
+    for c in cmds:
+        cmds2.append(c)
+        if c.endswith("="):
+            cmds2.append(c[:-1])
+    return cmds2
+
+
+# - CHECKED -
+def check_internet_connectivity(output):
+	flag = 0
+	if "mDataConnectionState=0" in output:
+		return 1
+	#if "UMTS" in output:
+		#return 1
+	#if "GSM EDGE" in output:
+		#return 1
+	return flag
+
+
+# - CHECKED -
+def at_probe():
+    found = []
+    if environment == 'linux':
+        print('Probing for ttyACM devices...')
+        for i in range(10):
+            devname = '/dev/ttyACM%d' % i
+            if not os.path.exists(devname):
+                continue
+            mode = os.stat(devname).st_mode
+            if S_ISCHR(mode):
+                found += [devname]
+
+    elif environment == 'windows':
+        print('Probing for COM ports...')
+        for i in range(256):
+            port = 'COM%d' % i
+            try:
+                s = serial.Serial(port)
+                s.close()
+                found.append(port)
+            except (OSError, serial.SerialException):
+                pass
+    else:
+        raise Exception('EnvironmentError: unknow OS')
+    return found
+
+
+# - CHECKED -
+def send_at_command(ser, cmd):
+    start = time.time()
+    ser.write(cmd + "\r")
+    lines = []
+
+    while True:
+        line = ser.readline()
+
+        # timeout
+        if line == "":
+            break
+
+        # clean up the output (we dont want line endings)
+        line_clean = line.strip('\r\n')
+
+        lines += [line_clean]
+
+        if 'ERROR' == line_clean:
+            break
+        elif 'CME ERROR' in line_clean:
+            break
+        elif 'OK' == line_clean:
+            break
+        elif 'NO CARRIER' == line_clean:
+            break
+        elif 'ABORTED' == line_clean:
+            break
+    end = time.time()
+    print end - start
+    return lines
+
+
+# - CHECKED -
 def at_connect(dev, baud=DEFAULT_BAUD):
     try:
         ser = create_serial(dev, baud)
@@ -246,12 +256,14 @@ def at_connect(dev, baud=DEFAULT_BAUD):
     return None
 
 
+# - CHECKED -
 def check_sim_connectivity(output):
     output = output[:150]
     # print output
     return 1 if "mServiceState=1 1" in output else 0
 
 
+# - CHECKED -
 def run_command(command):
     p = subprocess.Popen(command,
                          stdout=subprocess.PIPE,
@@ -259,6 +271,7 @@ def run_command(command):
     return iter(p.stdout.readline, b'')
 
 
+# - CHECKED -
 def set_environment():
     global environment
     if os.name == 'posix':
@@ -269,6 +282,7 @@ def set_environment():
         raise Exception('EnvironmentError: unknow OS')
 
 
+# - CHECKED -
 def get_serial_connection(dev):
     set_environment()
     devices = at_probe() if (dev == None) else [dev]
@@ -284,13 +298,13 @@ def get_serial_connection(dev):
     return None
 
 
+# - CHECKED -
 from subprocess import check_output
-
-
 def get_pid(name):
     return int(check_output(["pidof", name]))
 
 
+# - CHECKED -
 def test_adb_process():
     attempt = 5
     test = False
@@ -310,6 +324,7 @@ def test_adb_process():
             attempt -= 1
 
 
+# - CHECKED - 
 # reboot adb and the connected device
 def reboot_env(device=None):
     # test_adb_process()
@@ -337,6 +352,7 @@ def reboot_env(device=None):
     time.sleep(8)
 
 
+# - CHECKED - 
 def init_mfuzz_port(device, port):
     global mfuzz_port
     mfuzz_port = get_serial_connection(port)
@@ -351,6 +367,7 @@ def init_mfuzz_port(device, port):
         init_mfuzz_port(device, port)
 
 
+# - CHECKED - 
 def write_on_logcat(stime, ftime):
     command = 'adb logcat -v time -d *:E'.split()
     logcat = ''
@@ -376,6 +393,7 @@ def write_on_logcat(stime, ftime):
     f.close()
 
 
+# - CHECKED - 
 def bluetooth_fuzz(cmd):
 	retList = []
 	flag = 0
@@ -429,12 +447,8 @@ def bluetooth_fuzz(cmd):
 	return retList
 
 
-
+# - CHECKED - 
 def usb_fuzz(cmd, device, port=None):
-    print 'test '+cmd
-    cmd = cmd.replace("AT","")
-    cmd = "AT"+cmd
-    print 'test ' + cmd
     retList = []
     flag = 0
     # time.sleep(5)
@@ -479,8 +493,6 @@ def usb_fuzz(cmd, device, port=None):
         flag  = 1
         retList.append(flag)
         return  retList
-    # send("AT+CHUP")
-    # send("ATH")
 
     for _ in range(timer_for_check):
         # test_adb_process()
@@ -507,6 +519,11 @@ def usb_fuzz(cmd, device, port=None):
     mfuzz_port.close()
     logging.info("port is closed")
     return retList
+
+
+# - CHECKED -
+def test_fuzz(cmd):
+    return [random.random()*5, utility.flip_coin(10)]
 
 
 def main():
