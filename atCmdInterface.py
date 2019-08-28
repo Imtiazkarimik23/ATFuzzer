@@ -387,7 +387,7 @@ def write_on_logcat(stime, ftime):
 
 
 # Description: 
-def bluetooth_fuzz(cmd):
+def bluetooth_fuzz(cmd, port):
 	retList = []
 	flag = 0
 	timer_for_check = 50
@@ -397,7 +397,7 @@ def bluetooth_fuzz(cmd):
 	stime = datetime.now()
 	print stime
 	try:
-		r = bluetooth_send(cmd)
+		r = bluetooth_send(cmd, port)
 	except serial.serialutil.SerialException as e:
 		print e	
 	end = time.time()
