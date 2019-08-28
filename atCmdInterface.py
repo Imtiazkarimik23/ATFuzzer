@@ -50,7 +50,6 @@ format_string = ["<value>", "%d", "%u", "%s", "%c", "%x", "<n>", "<index>", "<ar
 debug_cmd_gen = True
 
 
-#
 def create_serial(port, baud):
     # print("Creating serial port %s @ %d baud" % (port, baud))
     return serial.Serial(port, baud, timeout=DEFAULT_TIMEOUT)
@@ -148,7 +147,6 @@ def bluetooth_send(cmd, port):
 		#send_blue(cmd)
 
 
-# Description:
 def extend(cmds):
     '''
 	Extend the cmd list
@@ -161,7 +159,6 @@ def extend(cmds):
     return cmds2
 
 
-# Description:
 def check_internet_connectivity(output):
 	flag = 0
 	if "mDataConnectionState=0" in output:
@@ -173,7 +170,6 @@ def check_internet_connectivity(output):
 	return flag
 
 
-# Description:
 def at_probe():
     found = []
     if environment == 'linux':
@@ -201,7 +197,6 @@ def at_probe():
     return found
 
 
-# Description:
 def send_at_command(ser, cmd):
     start = time.time()
     ser.write(cmd + "\r")
@@ -234,7 +229,6 @@ def send_at_command(ser, cmd):
     return lines
 
 
-# Description:
 def at_connect(dev, baud=DEFAULT_BAUD):
     try:
         ser = create_serial(dev, baud)
@@ -249,14 +243,12 @@ def at_connect(dev, baud=DEFAULT_BAUD):
     return None
 
 
-# Description:
 def check_sim_connectivity(output):
     output = output[:150]
     # print output
     return 1 if "mServiceState=1 1" in output else 0
 
 
-# Description:
 def run_command(command):
     p = subprocess.Popen(command,
                          stdout=subprocess.PIPE,
@@ -264,7 +256,6 @@ def run_command(command):
     return iter(p.stdout.readline, b'')
 
 
-# Description:
 def set_environment():
     global environment
     if os.name == 'posix':
@@ -275,13 +266,12 @@ def set_environment():
         raise Exception('EnvironmentError: unknow OS')
 
 
-# Description:
 def get_serial_connection(dev):
     set_environment()
     devices = at_probe() if (dev == None) else [dev]
 
     if len(devices) == 0:
-        print "No devices found"
+        print "No device found"
         return
     for d in devices:
         print 'Trying device ', d
@@ -291,13 +281,11 @@ def get_serial_connection(dev):
     return None
 
 
-# Description:
 from subprocess import check_output
 def get_pid(name):
     return int(check_output(["pidof", name]))
 
 
-# Description:
 def test_adb_process():
     attempt = 5
     test = False
@@ -317,7 +305,6 @@ def test_adb_process():
             attempt -= 1
 
 
-# Description: 
 # reboot adb and the connected device
 def reboot_env(device=None):
     # test_adb_process()
@@ -345,7 +332,6 @@ def reboot_env(device=None):
     time.sleep(8)
 
 
-# Description: 
 def init_mfuzz_port(device, port):
     global mfuzz_port
     mfuzz_port = get_serial_connection(port)
@@ -360,7 +346,6 @@ def init_mfuzz_port(device, port):
         init_mfuzz_port(device, port)
 
 
-# Description: 
 def write_on_logcat(stime, ftime):
     command = 'adb logcat -v time -d *:E'.split()
     logcat = ''
@@ -386,7 +371,6 @@ def write_on_logcat(stime, ftime):
     f.close()
 
 
-# Description: 
 def bluetooth_fuzz(cmd, port=None):
 	retList = []
 	flag = 0
@@ -411,7 +395,6 @@ def bluetooth_fuzz(cmd, port=None):
 
 	r = str(r).rstrip("\r\n")
 	if "ERROR" not in r:
-		print r + "in"
 		flag = 1
 		retList.append(flag)
 		#time.sleep(15)
@@ -427,20 +410,18 @@ def bluetooth_fuzz(cmd, port=None):
 		flag2 = check_internet_connectivity(output)
 		time.sleep(0.5)
 		if flag1==1 or flag2==1:
-			print "in here"
 			flag =1
-			print "flag is now " +str(flag)
+			print "flag is now " + str(flag)
 			time.sleep(5)
 			break
 		else:
-			print "flag is now yo" +str(flag)
+			print "flag is now" + str(flag)
 
 	retList.append(flag)
 	print retList
 	return retList
 
 
-# Description: 
 def usb_fuzz(cmd, device, port=None):
     retList = []
     flag = 0
@@ -514,7 +495,6 @@ def usb_fuzz(cmd, device, port=None):
     return retList
 
 
-# Description:
 def test_fuzz(cmd):
     return [random.random()*5, utilityFunctions.flip_coin(10)]
 
