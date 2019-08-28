@@ -2,7 +2,7 @@
 
 import random
 import string
-import utility
+import utilityFunctions
 from numpy import setdiff1d
 
 
@@ -17,7 +17,7 @@ def gram_crossover(cmd_gram, move_command=0):
 
 def add_field(cmd_gram):
     gram_struct = cmd_gram['struct']
-    possible_elements = utility.remove_elements(cmd_gram.keys(), ['struct', 'arg', 'separator', 'score'])
+    possible_elements = utilityFunctions.remove_elements(cmd_gram.keys(), ['struct', 'arg', 'separator', 'score'])
     missing_elements = setdiff1d(possible_elements, gram_struct)
     if len(missing_elements) > 0:
         gram_struct.append(random.choice(missing_elements))
@@ -34,7 +34,7 @@ def remove_field(cmd_gram, move_command):
 # # input: cmd_gram = detailed grammar dictionary
 def gram_random_add_delete(cmd_gram, move_command=0):
     gram_struct = cmd_gram['struct']
-    if len(gram_struct) < 2 or utility.flip_coin() == 0:
+    if len(gram_struct) < 2 or utilityFunctions.flip_coin() == 0:
         add_field(cmd_gram)
     else:
         remove_field(cmd_gram, move_command)
@@ -56,7 +56,7 @@ def make_gram_invalid(cmd_gram):
 
         if type == 'digit' or type == 'letters':
             half_len, double_len = (arg['length'] / 2), (arg['length'] * 2)
-            if utility.flip_coin(2) > 0:
+            if utilityFunctions.flip_coin(2) > 0:
                 if half_len < 2:
                     arg['length'] = double_len
                 elif double_len > 1000:
@@ -80,7 +80,7 @@ def make_gram_invalid(cmd_gram):
             arg['range'] = random.choice([[end + 1, end + 100], [start - 100, start - 1]])
 
         elif type == 'fixed':
-            if utility.flip_coin() == 0:
+            if utilityFunctions.flip_coin() == 0:
                 new_value = ''.join(
                     random.choice(string.ascii_letters + string.digits + string.punctuation) for x in range(10))
                 arg['values'].append(new_value)

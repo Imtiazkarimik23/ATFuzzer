@@ -69,7 +69,7 @@ def save_set(gram_set):
         fuzz_type_name = '_noCrossover'
     elif fuzz_type == 3:
         fuzz_type_name = '_noMutation'
-    with open('results/grammar_fuzzing_result_' + device + fuzz_type_name + '.txt', 'a') as f:
+    with open('results/' + device + fuzz_type_name + '.txt', 'a') as f:
         f.write(s)
 
 

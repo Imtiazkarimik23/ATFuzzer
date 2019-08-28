@@ -5,7 +5,7 @@ import os
 import signal
 import time
 import random
-import utility
+import utilityFunctions
 import logging
 import serial
 import socket
@@ -50,13 +50,13 @@ format_string = ["<value>", "%d", "%u", "%s", "%c", "%x", "<n>", "<index>", "<ar
 debug_cmd_gen = True
 
 
-# - CHECKED -
+# Description:
 def create_serial(port, baud):
     # print("Creating serial port %s @ %d baud" % (port, baud))
     return serial.Serial(port, baud, timeout=DEFAULT_TIMEOUT)
 
 
-# - CHECKED -
+# Description:
 def recv():
     my_poll = 0
     lines = []
@@ -110,7 +110,7 @@ def recv():
     return lines2
 
 
-# - CHECKED -
+# Description:
 def send(cmd):
     '''
 	True - sending failed
@@ -120,7 +120,7 @@ def send(cmd):
     mfuzz_port.write(cmd2 + '\r\r')
 
 
-# - CHECKED - 
+# Description: 
 def bluetooth_send(cmd):
 	'''
 	True - sending failed
@@ -155,7 +155,7 @@ def bluetooth_send(cmd):
 		#send_blue(cmd)
 
 
-# - CHECKED -
+# Description:
 def extend(cmds):
     '''
 	Extend the cmd list
@@ -168,7 +168,7 @@ def extend(cmds):
     return cmds2
 
 
-# - CHECKED -
+# Description:
 def check_internet_connectivity(output):
 	flag = 0
 	if "mDataConnectionState=0" in output:
@@ -180,7 +180,7 @@ def check_internet_connectivity(output):
 	return flag
 
 
-# - CHECKED -
+# Description:
 def at_probe():
     found = []
     if environment == 'linux':
@@ -208,7 +208,7 @@ def at_probe():
     return found
 
 
-# - CHECKED -
+# Description:
 def send_at_command(ser, cmd):
     start = time.time()
     ser.write(cmd + "\r")
@@ -241,7 +241,7 @@ def send_at_command(ser, cmd):
     return lines
 
 
-# - CHECKED -
+# Description:
 def at_connect(dev, baud=DEFAULT_BAUD):
     try:
         ser = create_serial(dev, baud)
@@ -256,14 +256,14 @@ def at_connect(dev, baud=DEFAULT_BAUD):
     return None
 
 
-# - CHECKED -
+# Description:
 def check_sim_connectivity(output):
     output = output[:150]
     # print output
     return 1 if "mServiceState=1 1" in output else 0
 
 
-# - CHECKED -
+# Description:
 def run_command(command):
     p = subprocess.Popen(command,
                          stdout=subprocess.PIPE,
@@ -271,7 +271,7 @@ def run_command(command):
     return iter(p.stdout.readline, b'')
 
 
-# - CHECKED -
+# Description:
 def set_environment():
     global environment
     if os.name == 'posix':
@@ -282,7 +282,7 @@ def set_environment():
         raise Exception('EnvironmentError: unknow OS')
 
 
-# - CHECKED -
+# Description:
 def get_serial_connection(dev):
     set_environment()
     devices = at_probe() if (dev == None) else [dev]
@@ -298,13 +298,13 @@ def get_serial_connection(dev):
     return None
 
 
-# - CHECKED -
+# Description:
 from subprocess import check_output
 def get_pid(name):
     return int(check_output(["pidof", name]))
 
 
-# - CHECKED -
+# Description:
 def test_adb_process():
     attempt = 5
     test = False
@@ -324,7 +324,7 @@ def test_adb_process():
             attempt -= 1
 
 
-# - CHECKED - 
+# Description: 
 # reboot adb and the connected device
 def reboot_env(device=None):
     # test_adb_process()
@@ -352,7 +352,7 @@ def reboot_env(device=None):
     time.sleep(8)
 
 
-# - CHECKED - 
+# Description: 
 def init_mfuzz_port(device, port):
     global mfuzz_port
     mfuzz_port = get_serial_connection(port)
@@ -367,7 +367,7 @@ def init_mfuzz_port(device, port):
         init_mfuzz_port(device, port)
 
 
-# - CHECKED - 
+# Description: 
 def write_on_logcat(stime, ftime):
     command = 'adb logcat -v time -d *:E'.split()
     logcat = ''
@@ -393,7 +393,7 @@ def write_on_logcat(stime, ftime):
     f.close()
 
 
-# - CHECKED - 
+# Description: 
 def bluetooth_fuzz(cmd):
 	retList = []
 	flag = 0
@@ -447,7 +447,7 @@ def bluetooth_fuzz(cmd):
 	return retList
 
 
-# - CHECKED - 
+# Description: 
 def usb_fuzz(cmd, device, port=None):
     retList = []
     flag = 0
@@ -521,9 +521,9 @@ def usb_fuzz(cmd, device, port=None):
     return retList
 
 
-# - CHECKED -
+# Description:
 def test_fuzz(cmd):
-    return [random.random()*5, utility.flip_coin(10)]
+    return [random.random()*5, utilityFunctions.flip_coin(10)]
 
 
 def main():

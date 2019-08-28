@@ -36,7 +36,7 @@ def main():
         s = '\n --- Select which channel you want to use for fuzzing ---\n' \
             ' > b - Bluetooth\n' \
             ' > u - USB\n' \
-            ' > t - Test execution (does not require any connected device)'
+            ' > t - Test execution (does not require any connected device)\n'
 
         fuzzer_channel = raw_input(s)
         while (fuzzer_channel not in ['b' , 'u', 't']):
