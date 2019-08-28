@@ -115,7 +115,7 @@ def send(cmd):
 
 
 # Method to send an AT command through Bluetooth channel 
-def bluetooth_send(cmd, port=None):
+def bluetooth_send(cmd, port):
     if port is None: 
         port = 3
     
@@ -387,7 +387,7 @@ def write_on_logcat(stime, ftime):
 
 
 # Description: 
-def bluetooth_fuzz(cmd, port):
+def bluetooth_fuzz(cmd, port=None):
 	retList = []
 	flag = 0
 	timer_for_check = 50

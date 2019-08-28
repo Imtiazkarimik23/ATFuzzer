@@ -142,7 +142,7 @@ def create_population(gram_sets, diversification_factor=1):
     return new_population
 
 
-def evaluate_command(cmd, sms_flag=None):
+def evaluate_command(cmd):
     if fuzz_channel == 'b':
         return bluetooth_fuzz(cmd, port)
     elif fuzz_channel == 'u':
