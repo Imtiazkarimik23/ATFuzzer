@@ -2,12 +2,12 @@
 
 import sys
 import bitarray
-import utility
+import utilityFunctions
 import random
 import re
 import time
 import traceback
-from atsend import fuzz
+from atCmdInterface import usb_fuzz
 
 
 def flip_n_bits(bit_line, n):
@@ -25,7 +25,7 @@ def bit_flip(line, coin=None):
     bit_line = bitarray.bitarray()
     bit_line.frombytes(line)
     if coin is None:
-        coin = utility.flip_coin(4)
+        coin = utilityFunctions.flip_coin(4)
     if coin == 0:
         return line
     
@@ -38,7 +38,7 @@ def bit_flip(line, coin=None):
 
 # Byte flip
 def byte_flip(line, l=None):
-    if (utility.flip_coin(2) == 0 and l is None):
+    if (utilityFunctions.flip_coin(2) == 0 and l is None):
         return line
 
     bit_line = bitarray.bitarray()
@@ -65,7 +65,7 @@ def is_number(char):
 
 # Known integers
 def known_integer(cmd):
-    if utility.flip_coin(2) == 0:
+    if utilityFunctions.flip_coin(2) == 0:
         return cmd
     MAX_INT = sys.maxint
     MIN_INT = -sys.maxint -1
@@ -90,7 +90,7 @@ def get_blocks(cmd):
 
 # Block deletion
 def block_deletion(cmd):
-    if utility.flip_coin(2) == 0:
+    if utilityFunctions.flip_coin(2) == 0:
         return cmd
     blocks = get_blocks(cmd)
     blocks.pop(random.randint(0, len(blocks)-1))
@@ -99,7 +99,7 @@ def block_deletion(cmd):
 
 # Block duplication via overwrite or insertion
 def block_swapping(cmd):
-    if utility.flip_coin(2) == 0:
+    if utilityFunctions.flip_coin(2) == 0:
         return cmd
     blocks = get_blocks(cmd)
     i, j = random.randint(0, len(blocks)-1), random.randint(0, len(blocks)-1)
@@ -124,7 +124,7 @@ def mutate_cmd(original_cmd):
 
 
 def update_commands_population(commands, div_factor=1):
-    new_commands = utility.copy_list(commands)
+    new_commands = utilityFunctions.copy_list(commands)
     for cmd in commands:
         for _ in range(div_factor):
             new_cmd = mutate_cmd(cmd)
@@ -155,7 +155,7 @@ ATTEMPTS = 10
 RESTART_TRESHOLD = 3
 def fuzz_command(commands, device):
     for x in range(RESTART_TRESHOLD):
-        fuzzing_cmd = utility.copy_list(commands)
+        fuzzing_cmd = utilityFunctions.copy_list(commands)
         commands_population = fuzzing_cmd
         print '\nRestart counter: ', x
         for i in range(ATTEMPTS):
@@ -164,7 +164,7 @@ def fuzz_command(commands, device):
             for cmd in commands_population:
                 #print cmd
                 #res = [random.random()*5, 0]
-                res = fuzz('AT'+cmd, device)
+                res = usb_fuzz('AT'+cmd, device)
                 time, flag = res[0], res[1]
                 cmd_result = hyperparameters['time_weight'] * time + hyperparameters['flag_weight'] * flag
                 results.append([cmd_result, cmd])
