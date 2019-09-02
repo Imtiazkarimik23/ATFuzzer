@@ -28,5 +28,5 @@ These options allows the user to choose which type of ATFuzzer to run.  This is 
 - t  Test execution (does not require any connected device)
 
 
-The test executionexecutes the AT command grammars fuzzer with fake evaluation pa-rameters and without submitting any command to a device.  This option is only for testingpurpose, so do not use it to fuzz an actual smartphone.
+The test execution executes the AT command grammars fuzzer with fake evaluation pa-rameters and without submitting any command to a device.  This option is only for testingpurpose, so do not use it to fuzz an actual smartphone.
 
