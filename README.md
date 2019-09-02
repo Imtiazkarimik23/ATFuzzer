@@ -16,13 +16,13 @@ Alternatively,  it  is  possible  to  execute  ATFuzzer  with  multiple  random 
  
 The program then asks to choose among 4 option:
 
--0  Standard fuzzer (includes crossover, mutation, feedback evaluation)
--1  No feedback fuzzer
--2  No crossover fuzzer-
--3  No mutation fuzzer
+0.  Standard fuzzer (includes crossover, mutation, feedback evaluation)
+1.  No feedback fuzzer
+2.  No crossover fuzzer-
+3.  No mutation fuzzer
 
 These options allows the user to choose which type of ATFuzzer to run.  This is fundamentalto test and evaluate the effectiveness of our fuzzer.Finally  ATFuzzer  requires  to  specify  which  channel  will  be  used  for  the  AT  commandstransmission.  It is possible to select one among three options:
-b. - Bluetooth
-u. - USB
-t. - Test execution (does not require any connected device)
+-b. - Bluetooth
+-u. - USB
+-t. - Test execution (does not require any connected device)
 The test executionexecutes the AT command grammars fuzzer with fake evaluation pa-rameters and without submitting any command to a device.  This option is only for testingpurpose, so do not use it to fuzz an actual smartphone.
