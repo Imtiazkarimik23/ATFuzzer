@@ -18,7 +18,7 @@ The program then asks to choose among 4 option:
 
 0.  Standard fuzzer (includes crossover, mutation, feedback evaluation)
 1.  No feedback fuzzer
-2.  No crossover fuzzer-
+2.  No crossover fuzzer
 3.  No mutation fuzzer
 
 These options allows the user to choose which type of ATFuzzer to run.  This is fundamentalto test and evaluate the effectiveness of our fuzzer.Finally  ATFuzzer  requires  to  specify  which  channel  will  be  used  for  the  AT  commandstransmission.  It is possible to select one among three options:
