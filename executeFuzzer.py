@@ -1,3 +1,10 @@
+#!/usr/bin/env python2
+
+'''
+    file name:      executeFuzzer.py
+    authors:        Imtiaz Karim (karim7@purdue.edu), Fabrizio Cicala (fcicala@purdue.edu)
+    python version: python 2.7.15
+'''
 
 import sys
 import multiGrammarFuzzer
