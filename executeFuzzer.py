@@ -16,7 +16,7 @@ def check_blu_addr(address):
         print ' Incorrect Bluetooth MAC address. The given address is None.\n'
         return False
     adrs_bytes = address.split(':')
-    allow_char = ['0', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', 'A', 'B', 'C', 'D', 'E', 'F'] 
+    allow_char = ['0', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', 'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F'] 
     if len(adrs_bytes) != 6:
         print ' Incorrect Bluetooth MAC address. The given address is too short.\n'
         return False
@@ -73,10 +73,10 @@ def main():
         if fuzzer_channel == 'b':
             blu_addr = str(raw_input('\n You have selected Bluetooth fuzzer.\n' \
                         ' Please insert the Bluetooth MAC address of the target device. ' \
-                        '(Use the format XX:XX:XX:XX:XX:XX with capital letters)\n'))
+                        '(Use the format XX:XX:XX:XX:XX:XX)\n'))
             while (check_blu_addr(blu_addr) is False):
                 blu_addr = str(raw_input(' Please insert the Bluetooth MAC address of the target device. ' \
-                        '(Use the format XX:XX:XX:XX:XX:XX with capital letters)\n'))
+                        '(Use the format XX:XX:XX:XX:XX:XX)\n'))
 
         print '\n --- Executing ATFuzzer! ---\n'
         
