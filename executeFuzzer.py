@@ -13,15 +13,19 @@ import grammarFuzzer
 
 def check_blu_addr(address):
     if address is None:
+        print ' Incorrect Bluetooth MAC address. The given address is None.\n'
         return False
-    bytes = address.split(':')
-    allow_char = ['0', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', 'A', 'B', 'C', 'D', 'F'] 
-    if len(bytes) != 6:
+    adrs_bytes = address.split(':')
+    allow_char = ['0', '1', '2', '3', '4', '5', '6', '7' ,'8', '9', 'A', 'B', 'C', 'D', 'E', 'F'] 
+    if len(adrs_bytes) != 6:
+        print ' Incorrect Bluetooth MAC address. The given address is too short.\n'
         return False
-    for b in bytes:
+    for b in adrs_bytes:
         if len(b) != 2:
+            print ' Incorrect Bluetooth MAC address. The given address contains invalid fields.\n'
             return False
         if b[0] not in allow_char or b[1] not in allow_char:
+            print ' Incorrect Bluetooth MAC address. The given address contains invalid characters.\n'
             return False
     return True
 
@@ -67,12 +71,15 @@ def main():
 
         blu_addr = None
         if fuzzer_channel == 'b':
-            blu_addr = str(input('\nYou have selected Bluetooth fuzzer.\n' \
-                        'Please insert the Bluetooth MAC address of the target device. (Use capital letters)\n'))
+            blu_addr = str(raw_input('\n You have selected Bluetooth fuzzer.\n' \
+                        ' Please insert the Bluetooth MAC address of the target device. ' \
+                        '(Use the format XX:XX:XX:XX:XX:XX with capital letters)\n'))
             while (check_blu_addr(blu_addr) is False):
-                blu_addr = str(input('\nThe inserted address is incorrect!\n' \
-                        'Please insert the Bluetooth MAC address of the target device. (Use capital letters)\n'))
+                blu_addr = str(raw_input(' Please insert the Bluetooth MAC address of the target device. ' \
+                        '(Use the format XX:XX:XX:XX:XX:XX with capital letters)\n'))
 
+        print '\n --- Executing ATFuzzer! ---\n'
+        
         if input_grams == 'multi':
             multiGrammarFuzzer.main(fuzzer_channel, input_device, fuzz_type, blu_addr, input_port)
         else:
