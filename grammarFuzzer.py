@@ -22,6 +22,7 @@ fuzz_type = 0                   # fuzzing type: standard, w/o feedback, w/o cros
 move_command = 0                # during the mutation with 0 the position of the command is fixed; with 1 it is variable
 device = 'unknown'              # device name (e.g. Nexus6P)
 port = None
+blue_address = None
 
 standard_grammar = {}           # standard version of the grammar
 stored_grammar = []             # list of grammars that triggered an issue
@@ -128,7 +129,7 @@ def select_population(scores):
 
 def evaluate_command(cmd):
     if fuzz_channel == 'b':
-        return bluetooth_fuzz(cmd, port)
+        return bluetooth_fuzz(cmd, blue_address, port)
     elif fuzz_channel == 'u':
         return usb_fuzz(cmd, device, port)
     elif fuzz_channel == 't': # only for test purpose
@@ -224,13 +225,15 @@ def evaluate_grammars(input_grams):
             print('__________________________________________________\n')
 
 
-def main(channel, input_grams, input_device, type_of_fuzz, input_port):
+def main(channel, input_grams, input_device, type_of_fuzz, blu_addr, input_port):
     global fuzz_channel
     fuzz_channel = channel
     global device
     device = input_device
     global fuzz_type
     fuzz_type = type_of_fuzz
+    global blue_address
+    blue_address = blu_addr
     if input_port is not None:
         global port
         port = input_port
