@@ -115,18 +115,13 @@ def block_swapping(cmd):
 
 
 def mutate_cmd(original_cmd):
-    #print 'original:\t\t', original_cmd
     cmd = original_cmd
     cmd = bit_flip(cmd)
-    #print 'bit_flip:\t\t', cmd
     cmd = byte_flip(cmd)
-    #print 'byte_flip:\t\t', cmd
     cmd = known_integer(cmd)
-    #print 'known_integer:\t', cmd
     cmd = block_deletion(cmd)
-    #print 'block_deletion:\t', cmd
     cmd = block_swapping(cmd)
-    #print 'block_swapping:\t', cmd
+    
     return cmd
 
 

@@ -325,16 +325,17 @@ def reboot_env(device=None):
     else:
         raise Exception('EnvironmentError: unknow OS')
     subprocess.call("adb kill-server", shell=True)
-    cmd = ['adb', 'shell', 'su']
-    procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    #cmd = ['adb', 'shell', 'su']
+    #procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
     if device == 'htcDesire10':
-        procId.communicate('setprop sys.usb.config mtp,adb,diag,modem,modem_mdm,diag_mdm\nexit\n')
+        #procId.communicate('setprop sys.usb.config mtp,adb,diag,modem,modem_mdm,diag_mdm\nexit\n')
+        subprocess.call('adb shell setprop sys.usb.config mtp,adb,diag,modem,modem_mdm,diag_mdm\nexit\n')
     elif device == 'huaweiNexus6P' or device is None:
         pass
     else:
-        procId.communicate('setprop sys.usb.config diag,adb\nexit\n')
-
+        #procId.communicate('setprop sys.usb.config diag,adb\nexit\n')
+        subprocess.call('adb shell setprop sys.usb.config diag,adb')
     time.sleep(8)
 
 
