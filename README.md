@@ -58,7 +58,7 @@ In the following we provide a description of the struture of the implementation 
 **inputGen.py**: generates an random AT command instance given a input grammar.
 
 
-**atCmdInterface.py**: implements the functions necessary to interact with the AT interface of the target device. I
+**atCmdInterface.py**: implements the functions necessary to interact with the AT interface of the target device. It is responsable for setting up the communication with the device, submitting the AT command instances, and finnally collecting and evaluating the responses.
 
 
 **afl_fuzzer.py**: implements the functions used to execute AFL fuzzer in the context of AT commands.
