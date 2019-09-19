@@ -166,7 +166,7 @@ def evaluate_set(gram_set):
     timing = []
     flag = 0
     for _ in range(INPUT_NUMBER):
-        input_cmd = 'AT'
+        input_cmd = ''
         for g in gram_set:
             input_cmd += str(inputGen.gen_command(g)) + ';'
         input_cmd = input_cmd[:-1]

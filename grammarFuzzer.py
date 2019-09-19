@@ -168,7 +168,7 @@ def evaluate_grammar(cmd_gramm):
     timing = []
     flag = 0
     for _ in range(INPUT_NUMBER):
-        cmd = 'AT' + inputGen.gen_command(cmd_gramm)
+        cmd = inputGen.gen_command(cmd_gramm)
         cmd_window.append(cmd)
         result = evaluate_command(cmd, cmd_gramm['cmgf_flag']) if cmd_gramm['cmd'] == '+CMGS' else evaluate_command(cmd)
         timing.append(result[0])

@@ -72,6 +72,7 @@ def gen_terminal(cmd_info, elem):
     return generate_value(cmd_info[elem]) if elem in arg else str(cmd_info[elem])
 
 
+# NOT USED
 # build at command to send a message to a specific phone number with a random string message
 def gen_message_command(cmd_gram):
     first, second = 'AT', ''
