@@ -37,7 +37,7 @@ Test execution executes ATFuzzer with fake evaluation parameters and without sub
 **Note**: if you run Bluetooth ATFuzzer on Linux, it may be necessary to execute the program with *sudo*, depending on the system configuration.
 
 
-# Structure of ATFuzzer
+# Structure of ATFuzzer implementation
 In the following we provide a description of the struture of the implementation of ATFuzzer.
 
 **commandGrammar.json**: json file which contains a set of grammars for more that 80 AT commands. The grammars are defined following a specific structure that allows the program to efficiently read them.
