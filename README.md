@@ -31,4 +31,4 @@ If the Bluetooth option is selected, the program asks for the Bluetooth address 
 
 Test execution executes ATFuzzer with fake evaluation parameters and without submitting any command to a device. This option is only for testing purpose, so do not use it to fuzz an actual smartphone.
 
-**Note**: if you run Bluetooth ATFuzzer on linux, it may be necessary to execute the program with *sudo*, depending on the system configuration.
+**Note**: if you run Bluetooth ATFuzzer on Linux, it may be necessary to execute the program with *sudo*, depending on the system configuration.
