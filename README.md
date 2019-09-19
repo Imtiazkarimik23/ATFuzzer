@@ -35,3 +35,50 @@ If the Bluetooth option is selected, the program asks for the Bluetooth address 
 Test execution executes ATFuzzer with fake evaluation parameters and without submitting any command to a device. This option is only for testing purpose, so do not use it to fuzz an actual smartphone.
 
 **Note**: if you run Bluetooth ATFuzzer on Linux, it may be necessary to execute the program with *sudo*, depending on the system configuration.
+
+
+# Structure of ATFuzzer
+In the following we provide a description of the struture of the implementation of ATFuzzer.
+
+**commandGrammar.json**: json file which contains a set of grammars for more that 80 AT commands. The grammars are defined following a specific structure that allows the program to efficiently read them.
+
+
+**executeFuzzer.py**: main program which allows the user to run ATFuzzer. It provides different options of execution (see *How to run*).
+
+
+**grammarFuzzer.py**: implements the actual fuzzing. It reads the grammars for the AT commands submitted by the user and performs the fuzzing loop: *input generation - input submission - grammar evaluation - grammar evolution*.
+
+
+**multiGrammarFuzzer.py**: implements the actual fuzzing. It reads the grammars for the randomly chosen AT commands and performs the fuzzing loop: *input generation - input submission - grammar evaluation - grammar evolution*.
+
+
+**grammarModifier.py**: implements the functions for the evolution phase. Such functions include grammar crossover and grammar mutation.
+
+
+**inputGen.py**: generates an random AT command instance given a input grammar.
+
+
+**atCmdInterface.py**: implements the functions necessary to interact with the AT interface of the target device. I
+
+
+**afl_fuzzer.py**: implements the functions used to execute AFL fuzzer in the context of AT commands.
+
+
+**utilityFunctions.py**: implements support functions for the execution of the main program.
+
+
+**results**: directory containg the results of each ATFuzzer execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
