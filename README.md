@@ -7,7 +7,18 @@ the AT command interface exposed by the cellular baseband processor through Blue
 uses this interface for issuing high-level commands (or, AT commands) to the baseband processor for performing cellular network
 operations (e.g., placing a phone call). Vulnerabilities in this interface can be leveraged by malicious Bluetooth peripherals to launch various attacks including DoS and privacy attacks. To identify such vulnerabilities, we propose ATFuzzer that uses a grammar-guided evolutionary fuzzing approach which mutates production rules of the AT command grammar instead of concrete AT commands. Empirical evaluation with ATFuzzer on 8 Android smartphones from 5 vendors revealed 4 invalid AT command grammars over Bluetooth and 13 over USB with implications ranging from DoS, downgrade of cellular protocol version to severe privacy leaks.
 
-# How to run
+# Run ATFuzzer
+
+## Requirements
+Python 2.7.15. Please do not use python 3 because there are library incompatibilities. The required libraries are specified in the file *requirements.txt* and they can be installed executing the command:
+
+``` pip install -r requirements.txt} ```
+
+**Note**: the module *pybluez* for python 2.7 is not compatible with Windows. To install *pybluez* on Windows it is necessary to download a previous version. Download *PyBluez‑0.22‑cp27* at [pybluez](www.lfd.uci.edu/~gohlke/pythonlibs/#pybluez) and install it with the command:
+
+``` pip install <pybluez file.whl> ```
+
+## How to run
 To run ATFuzzer execute the following command:
 
 *sudo python  executeFuzzer.py  \<list\_of\_grammars\>  \<device\_name\>  \<port (optional)\>*
