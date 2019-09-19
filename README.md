@@ -9,10 +9,13 @@ operations (e.g., placing a phone call). Vulnerabilities in this interface can b
 
 # How to run:
 To run ATFuzzer execute the following command:
-*./executeFuzzer.py <list of grammars> <devicename> <port (optional)>*
+
+*python executeFuzzer.py <list of grammars> <device name> <port (optional)>*
 
 Alternatively,  it  is  possible  to  execute  ATFuzzer  with  multiple  random  chosen  grammars with the command:
-*./executeFuzzer.py multi <devicename> <port (optional)>*
+
+*python executeFuzzer.py <list of grammars> <device name> <port (optional)>*
+ 
 
 The program then asks to choose among 4 option:
  - 0 - Standard fuzzer (includes crossover, mutation, feedback evaluation)
