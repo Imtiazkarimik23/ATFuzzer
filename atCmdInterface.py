@@ -383,7 +383,7 @@ def bluetooth_fuzz(cmd, blu_addr, port=None):
 	serverMACAddress = blu_addr
 	retList = []
 	flag = 0
-	timer_for_check = 50
+	timer_for_check = 30
 	cmd = str("AT"+cmd)
 	print cmd
 	start = time.time()
@@ -424,7 +424,7 @@ def bluetooth_fuzz(cmd, blu_addr, port=None):
 			time.sleep(5)
 			break
 		else:
-			print "flag is now" + str(flag)
+			print "flag is now " + str(flag)
 
 	retList.append(flag)
 	print retList
