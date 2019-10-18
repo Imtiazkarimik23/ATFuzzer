@@ -1,5 +1,0 @@
-numpy
-bitarray
-serial
-pyserial
-pybluez
