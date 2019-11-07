@@ -1,4 +1,6 @@
 # ATFuzzer
+
+
 "Opening Pandora's Box through ATFuzzer: Dynamic Analysis of AT Interface for Android Smartphones" is accepted to the 35th Annual Computer Security Applications Conference (ACSAC) 2019.
 
 # Abstract
@@ -26,14 +28,22 @@ To run ATFuzzer execute the following command:
 Alternatively, it is possible to execute ATFuzzer with multiple random chosen grammars with the command:
 
 *sudo python executeFuzzer.py multi \<device\_name\> \<port (optional)\>*
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 7c6ca7ea844a732135a16d33d9a8c7438ec2a7ce
 
 The program then asks to choose among 4 option:
  - 0 - Standard fuzzer (includes crossover, mutation, feedback evaluation)
  - 1 - No feedback fuzzer
  - 2 - No crossover fuzzer
  - 3 - No mutation fuzzer
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 7c6ca7ea844a732135a16d33d9a8c7438ec2a7ce
 These options allows the user to choose which type of ATFuzzer to run.  This is fundamental to test and evaluate the effectiveness of our fuzzer.
 
 Finally, ATFuzzer requires to specify which channel will be used for the AT commands transmission.  It is possible to select one among three options:
