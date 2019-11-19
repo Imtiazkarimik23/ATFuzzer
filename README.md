@@ -14,7 +14,7 @@ operations (e.g., placing a phone call). Vulnerabilities in this interface can b
 ## Requirements
 Python 2.7.15. Please do not use python 3 because there are library incompatibilities. The required libraries are specified in the file *requirements.txt* and they can be installed executing the command:
 
-``` pip install -r requirements.txt} ```
+``` pip install -r requirements.txt ```
 
 **Note**: the module *pybluez* for python 2.7 is not compatible with Windows. To install *pybluez* on Windows it is necessary to download a previous version. Download *PyBluez‑0.22‑cp27* at [pybluez](www.lfd.uci.edu/~gohlke/pythonlibs/#pybluez) and install it with the command:
 
