@@ -53,7 +53,7 @@ Test execution executes ATFuzzer with fake evaluation parameters and without sub
 
 
 # Structure of ATFuzzer implementation
-In the following we provide a description of the struture of the implementation of ATFuzzer.
+In the following we provide a description of the structure of the implementation of ATFuzzer.
 
 **commandGrammar.json**: json file which contains a set of grammars for more that 80 AT commands. The grammars are defined following a specific structure that allows the program to efficiently read them.
 
@@ -82,6 +82,6 @@ In the following we provide a description of the struture of the implementation 
 **utilityFunctions.py**: implements support functions for the execution of the main program.
 
 
-**results**: directory containg the results of each ATFuzzer execution.
+**results**: directory containing the results of each ATFuzzer execution.
 
 
