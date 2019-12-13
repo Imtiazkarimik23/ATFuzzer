@@ -30,9 +30,6 @@ Alternatively, it is possible to execute ATFuzzer with multiple random chosen gr
 
 *sudo python executeFuzzer.py multi \<device\_name\> \<port (optional)\>*
 
-## Demo
-https://www.youtube.com/watch?v=qR4Pq5i0IRE
-
 
 The program then asks to choose among 4 option:
  - 0 - Standard fuzzer (includes crossover, mutation, feedback evaluation)
@@ -87,4 +84,5 @@ In the following we provide a description of the structure of the implementation
 
 **results**: directory containing the results of each ATFuzzer execution.
 
-
+## Demo
+https://www.youtube.com/watch?v=qR4Pq5i0IRE
