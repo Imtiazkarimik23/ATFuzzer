@@ -86,3 +86,13 @@ In the following we provide a description of the structure of the implementation
 
 ## Demo
 https://www.youtube.com/watch?v=qR4Pq5i0IRE
+
+## Citation
+If your research find one or several components of savior useful, please cite the following paper:
+@inproceedings{karim2019opening,
+  title={Opening Pandora's box through ATFuzzer: dynamic analysis of AT interface for Android smartphones},
+  author={Karim, Imtiaz and Cicala, Fabrizio and Hussain, Syed Rafiul and Chowdhury, Omar and Bertino, Elisa},
+  booktitle={Proceedings of the 35th Annual Computer Security Applications Conference},
+  pages={529--543},
+  year={2019}
+}
