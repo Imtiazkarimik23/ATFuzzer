@@ -159,9 +159,9 @@ def fuzz_command(commands, device):
     for x in range(RESTART_TRESHOLD):
         fuzzing_cmd = utilityFunctions.copy_list(commands)
         commands_population = fuzzing_cmd
-        print '\nRestart counter: ', x
+        print ('\nRestart counter: ', x)
         for i in range(ATTEMPTS):
-            print '\n - Iteration counter: ', i
+            print ('\n - Iteration counter: ', i)
             results = []
             for cmd in commands_population:
                 #print cmd
@@ -175,23 +175,23 @@ def fuzz_command(commands, device):
 
             selected_commands = select_population(results)
             commands_population = update_commands_population(selected_commands)
-        print '__________________________________________________\n'
+        print ('__________________________________________________\n')
 
 
 usage_message = 'Usage: ./afl_fuzzer.py <device_name>'
 def main():
     if len(sys.argv) < 2:
-        print 'Error: missing argument'
-        print usage_message
+        print ('Error: missing argument')
+        print (usage_message)
         sys.exit()
     elif len(sys.argv) > 2:
-        print 'Error: too many arguments'
-        print usage_message
+        print ('Error: too many arguments')
+        print (usage_message)
         sys.exit()
     else:
         start_time = time.time()
         device = sys.argv[1]
-        print ' --- AFL fuzzer ---'
+        print (' --- AFL fuzzer ---')
         commands = ['+CCFC=5,4,4239,129,2,/+,18960999,20', '+CCFC=5,4,sadgfas,2,/+,,20', 
                     '+CRLP=691,593,15720364,2448120,20,1012', '+CRLP=,593,efdasfgah,20,1012', 
                     '+CLIP=1', '+CLIP=adfg#$:<@%fd', 
@@ -216,19 +216,19 @@ def main():
                     '+CPNET=1', '+CPNET=1gsadgsdjgjyid']
         try:
             fuzz_command(commands, device)
-            print '\nExecution time: ', (time.time() - start_time)
+            print ('\nExecution time: ', (time.time() - start_time))
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             traceback.print_exception(exc_type, exc_value, exc_traceback)
-            print '\nExecution time: ', (time.time() - start_time)
+            print ('\nExecution time: ', (time.time() - start_time))
             sys.exit()
 
 
 
 def test():
-    print ' --- AFL fuzzer ---'
+    print (' --- AFL fuzzer ---')
     command = '+CCFC=5,1,1480934,129,8,Pzb;"L,1725093,3'
-    print command
+    print (command)
     fuzz_command(command, 'test_dev')
 
 

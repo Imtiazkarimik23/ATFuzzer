@@ -71,7 +71,7 @@ def print_grammars(gram_list):
 
 def print_grammars_in_set(gram_set):
     for gram in gram_set:
-        print gram
+        print (gram)
 
 
 def sorted_insert(gram_list, gram):

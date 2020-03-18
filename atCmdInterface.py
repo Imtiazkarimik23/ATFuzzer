@@ -121,9 +121,9 @@ def send(cmd):
 
 # Method to send an AT command through Bluetooth channel 
 def bluetooth_send(cmd, port):
-    if port is None: 
-        port = 3
-    
+	if port is None: 
+		port = 3
+
 	data = "NULL"
 	backlog = 1
 	cmd2 = str(cmd)
@@ -133,8 +133,8 @@ def bluetooth_send(cmd, port):
 		#s.bind((serverMACAddress, port))
 		#s.listen(backlog)
 	except Exception as e:
-		print "error occured"
-		print e
+		print ("error occured")
+		print (e)
 		s.close()
 		subprocess.call("sudo /etc/init.d/bluetooth restart",shell=True)
 		time.sleep(15)
@@ -142,7 +142,7 @@ def bluetooth_send(cmd, port):
 	try:
 		s.send(cmd +"\r\r")
 		data=s.recv(size)
-		print data
+		print (data)
 		time.sleep(5)
 		s.close()
 		return data
@@ -231,7 +231,7 @@ def send_at_command(ser, cmd):
         elif 'ABORTED' == line_clean:
             break
     end = time.time()
-    print end - start
+    print (end - start)
     return lines
 
 
@@ -277,10 +277,10 @@ def get_serial_connection(dev):
     devices = at_probe() if (dev == None) else [dev]
 
     if len(devices) == 0:
-        print "No device found"
+        print ('No device found')
         return
     for d in devices:
-        print 'Trying device ', d
+        print ('Trying device ', d)
         ser = at_connect(d)
         if ser is not None:
             return ser
@@ -385,19 +385,19 @@ def bluetooth_fuzz(cmd, blu_addr, port=None):
 	flag = 0
 	timer_for_check = 30
 	cmd = str("AT"+cmd)
-	print cmd
+	print (cmd)
 	start = time.time()
 	stime = datetime.now()
-	print stime
+	print (stime)
 	try:
 		r = bluetooth_send(cmd, port)
 	except serial.serialutil.SerialException as e:
-		print e	
+		print (e)	
 	end = time.time()
 	total_time = (end-start)/len(cmd)	# normalize the total time based on the command length
 	ftime = datetime.now() + timedelta(minutes=1)
 	retList.append(total_time)
-	print "Input: "+cmd+" Output: "+str(r)
+	print ('Input: ' + cmd + ' Output: ' + str(r))
 	if r is None:
 		retList.append(flag)
 		return retList
@@ -420,14 +420,14 @@ def bluetooth_fuzz(cmd, blu_addr, port=None):
 		time.sleep(0.5)
 		if flag1==1 or flag2==1:
 			flag =1
-			print "flag is now " + str(flag)
+			print ('flag is now ' + str(flag))
 			time.sleep(5)
 			break
 		else:
-			print "flag is now " + str(flag)
+			print ('flag is now ' + str(flag))
 
 	retList.append(flag)
-	print retList
+	print (retList)
 	return retList
 
 
@@ -437,16 +437,16 @@ def usb_fuzz(cmd, device, port=None):
     # time.sleep(5)
     # Open the serial port
     init_mfuzz_port(device, port)
-    print 'Serial port: ', mfuzz_port.port
+    print ('Serial port: ', mfuzz_port.port)
     logging.info("port is opened for %s" % mfuzz_port.port)
 
     # Fuzz
     timer_for_check = 20
-    print cmd
+    print (cmd)
     cmd = str(cmd)
     start = time.time()
     stime = datetime.now()
-    print stime
+    print (stime)
     try:
         send(cmd)
     except serial.serialutil.SerialException as e:
@@ -455,7 +455,7 @@ def usb_fuzz(cmd, device, port=None):
                 return usb_fuzz(cmd, device, port)
             except:
                 pass
-        print e
+        print (e)
         mfuzz_port.close()
         reboot_env(device)
         return usb_fuzz(cmd, device, port)
@@ -465,7 +465,7 @@ def usb_fuzz(cmd, device, port=None):
     total_time = (end - start) / len(cmd)  # normalize the total time based on the command length
     ftime = datetime.now() + timedelta(minutes=1)
     retList.append(total_time)
-    print r
+    print (r)
     if "OK\r" in r:  # cut phone Go to sleep got phone call
         # time.sleep(1)
         #send("AT+CHUP")
@@ -492,13 +492,13 @@ def usb_fuzz(cmd, device, port=None):
         time.sleep(0.5)
         if flag1 == 1 or flag2 == 1:
             flag = 1
-            print "flag is now " + str(flag)
+            print ("flag is now " + str(flag))
             time.sleep(5)
             break
         else:
-            print "flag is now " + str(flag)
+            print ("flag is now " + str(flag))
     retList.append(flag)
-    print retList
+    print (retList)
     mfuzz_port.close()
     logging.info("port is closed")
     return retList
@@ -511,7 +511,7 @@ def test_fuzz(cmd):
 def main():
     usb_fuzz("ATD123", 'test_dev')
     # logging.info("atsend/mfuzz ends...")
-    print '\n--- Test Completed ---\n'
+    print ('\n--- Test Completed ---\n')
 
 
 if __name__ == "__main__":

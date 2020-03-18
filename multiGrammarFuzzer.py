@@ -25,6 +25,7 @@ log_file = 'log/grammarFuzzer_log.json'
 # Global variables
 fuzz_channel = 'unknown'        # it may be USB or Bluetooth                   
 fuzz_type = 0                   # fuzzing type: standard, w/o feedback, w/o crossover, w/o mutation 
+fuzz_settings = []
 move_command = 0                # during the mutation with 0 the position of the command is fixed; with 1 it is variable
 device = 'unknown'              # device name (e.g. Nexus6P)
 port = None
@@ -68,15 +69,7 @@ def save_set(gram_set):
     if gram_set not in stored_set:
         stored_set.append(gram_set)
     s = utilityFunctions.build_string_set_gram_cmd(gram_set, cmd_window)
-    if fuzz_type == 0:
-        fuzz_type_name = '_standard'
-    elif fuzz_type == 1:
-        fuzz_type_name = '_noFeedback'
-    elif fuzz_type == 2:
-        fuzz_type_name = '_noCrossover'
-    elif fuzz_type == 3:
-        fuzz_type_name = '_noMutation'
-    with open('results/' + device + fuzz_type_name + '.txt', 'a') as f:
+    with open('results/' + device + '.txt', 'a') as f:
         f.write(s)
 
 
@@ -85,13 +78,9 @@ def save_set(gram_set):
 #   1. random crossovering of elements in the given grammar
 #   2. random modification of the given grammar by adding or deleting one element
 #   3. random modification of the given grammar to make it generate invalid commands
-def modify_grammar(gram):
+''' NO LONGER USED '''
+def modify_grammar_back(gram):
     cmd_gram = utilityFunctions.copy_dict(gram)
-    ''' 
-    global move_command
-    if move_command == 0:
-        move_command = 1 if utilityFunctions.flip_coin(10) == 1 else 0
-    '''
     # 3 steps:
     # 1. random crossover
     # check if no crossover fuzzer
@@ -127,7 +116,8 @@ def modify_set(gram_set, diversification_factor):
         generated = 0
         previous_gram = {}
         while generated < diversification_factor:
-            new_gram = modify_grammar(g)
+            new_gram = utilityFunctions.copy_dict(g)
+            modify_grammar(new_gram, fuzz_settings, move_command)
             if new_gram not in standard_set and new_gram != previous_gram:
                 modified_set[generated].append(new_gram)
                 generated += 1
@@ -204,7 +194,7 @@ def select_population(scores):
     set_and_scores = []
     selected_sets = []
 
-    if fuzz_type == 1:  # no feedback fuzz
+    if fuzz_settings[0] == 0:  # no feedback fuzz
         for scr in scores:
             selected_sets.append(scores[scr]['set'])
         # randomly select 2 grammars
@@ -266,13 +256,13 @@ def evaluate_grammars():
     fuzz_multi_grams()
 
 
-def main(channel, input_device, type_of_fuzz, blue_addr, input_port):
+def main(channel, input_device, settings, blue_addr, input_port):
     global fuzz_channel
     fuzz_channel = channel
     global device
     device = input_device
-    global fuzz_type
-    fuzz_type = type_of_fuzz
+    global fuzz_settings
+    fuzz_settings = settings
     global blue_address
     blue_address = blue_addr
     if input_port is not None:

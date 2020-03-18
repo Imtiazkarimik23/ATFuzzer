@@ -21,11 +21,14 @@ from grammarModifier import *
 from numpy import setdiff1d
 
 
+
+
 log_file = 'log/grammarFuzzer_log.json'
 
 # Global variables
 fuzz_channel = 'unknown'        # it may be USB or Bluetooth                   
 fuzz_type = 0                   # fuzzing type: standard, w/o feedback, w/o crossover, w/o mutation 
+fuzz_settings = [] 
 move_command = 0                # during the mutation with 0 the position of the command is fixed; with 1 it is variable
 device = 'unknown'              # device name (e.g. Nexus6P)
 port = None
@@ -73,12 +76,14 @@ def update_current(gram):
 #       grammars = list of grammars that can generate a specific AT command
 #       diversification_factory = number of new grammar to generate for each given grammar
 # # output: mutated_grams = list of new modified grammars
-def create_population(grammars, diversification_factor=1):
+''' NO LONGER USED '''
+def create_population_back(grammars, diversification_factor=1):
     mutated_grams = []
     for g in grammars:
         cmd_gram = utilityFunctions.copy_dict(g)
         update_current(cmd_gram)
         generated = 0
+
         while generated < diversification_factor:
             ''' 
             global move_command
@@ -90,7 +95,7 @@ def create_population(grammars, diversification_factor=1):
             # 1. random crossover
             # check if no crossover fuzzer
             new_gram = utilityFunctions.copy_dict(gram_crossover(cmd_gram, move_command)) if fuzz_type != 2 else utilityFunctions.copy_dict(cmd_gram)
-
+            
             if fuzz_type != 3:  # check if no mutation fuzz
                 # 2. random add or delete
                 if utilityFunctions.flip_coin() == 1:
@@ -106,6 +111,30 @@ def create_population(grammars, diversification_factor=1):
     return mutated_grams
 
 
+def create_population(grammars, diversification_factor=1):
+    mutated_grams = []
+    for g in grammars:
+        cmd_gram = utilityFunctions.copy_dict(g)
+        update_current(cmd_gram)
+        generated = 0
+        while generated < diversification_factor:
+            ''' 
+            global move_command
+            if move_command == 0:
+                move_command = 1 if utilityFunctions.flip_coin(10) == 1 else 0
+            '''
+            new_gram = utilityFunctions.copy_dict(cmd_gram)
+
+            modify_grammar(new_gram, fuzz_settings, move_command)
+
+            if new_gram not in stored_grammar and new_gram != standard_grammar:
+                mutated_grams.append(new_gram)
+                generated += 1
+            #else:
+            #    print ('new_gram not new!')
+    return mutated_grams
+
+
 hyperparameters = {
     'time_weight': 0.6,
     'flag_weight': 0.4,
@@ -114,7 +143,7 @@ hyperparameters = {
 }
 def select_population(scores):
     selected_grammars = []
-    if fuzz_type == 1:  # no feedback fuzz
+    if fuzz_settings[0] == 0:  # no feedback fuzz
         for scr in scores:
             selected_grammars.append(scores[scr]['grammar'])
         # randomly select 5 grammars
@@ -152,15 +181,7 @@ def save_grammar(gram, cmd):
     if gram not in stored_grammar:
         stored_grammar.append(gram)
     s = utilityFunctions.build_string_gram_cmd(gram, cmd)
-    if fuzz_type == 0:
-        fuzz_type_name = '_standard'
-    elif fuzz_type == 1:
-        fuzz_type_name = '_noFeedback'
-    elif fuzz_type == 2:
-        fuzz_type_name = '_noCrossover'
-    elif fuzz_type == 3:
-        fuzz_type_name = '_noMutation'
-    with open('results/' + device + fuzz_type_name + '.txt', 'a') as f:
+    with open('results/' + device + '.txt', 'a') as f:
         f.write(s)
 
 
@@ -170,7 +191,8 @@ def evaluate_grammar(cmd_gramm):
     for _ in range(INPUT_NUMBER):
         cmd = inputGen.gen_command(cmd_gramm)
         cmd_window.append(cmd)
-        result = evaluate_command(cmd, cmd_gramm['cmgf_flag']) if cmd_gramm['cmd'] == '+CMGS' else evaluate_command(cmd)
+        #result = evaluate_command(cmd, cmd_gramm['cmgf_flag']) if cmd_gramm['cmd'] == '+CMGS' else evaluate_command(cmd)
+        result = evaluate_command(cmd)
         timing.append(result[0])
         if result[1] == 1:
             save_grammar(cmd_gramm, cmd)
@@ -232,13 +254,13 @@ def evaluate_grammars(input_grams):
             print('__________________________________________________\n')
 
 
-def main(channel, input_grams, input_device, type_of_fuzz, blu_addr, input_port):
+def main(channel, input_grams, input_device, settings, blu_addr, input_port):
     global fuzz_channel
     fuzz_channel = channel
     global device
     device = input_device
-    global fuzz_type
-    fuzz_type = type_of_fuzz
+    global fuzz_settings
+    fuzz_settings = settings
     global blue_address
     blue_address = blu_addr
     if input_port is not None:
@@ -259,5 +281,5 @@ def main(channel, input_grams, input_device, type_of_fuzz, blu_addr, input_port)
 
 
 if __name__ == '__main__':
-    main('test', 'ATD', 'test_dev', 0, None)
+    main('test', 'ATD', 'test_dev', 0, None, None)
 
