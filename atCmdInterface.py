@@ -442,6 +442,7 @@ def usb_fuzz(cmd, device, port=None):
 
     # Fuzz
     timer_for_check = 20
+    cmd = str("AT"+cmd)
     print (cmd)
     cmd = str(cmd)
     start = time.time()
@@ -466,15 +467,16 @@ def usb_fuzz(cmd, device, port=None):
     ftime = datetime.now() + timedelta(minutes=1)
     retList.append(total_time)
     print (r)
+    time.sleep(1)
+    send("AT+CHUP")
+    r10 = recv()
+    time.sleep(2)
     if "OK\r" in r:  # cut phone Go to sleep got phone call
-        # time.sleep(1)
-        #send("AT+CHUP")
-        r10 = recv()
-        #time.sleep(2)
         #cmd2 = cmd + '\r\r'
         #flag = 0 if (len(r) == 2 and cmd2 in r) or (len(r) == 1) else 1
         flag  = 1
         retList.append(flag)
+        time.sleep(20)
         return  retList
 
     for _ in range(timer_for_check):
@@ -497,6 +499,7 @@ def usb_fuzz(cmd, device, port=None):
             break
         else:
             print ("flag is now " + str(flag))
+    time.sleep(20)
     retList.append(flag)
     print (retList)
     mfuzz_port.close()

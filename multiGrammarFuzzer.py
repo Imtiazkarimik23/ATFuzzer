@@ -40,9 +40,9 @@ stored_set = []                 # list of sets of grammars that triggered an iss
 
 # --- EXECUTION PARAMETERS --- #
 ATTEMPTS = 10                   # number of iterations
-RESTART_TRESHOLD = 3            # number of repetetions of all the iterations
+RESTART_TRESHOLD = 2            # number of repetetions of all the iterations
 INPUT_NUMBER = 5                # number of input generated for each grammar
-CMD_NUMBER = 3                  # number of commands in the input line
+CMD_NUMBER = 2                  # number of commands in the input line
 
 
 def read_conf():

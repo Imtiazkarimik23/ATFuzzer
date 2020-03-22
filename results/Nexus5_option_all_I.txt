@@ -1,0 +1,63 @@
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: >
+	arg: ['random']
+Command: I0
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: %
+	arg: ['random']
+Command: ILX
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random']
+Command: ILm
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random']
+Command: IL
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0.400765376125
+	separator: ;
+	arg: ['random']
+Command: IE
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0.400658596039
+	separator: &
+	arg: ['random']
+Command: II
+
+Grammar:
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0.400523414952
+	separator: %
+	arg: ['random']
+Command: I9
+

@@ -1,0 +1,66 @@
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D958;I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D234;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D33482407199260;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D599418317918406883;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D621950;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '5;=%z(s62h'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D93|dp3q[,o;
+
