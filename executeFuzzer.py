@@ -111,43 +111,11 @@ def main():
 
 
 def test():
-    import random
-    cmd1 = {
-        'arg': ['arg1', 'arg2'],
-        'arg1': {
-            'type': 'string',
-            'length': 5
-        },
-        'arg2': {
-            'type': 'digit',
-            'length': 3
-        }
-    }
+    MAX_INT = int(float('inf'))
+    MIN_INT = int(float('-inf'))
 
-    cmd2 = {
-        'arg': ['arg3', 'arg4'],
-        'arg3': {
-            'type': 'letters',
-            'length': 5
-        },
-        'arg4': {
-            'type': 'fixed',
-            'length': 3
-        }
-    }
-
-    print (cmd1)
-    print (cmd2)
-    print ('')
-
-    arg1 = random.choice(cmd1['arg'])
-    arg2 = random.choice(cmd2['arg'])
-
-    cmd1[arg1], cmd2[arg2] = cmd2[arg2], cmd1[arg1]
-
-    print (cmd1)
-    print (cmd2)
-
+    print (MAX_INT)
+    print (MIN_INT)
 
 if __name__ == '__main__':
     main()

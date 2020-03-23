@@ -55,6 +55,7 @@ def generate_value(singol_arg):
         return random_string(singol_arg['length'])
     elif type == 'ranged':
         start, end = singol_arg['range'][0], singol_arg['range'][1]
+        print('#############' + str(start) + ', ' +  str(end))
         return str(random.randint(start, end))
     elif type == 'fixed':
         return str(random.choice(singol_arg['values']))

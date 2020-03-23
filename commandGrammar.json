@@ -971,7 +971,7 @@
             },
             "AcT": {
                 "type": "ranged",
-                "range": [0, 7]
+                "range": [0,7]
             }
         },
 

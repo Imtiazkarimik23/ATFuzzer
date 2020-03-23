@@ -6,10 +6,15 @@
     python version: python 2.7.15
 '''
 
+import sys
 import random
 import string
 import utilityFunctions
 from numpy import setdiff1d
+
+
+MAX_INT = sys.maxsize
+MIN_INT = -sys.maxsize
 
 
 def in_gram_crossover(cmd_gram, move_command=0):
@@ -110,7 +115,13 @@ def make_gram_invalid(cmd_gram):
 
         elif type == 'ranged':
             start, end = arg['range'][0], arg['range'][1]
-            arg['range'] = random.choice([[end + 1, end + 100], [start - 100, start - 1]])
+            start_or_end = utilityFunctions.flip_coin()
+            if start_or_end == 1: # negate start
+                if start > MIN_INT:
+                    arg['range'] = [start - 100, start - 1] if (start-100 > MIN_INT) else [MIN_INT, start - 1]
+            else: # engate end
+                if end < MAX_INT:
+                    arg['range'] = [end + 1, end + 100] if (end+100 < MAX_INT) else [end + 1, MAX_INT]
 
         elif type == 'fixed':
             if utilityFunctions.flip_coin() == 0:
@@ -144,9 +155,15 @@ def negate_condition(cmd_gram):
             half_len, double_len = (arg['length'] / 2), (arg['length'] * 2)
             arg['length'] = double_len if half_len < 2 else random.choice([half_len, double_len])
 
-        elif type == 'ranged':    # condition: range - [int, int]
+        elif type == 'ranged':
             start, end = arg['range'][0], arg['range'][1]
-            arg['range'] = random.choice([[end + 1, end + 100], [start - 100, start - 1]])
+            start_or_end = utilityFunctions.flip_coin()
+            if start_or_end == 1: # negate start
+                if start > MIN_INT:
+                    arg['range'] = [start - 100, start - 1] if (start-100 > MIN_INT) else [MIN_INT, start - 1]
+            else: # engate end
+                if end < MAX_INT:
+                    arg['range'] = [end + 1, end + 100] if (end+100 < MAX_INT) else [end + 1, MAX_INT]
 
         elif type == 'fixed':    # condition: values - [str, str, ... , str]
             new_value = ''.join(
@@ -233,11 +250,14 @@ def fixed_integers(cmd_gram):
 
         if type == 'digit':
             arg['type'] = 'fixed'
-            arg['values'] = [float('inf'), float('-inf')]
+            arg['values'] = [MIN_INT, MAX_INT]
         if type == 'fixed':
-            arg['values'].append([float('inf'), float('-inf')])
+            arg['values'].append([MIN_INT, MAX_INT])
         if type == 'ranged':
-            arg['range'] = [float('inf'), float('-inf')]
+            if utilityFunctions.flip_coin() == 0:
+                arg['range'] = [MIN_INT, arg['range'][1]]
+            else:
+                arg['range'] = [arg['range'][0], MAX_INT]
 
 
 
