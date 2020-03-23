@@ -1,0 +1,465 @@
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', ',n5;R4<WWl', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ?
+	arg: ['random']
+
+Commands: 
+D11083462378084613653642;I6Zoh?
+Dinf;Iri|$o}
+D-inf;Iq$+%d$Y"
+D-inf;IOo>zIM<$BGt&)_*
+D-inf;I`Y3~UDV$nK[cj9
+D-inf;IB7on((v)$@&b$
+D272517656211900903;NS#Gh;I+ufo
+D5723179772I;cM3v;IRV
+D26153979;53_;ICYj
+D5178;l;I4M
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', ',n5;R4<WWl', [inf, -inf], [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random']
+
+Commands: 
+D-inf;IOo>zIM<$BGt&)_*
+D-inf;I`Y3~UDV$nK[cj9
+D-inf;IB7on((v)$@&b$
+D272517656211900903;NS#Gh;I+ufo
+D5723179772I;cM3v;IRV
+D26153979;53_;ICYj
+D5178;l;I4M
+D6791465557154G;(_uY;IiH/a
+D759641,n5;R4<WWl9TVa;I--R[>'(y}k
+D7003811816483347G%+2Q;IZI
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', ',n5;R4<WWl', [inf, -inf], [inf, -inf]]}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random']
+
+Commands: 
+Dmoasyukrc;I'
+Dq;I;K
+Ddqbmgndmqk;IZ^
+D-inf;;Iwt'Ce~
+Ds2J:.p';G8;;IDCt
+D[inf, -inf];;I?T!c|24Df
+D-inf;;Ip`%X=Jd
+Dinf;;I8V#6Z5d{
+DinfO;IJ1h^
+Dinf+GGku6;Il
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', ',n5;R4<WWl', [inf, -inf], [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random', 'random']
+
+Commands: 
+DjhQb;INo&c.Ce&a
+D)k;I49kJ&*4.^K&C!M.7
+D4xU+;I]s2&i5Q)c&)R
+D7;I[A{&}/we&iX/w
+Ds;II(A&%1&)
+DD`pg;I+
+D;{J;I.
+DS;Iy=3A
+D_*;InA=
+D#W=*;IP
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'type': 'digit', u'length': 68, 'values': [inf, -inf, '(14f=zi(=9']}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'veDQi/x${o']}
+	score: 0
+	separator: :
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random']
+
+Commands: 
+D)I;I"G2t6N6I&`
+DQ;I$d`?&<x#8cJ
+DwPL_;IRocP
+DS{a;I.
+Dme;I3dK
+D[U<R;I|tm@q
+DqRz2;I}v
+D500600034306138198182435371093323223931780:@E:gg_Q2%-e=];I~)
+D542562160538014:X0:G;I"P8
+D4495744233752435391326136832336802376726459366288:N;IPxi
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'type': 'digit', u'length': 68, 'values': [inf, -inf, '(14f=zi(=9']}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'veDQi/x${o']}
+	score: 0
+	separator: :
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DQ;I$d`?&<x#8cJ
+DwPL_;IRocP
+DS{a;I.
+Dme;I3dK
+D[U<R;I|tm@q
+DqRz2;I}v
+D500600034306138198182435371093323223931780:@E:gg_Q2%-e=];I~)
+D542562160538014:X0:G;I"P8
+D4495744233752435391326136832336802376726459366288:N;IPxi
+D1449594652892491234918149349475605158205688541532:lQA!=;I8x
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'type': 'fixed', u'length': 18, 'values': [inf, -inf]}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', '"y?s<TI2|M']}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: :
+	arg: ['random', 'random']
+
+Commands: 
+DI:/)':g)](_`gUkAp:af=7H>HJSU1'/;IQ},5{+}I
+Dw#u;I3F\[a}|7iuJ}$
+D-inf\xl!jW)MW%6\h=|Lxpb;;I|0
+D-inf\Gw56;;Ilv
+D-inf\_z-NM;;Ih6
+D-inf\"y?s<TI2|M\dB!5.REhYq;;Ib
+Dinf\aC8*$K9d;;Im
+Dinf)7K~?V'nTl;I6|
+Dinf)QU]k1;I-
+D-inf)OW}^d{O)"y?s<TI2|M;I70
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '(14f=zi(=9', 'wf7kXb>Sk]'], u'length': 5, u'type': 'string'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'B}d^WkL||K', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: ^
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: <
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DH.i~OdAq/OuA\ak=:NH/hz';Ivg4\+^}Z|2/:U^!m):Cp-
+DU/(TdOFM`,6i>^/l}\t93ie@;I|b=U]4[1):^3_Uyq:^6^;-+CAi;G>
+D4mQn_5/o##z^v#[z;\:-;IYY\QCNi3s"^l^siQtLy}B
+D=+O$U(T=p(,\,&(Se%;Iz}~A[}M'1`.}Tg}4t
+D/8CT6A_p-BIAC>e;ILOv}/Z`)@}GbZss}i
+D|AFDdR^H;IW^d}C}dDuk\}yYm
+DeoRfajodv''tW-"tW=;IH}Lz4!%}vDa}PJ
+DD`)fQh!+;IC:}yD^dh}9}rXi^&
+D`uW`;I4z
+DmP5;I9
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'type': 'string', u'length': 5, 'values': [inf, -inf, '(14f=zi(=9', 'wf7kXb>Sk]']}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'B}d^WkL||K', [inf, -inf], "^1xq/jA;'N", [inf, -inf]]}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: <
+	arg: ['random', 'random', 'random']
+
+Commands: 
+Dpn,;IFt#X!\yt[(
+DS"];IjaZkqt3
+DEs|^KK;IW
+Dz4L^cUr;IU
+D}'+^L;I%
+Dix@)^b;IgT`}
+D~%B:^'#b1;IA[h
+D2V&B}d^WkL||K;IB
+Db}E&I;IV
+DVxe2M;IQT
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'type': 'digit', u'length': 26, 'values': [inf, -inf, [inf, -inf]]}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', '"y?s<TI2|M']}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random', 'random']
+
+Commands: 
+D2V&B}d^WkL||K;IB
+Db}E&I;IV
+DVxe2M;IQT
+DG&[inf, -inf];IQn
+D}vp,&B}d^WkL||K;Ia
+D9615813005240;IA
+D14745072303921;IY
+D8129028;Idw
+D269214956;IC'N
+D444670969673915279749;It
+
+
+Grammars:
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'number', u'random']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 26, u'type': 'fixed'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', '"y?s<TI2|M'], u'type': u'fixed'}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random']
+
+Commands: 
+D>;I;FFP^aVW*P
+D{r/$;I<ck^?'}
+D'7>On0!X*;YIw`]Vx*98QOT;IBbf&^)@
+DJ/!sh0=7O^n(@HSU}Y0_rZ~?;I6^'
+D-inf$ivhqmkvtdrtrigt;I4Jxk
+D-inf$frhungoucngmholfaksajfdbwimerro;IgK
+D-inf$btnfrpefdwnqvmmvcr;I2c/p
+Dinf$qgcbqctqxcmukoswjsyibdchzgqsmt;I+Nal
+Dinf$amixumrtdjitpjkrlkfjp;Im,
+Dinf)MJ2F;I9Q
+
+
+Grammars:
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'number', u'random']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 26, u'type': 'fixed'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', '"y?s<TI2|M'], u'type': u'fixed'}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random']
+
+Commands: 
+D'7>On0!X*;YIw`]Vx*98QOT;IBbf&^)@
+DJ/!sh0=7O^n(@HSU}Y0_rZ~?;I6^'
+D-inf$ivhqmkvtdrtrigt;I4Jxk
+D-inf$frhungoucngmholfaksajfdbwimerro;IgK
+D-inf$btnfrpefdwnqvmmvcr;I2c/p
+Dinf$qgcbqctqxcmukoswjsyibdchzgqsmt;I+Nal
+Dinf$amixumrtdjitpjkrlkfjp;Im,
+Dinf)MJ2F;I9Q
+Dinf)C;IY.8]mz&
+D-inf)(Jr8:5PP;II
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'random', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, '(14f=zi(=9', 'wf7kXb>Sk]'], u'length': 5, u'type': 'string'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'B}d^WkL||K', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: ^
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: =
+	arg: ['random', 'random', 'random']
+
+Commands: 
+Dgiztgfbygyc;,;H;-=z2ws{;IsEW.=c??d`=I8lj
+Dsbbuuyj`k1li`}p\zV-"I8UGJ?Hy]RCL]2(j/-q9suV[Am!Aa;I0A\
+Dpluuz`w#WF`1yI3@%UmCL$:sEx6DrF9}Y<;K/scI:HUZ~QtXGSig5aOhaR`|T?;I<PqYGR%
+Dleysxeb`R)A(`H]B!oHMi#O{zO~@AuU:TNH*b>jgW(z~<b$vmB;z@Pu6|]*.;|w`a]UgAW@djz6Se(0;IRr%
+Dqtbpgy`ikE>`TpJmcw~J;I+#O(sn
+Dugcaexxiszo`9`O8g~QZ07BFoBjK{L_mgUq`KHo6%F/<v<hoB>-EKg!cZ1Q;I-
+D+Q!^kxVOo;IE,<P
+D5^2#H^I;I`N
+Do^w^xl!jW)MW%6;Ig\I(
+D4^m0Nk^G;Iq
+
+
+Grammars:
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, [inf, -inf], "+`aJ!'F'vn", 'Qsf4g~6fL`'], u'length': 28, u'type': 'string'}
+	semiCol: ;
+	flag: {u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', '"y?s<TI2|M'], u'type': u'fixed'}
+	score: 0
+	separator: ,
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: _
+	arg: ['random', 'random']
+
+Commands: 
+D4^m0Nk^G;Iq
+D&$k1^Y%W?;I$o
+D6^]\S:;IDx_uYO])]2J:ML~
+Dz\lZ^s-;It78$`^+P#R)X+7{0L'/
+DR^P6;Ii``t6OU)a[@{7mK3f-
+D<^iu7Kp;Id5Ck6]HQ{V).A@S}Dvg
+D&&H^I.2>;I}Fr"hs;n3w)k$<mPmt$[
+DtQ1LL|dib.=*)H1K0'%uikE_iP;I'
+D0i7}c"7Q:v;IJ
+Du>Jh$%\`T_qDMZ(J_&9;Ii
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'random']
+	cmd: ATD
+	number: {u'type': 'string', u'length': 5, 'values': [inf, -inf, '(14f=zi(=9', 'wf7kXb>Sk]']}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'xl!jW)MW%6', 'gg_Q2%-e=]', 'B}d^WkL||K', [inf, -inf], 'W(<GV?atAB']}
+	score: 0
+	separator: ^
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: <
+	arg: ['random', 'random', 'random']
+
+Commands: 
+D-TCPDK|*<_)f;I$
+Dinf),4;Ic:C
+Dinf)eyrtjX0,j.:FrTr\w@;IA
+Dinf)C2C78sIyW:l#Rm;Iv
+Dinf)U|'9F,_L;Idb
+D-inf)\%_C;Idnn
+Dinf)K&Y7A5WbDy$<&LjEh;I$^L
+D<:^B}d^WkL||K^thqo:;I1r
+D9^I^6d;IO*_i
+DEwS|^xl!jW)MW%6^E00$I;I1
+
+
