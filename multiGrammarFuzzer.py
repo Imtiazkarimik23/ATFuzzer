@@ -112,6 +112,9 @@ def modify_set(gram_set, diversification_factor):
     for _ in range(diversification_factor):
         modified_set.append([])
 
+    if fuzz_settings[1] == '1': # crossover
+        multi_gram_crossover(gram_set)    
+    
     for g in gram_set:
         generated = 0
         previous_gram = {}
@@ -247,16 +250,20 @@ def fuzz_multi_grams():
         print('__________________________________________________\n')
 
 
-def evaluate_grammars():
+def evaluate_grammars(input_grams):
     grammars = read_conf()
-    random_grammars = random.sample(grammars.keys(), CMD_NUMBER)
-    print('Fuzzing grammars: ', str(random_grammars))
-    for g in random_grammars:
-        current_set.append(grammars[g])
+    if (input_grams == []):
+        input_grams = random.sample(grammars.keys(), CMD_NUMBER)
+        print('Fuzzing grammars: ', str(input_grams))
+    for g in input_grams:
+        try:
+            current_set.append(grammars[g])
+        except:
+            raise Exception('Error: Unknown grammar')
     fuzz_multi_grams()
 
 
-def main(channel, input_device, settings, blue_addr, input_port):
+def main(channel, input_grams, input_device, settings, blue_addr, input_port):
     global fuzz_channel
     fuzz_channel = channel
     global device
@@ -271,7 +278,7 @@ def main(channel, input_device, settings, blue_addr, input_port):
 
     start_time = time.time()
     try:
-        evaluate_grammars()
+        evaluate_grammars(input_grams)
         print('\nExecution time: ', (time.time() - start_time))
     except:
         exc_type, exc_value, exc_traceback = sys.exc_info()

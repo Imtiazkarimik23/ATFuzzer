@@ -99,11 +99,57 @@ def main():
 
         if input_grams == 'multi':
             #print ('multi', fuzzer_channel, input_device, fuzz_settings, blu_addr, input_port)
-            multiGrammarFuzzer.main(fuzzer_channel, input_device, fuzz_settings, blu_addr, input_port)
+            multiGrammarFuzzer.main(fuzzer_channel, [], input_device, fuzz_settings, blu_addr, input_port)
         else:
-            #print ('single', fuzzer_channel, input_grams, input_device, fuzz_settings, blu_addr, input_port)
-            grammarFuzzer.main(fuzzer_channel, input_grams, input_device, fuzz_settings, blu_addr, input_port)
+            input_grams = input_grams.split(',')
+            if len(input_grams) > 1:
+                #print ('many', fuzzer_channel, input_grams, input_device, fuzz_settings, blu_addr, input_port)
+                multiGrammarFuzzer.main(fuzzer_channel, input_grams, input_device, fuzz_settings, blu_addr, input_port)
+            else:
+                #print ('single', fuzzer_channel, input_grams[0], input_device, fuzz_settings, blu_addr, input_port)
+                grammarFuzzer.main(fuzzer_channel, input_grams[0], input_device, fuzz_settings, blu_addr, input_port)
+
+
+def test():
+    import random
+    cmd1 = {
+        'arg': ['arg1', 'arg2'],
+        'arg1': {
+            'type': 'string',
+            'length': 5
+        },
+        'arg2': {
+            'type': 'digit',
+            'length': 3
+        }
+    }
+
+    cmd2 = {
+        'arg': ['arg3', 'arg4'],
+        'arg3': {
+            'type': 'letters',
+            'length': 5
+        },
+        'arg4': {
+            'type': 'fixed',
+            'length': 3
+        }
+    }
+
+    print (cmd1)
+    print (cmd2)
+    print ('')
+
+    arg1 = random.choice(cmd1['arg'])
+    arg2 = random.choice(cmd2['arg'])
+
+    cmd1[arg1], cmd2[arg2] = cmd2[arg2], cmd1[arg1]
+
+    print (cmd1)
+    print (cmd2)
 
 
 if __name__ == '__main__':
     main()
+    #test()
+   

@@ -1,0 +1,4399 @@
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D945328772G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D5902G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'Y{G_VmtF4i'], u'type': u'fixed'}
+	score: 0
+	separator: }
+	arg: [u'number', u'flag']
+Command: D69186483;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: \
+	arg: [u'number', u'flag']
+Command: Dinf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: DR{M0Y&/It8oAo##R|%)^Ot2(!}?CMI;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: [
+	arg: [u'number', u'flag']
+Command: Doxqoyzhkd;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.46302933432
+	separator: [
+	arg: [u'number', u'flag']
+Command: D7v;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'O{A8n!].SY'], u'type': u'fixed'}
+	score: 2.22617259331
+	separator: #
+	arg: [u'number', u'flag']
+Command: Dieq}fAsJY0RsPk9C2\D5+pOJ3:?!V#G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'O{A8n!].SY'], u'type': u'fixed'}
+	score: 2.22617259331
+	separator: #
+	arg: [u'number', u'flag']
+Command: D$e#O{A8n!].SY;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'g~.G~V8L0S'], 'length': 22, u'type': 'digit'}
+	score: 1.93484417157
+	separator: 
+	arg: [u'number', u'flag', 'random']
+Command: D15778874696322017759369243163;!
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.90268945941
+	separator: [
+	arg: [u'number', u'flag']
+Command: D\;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'Y{G_VmtF4i'], 'length': 18, u'type': 'string'}
+	score: 1.86704048118
+	separator: ~
+	arg: [u'number', u'flag']
+Command: D902~h]B
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], u'type': u'fixed'}
+	score: 1.82736525812
+	separator: +
+	arg: [u'number', u'flag', 'random']
+Command: DN}lA_Fk{f?i0@?+4P~kFOmn[_;Qb3Ka
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.77496971816
+	separator: %
+	arg: [u'number', u'flag']
+Command: Dh]CD\^;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.77496971816
+	separator: %
+	arg: [u'number', u'flag']
+Command: D{m|,G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 55, u'type': 'string'}
+	score: 2.2681227634
+	separator: .
+	arg: [u'number', u'flag', 'random']
+Command: D?30NH.'KE$rLi12c3Z}r~w:Y%QJw:Z[I6G-yd%KE\KT^L2iq.E\7
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 55, u'type': 'string'}
+	score: 2.2681227634
+	separator: .
+	arg: [u'number', u'flag', 'random']
+Command: D!EH.E+|Wd:<M?kb<+h|BOl|,g?@Xh#^E+LS3>.}Z2
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], u'type': u'fixed'}
+	score: 2.2681227634
+	separator: +
+	arg: [u'number', u'flag', 'random']
+Command: Dau),6@+I+Xm$
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 2, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.95852657765
+	separator: [
+	arg: [u'number', u'flag']
+Command: DCI[G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.84574133038
+	separator: %
+	arg: [u'number', u'flag']
+Command: Dpb:P<W-
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'Y{G_VmtF4i'], 'length': 9, u'type': 'string'}
+	score: 1.83298800293
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Ddcnthqytn'}S#ek'tf<^;`fEn
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.11148065176
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D\0YR"C0S4m$"d;"^i<
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.11148065176
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D.Z4"E_2qmp:lWg['b"401{H~*<v"p":;;Us@
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'gV8!\\yGtM_'], u'length': 4, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.84806834633
+	separator: *
+	arg: [u'number', u'flag']
+Command: DgV8!\yGtM_;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf]], u'length': 4, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.84806834633
+	separator: ^
+	arg: [u'number', u'flag']
+Command: D-inf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'Y{G_VmtF4i'], 'length': 9, u'type': 'string'}
+	score: 1.83661367412
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Duqgtszyy'E1"\`*g;W_Y
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 1.78932025338
+	separator: |
+	arg: [u'number', u'flag', 'random']
+Command: D$_T68QG]=E'$d]0-|=t|ro
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], '3Z>[_JV,#P'], u'length': 4, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.13873920649
+	separator: _
+	arg: [u'number', u'flag']
+Command: D-inf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.13873920649
+	separator: ^
+	arg: [u'number', u'flag']
+Command: DuUOy9L:W(Io).[Qy:jM`&'hJPfi4!RIfzR=b=+c;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.83805629685
+	separator: .
+	arg: [u'number', u'flag']
+Command: D|jL!eU.I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.25144213082
+	separator: (
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+Command: D'f([30waw.#(ts(`Ulb`;@~
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.25144213082
+	separator: (
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+Command: DcnH{rBn~M(K|MUnNDHB7g$O(.((9F*;7ay}!
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 43, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.20572831485
+	separator: $
+	arg: [u'number', u'flag']
+Command: D-inf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], '3Z>[_JV,#P'], u'length': 27, u'type': 'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.20572831485
+	separator: ]
+	arg: [u'number', u'flag']
+Command: D6925532572197;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 114, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.09309252448
+	separator: ^
+	arg: [u'number', u'flag']
+Command: D%g'JvQm~R&,n[[2L|1pw@L@>os(=FcXVc-CCnA5BHOeaiZ?Vx@zZ>,MRF]~;0Bcx;>sd'PrbRioLRtB:?[2Z!kRq4k^0>8"p`V]?nD!k&rjaIL3s5;G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 1.91405034587
+	separator: %
+	arg: [u'number', u'flag']
+Command: DI.}GP;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'gV8!\\yGtM_'], u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.79665097579
+	separator: *
+	arg: [u'number', u'flag']
+Command: D7;;I
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.22129798623
+	separator: )
+	arg: [u'number', u'flag', 'random']
+Command: DI@/lReK5E)zA[hFKeOU.V4*8T/'aAk7#mXm5nRM;qE5;G)9
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.22129798623
+	separator: )
+	arg: [u'number', u'flag', 'random']
+Command: Dp0\/2/WBq/g>]J.%hV}$O\CUW;I)UZl
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 2.22129798623
+	separator: ^
+	arg: [u'number', u'flag']
+Command: D*oH_[yXT^G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'fixed'}
+	score: 2.12114097605
+	separator: -
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dxmm;8^;>
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'fixed'}
+	score: 2.12114097605
+	separator: -
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D6adt!><-G;kPY
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.12114097605
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+Command: DjTZL9*-K%Y;)*V*Q
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 2.4170692547
+	separator: ^
+	arg: [u'number', u'flag', 'random']
+Command: Drb3r`;I^=Hf
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'vi^=#S%RI%'], u'type': u'fixed'}
+	score: 2.4170692547
+	separator: ^
+	arg: [u'number', u'flag']
+Command: De9rJC]@\$:hU-qNkAaxmx@]L+9^vi^=#S%RI%;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ';r6"u{#LTe', [inf, -inf], 'PNyJ2FiC-_'], u'length': 57, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'vi^=#S%RI%'], u'type': u'fixed'}
+	score: 2.4170692547
+	separator: ^
+	arg: [u'number', u'flag']
+Command: D}Ixn&E8B'X3fLh^E:*z.F(+*4LdzBz';
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, "'aUPDts_4&"], u'length': 48, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.15962282391
+	separator: "
+	arg: [u'number', u'flag']
+Command: Dnbubdvlgpeyxj
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'O.oYEGp)9B', [inf, -inf]], u'length': 27, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.15962282391
+	separator: "
+	arg: [u'number', u'flag']
+Command: D-inf
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', 'random', 'random', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '4P~kFOmn[_', [inf, -inf]], 'length': 27, u'type': 'string'}
+	score: 2.10264239877
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+Command: D"!Y\]#sVC*\:4;[XAe*D[*!E_?YE=AjS0j+EH#"{9Jw6hV*X_>
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, [inf, -inf]], u'length': 52, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.94046697775
+	separator: $
+	arg: [u'number', u'flag']
+Command: Diactrlafppwbxuthnszspeiofkrmeealqajejghw
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 36, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: %
+	arg: [u'number', u'flag']
+Command: D-inf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag']
+Command: D+T&G+"%2%\TA*:YevrumA_*-|Gr`G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D58G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'Ik9CjWdX^S'], u'length': 79, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 4, u'type': 'digit'}
+	score: 2.0840576101
+	separator: 
+	arg: [u'number', u'flag']
+Command: Dtktsodspdtdjdeztqu;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'YvhG9U/]4>'], u'length': 36, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 84, u'type': 'digit'}
+	score: 1.97442874239
+	separator: %
+	arg: [u'number', u'flag']
+Command: DYvhG9U/]4>;549170183697514859540369989901606545665
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 48, u'type': 'digit'}
+	score: 1.85593942126
+	separator: 
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Drvfboyhae27953954574626990594082588861413805616147048Fn;"
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf]], u'type': u'fixed'}
+	score: 1.72852025035
+	separator: @
+	arg: [u'number', u'flag']
+Command: Dfcq@G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf]], u'length': 36, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.0684615078
+	separator: ~
+	arg: [u'number', u'flag']
+Command: D@&etCUp+GU
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf], 'qqr?6bIpUs'], 'length': 77, u'type': 'string'}
+	score: 1.90997210441
+	separator: #
+	arg: [u'number', u'flag', 'random']
+Command: D142#^n7r;zm#};AUb6ov|S)Jxva.32bH"qBZU-o!Q'RWFB/#yn3%.`!>SW$q0=O
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], 'Ay]>x+=@hy'], u'type': u'fixed'}
+	score: 1.87974602009
+	separator: 
+	arg: [u'number', u'flag']
+Command: D~P)[SXwP%/y]z
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 48, u'type': 'digit'}
+	score: 1.87395712286
+	separator: $
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dbtwedklxclzdihsfjhyjjblausplnahqx$174750085659641344224772$]hUH;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 48, u'type': 'digit'}
+	score: 1.87395712286
+	separator: 
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dqqkfikncir)iZN=!B8OVNu0UrR@t;870354746654007676
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf]], u'length': 0, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.87303029502
+	separator: /
+	arg: [u'number', u'flag']
+Command: De
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf]], u'length': 0, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 2.20282771919
+	separator: &
+	arg: [u'number', u'flag']
+Command: D*
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 24, u'type': 'digit'}
+	score: 1.99838157148
+	separator: 
+	arg: [u'number', u'flag', 'random', 'random']
+Command: DschsdvgwbzuahrsAPZ_w\{!M925;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf], 'O*&0{,?_2)'], u'length': 36, u'type': 'fixed'}
+	flag: {u'values': [inf, -inf], 'length': 164, u'type': 'fixed'}
+	score: 1.70272768328
+	separator: ]
+	arg: [u'number', u'flag']
+Command: DO*&0{,?_2)]-inf
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf], 'O*&0{,?_2)', [inf, -inf]], u'length': 36, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 82, u'type': 'string'}
+	score: 1.70272768328
+	separator: ?
+	arg: [u'number', u'flag']
+Command: D@&etCUp+GU?j9L[y1|_Y*%<!5[+~2tWhD,VXwZr,QuCV6YDT6#^2q_MP'ej)r61=Pq:4-O,T'ju}H8AqxgMl
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf], [inf, -inf]], u'length': 0, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.89729099697
+	separator: &
+	arg: [u'number', u'flag']
+Command: D[inf, -inf]
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [inf, -inf], 'length': 48, u'type': 'fixed'}
+	score: 1.76146004805
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dsylmhbfkezxxcdotk;Bo[xql;inf;j;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 56, u'type': 'string'}
+	score: 1.61699666912
+	separator: @
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D-inf@X7=_EQ!S9B/P(,g>+}N@|u
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 56, u'type': 'string'}
+	score: 2.26169304248
+	separator: _
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D-inf_2_-~pBq$h^<|<+\"9/?4iqOJv6O;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [inf, -inf], 'length': 48, u'type': 'fixed'}
+	score: 1.72048389484
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Daqbxdstvhqmbibneep;inf;hpu~R;k>a2,wxg5;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [inf, -inf], 'length': 48, u'type': 'fixed'}
+	score: 2.18206858814
+	separator: {
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+Command: Dhpxjo{-inf{5=;<{HM
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'digit'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [inf, -inf, 'Xh^7XCUBim'], 'length': 48, u'type': 'fixed'}
+	score: 2.18206858814
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D65397531;-inf;pcB*zukx;Un;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'digit'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [inf, -inf, 'Xh^7XCUBim'], 'length': 48, u'type': 'fixed'}
+	score: 2.18206858814
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: D4145414189645;-inf;Q]y;(&;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [inf, -inf], 'length': 48, u'type': 'fixed'}
+	score: 2.16048521033
+	separator: !
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dohvzupt!-inf!y%\;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 28, u'type': 'string'}
+	score: 2.04263051641
+	separator: _
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dinf_,K0_yo!^Tnxk0yT28xNT;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 65, u'type': 'string'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 56, u'type': 'string'}
+	score: 2.04263051641
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random']
+Command: DWg[x)=;aa!ag%Dj\9HA#\#H!:Uue6D"L;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 12, u'type': 'digit'}
+	score: 1.73990232425
+	separator: ]
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dfnujepkgsudwfi;463302]m
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, '@&etCUp+GU', [inf, -inf], [inf, -inf], [inf, -inf], '~-L_c>>eL"', [inf, -inf], '3X<_0*2(ru'], u'length': 77, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.73898718297
+	separator: ,
+	arg: [u'number', u'flag']
+Command: D_#zmI;55t})C3FhN^9u#*2u/o><3U'\mXKGj_4L@-d*u:
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [inf, -inf, '(D1Sv<>hic'], 'length': 48, u'type': 'fixed'}
+	score: 2.35745082096
+	separator: {
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+Command: Dtrulxnzenxmgwuli{inf{~xkN;t.J{v/p{m"P7
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 12, u'type': 'string'}
+	score: 2.00246684641
+	separator: ]
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+Command: Djskufcdqqdfkbvxxyovlf;I[*0D>{a8Z]tZ2]Xe
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [inf, -inf, ']6X&y:REGG'], 'length': 48, u'type': 'fixed'}
+	score: 1.99146345513
+	separator: !
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dd;]6X&y:REGG
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 24, u'type': 'digit'}
+	score: 1.86950576398
+	separator: ]
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dij;5S`.G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'a5H]]EIRh4'], 'length': 12, u'type': 'string'}
+	score: 2.33511886576
+	separator: ]
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+Command: Duggekxxmzpeipladdiwmlyzwyubxivzldicmxyyprfozjprxwpfhjcsrwvzkaavfdvu;KK]'3QsJO?9`R]&F]!zoe{
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 65, u'type': 'letters'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 56, u'type': 'string'}
+	score: 1.7477689556
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dtksyhsoifesldugapjbrsonzlvf"/x;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 65, u'type': 'letters'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '[SXwP%/y]z', [inf, -inf], [inf, -inf]], 'length': 56, u'type': 'string'}
+	score: 1.7477689556
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Duyksiwvd"c;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 67, u'type': 'digit'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+Command: D28018283951374787885943433491581;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.91990393713
+	separator: -
+	arg: [u'number', u'flag']
+Command: D5140-4
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 1.70797122662
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Ditwnohmscy;krvcvj*Bo0|*^X4
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 1.5866159997
+	separator: 
+	arg: [u'number', u'flag']
+Command: D232607843G
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 28, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null', '{b?L~%T>\\m'], 'length': 22, u'type': 'letters'}
+	score: 1.56594114615
+	separator: }
+	arg: [u'number', u'flag']
+Command: Dinf;srexqmvgxpzrndyyofgwsm
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null', '{b?L~%T>\\m'], 'length': 22, u'type': 'letters'}
+	score: 1.56594114615
+	separator: |
+	arg: [u'number', u'flag']
+Command: Dinf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf, '#%>gD1t[<b', [inf, -inf]], u'length': 28, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null', '{b?L~%T>\\m'], 'length': 22, u'type': 'letters'}
+	score: 2.00860972586
+	separator: >
+	arg: [u'number', u'flag']
+Command: D-inf;feony
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 28, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null', '{b?L~%T>\\m'], 'length': 11, u'type': 'string'}
+	score: 2.00860972586
+	separator: >
+	arg: [u'number', u'flag']
+Command: Dinf>~Exe<4;EgHk;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.93520524582
+	separator: -
+	arg: [u'number', u'flag']
+Command: Dz-:.]k
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.93520524582
+	separator: >
+	arg: [u'number', u'flag']
+Command: D}fh:-/`u8$AEVhdWS_>t`(;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 3, u'type': 'letters'}
+	score: 1.87555475565
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dwrzvj;a4;jf;x
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 3, u'type': 'letters'}
+	score: 1.87555475565
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dnfziywezezw;>;!W7;lgg
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 1.87555475565
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dfzshhrda*Ca[n9vy*&B%_gC;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 2.13503702263
+	separator: >
+	arg: [u'number', u'flag']
+Command: DIJ{mN]$FR([<9Jx;>5R_
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 3, u'type': 'letters'}
+	score: 1.99379761748
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Djugc;-"*4b;H#;w
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 1.80372750094
+	separator: @
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Duveyoqqud@[Dh;n
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 1.80372750094
+	separator: +
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dlfnzfhofzbvsvsvl;>lg+5jb_TD{g3?t.1]bk?G|B+e
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 2.1300552141
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dejlhtelz;S,4q1i}~?$v6>)Mt<3|*[:lF8N
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 6, u'type': 'letters'}
+	score: 2.1300552141
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Diffnooe;\2<FMax+`Dkay),rb{@*vE#c*Y&kPmo/\
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 2.12159521157
+	separator: +
+	arg: [u'number', u'flag', 'random']
+Command: D[fxRP}m&>;BGsq,"Vn[Le5@%5dcYtg@qi+y;v`x
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, "UD92~Dgk'P"], u'length': 29, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 8, u'type': 'string'}
+	score: 2.10827692292
+	separator: =
+	arg: [u'number', u'flag']
+Command: Denxyqruvddmhuj
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 4, u'type': 'fixed'}
+	score: 2.06508238537
+	separator: =
+	arg: [u'number', u'flag']
+Command: D472128012779103=G;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 9, u'type': 'fixed'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 4, u'type': 'fixed'}
+	score: 2.29928639118
+	separator: =
+	arg: [u'number', u'flag']
+Command: Dinf;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 92, u'type': 'letters'}
+	score: 2.29928639118
+	separator: &
+	arg: [u'number', u'flag', 'random']
+Command: D156708104&kvhfqgpdaqwhzisrvdhfjcwpukirmvngirhxvynlohndhvxswydo;5
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 2.04792968974
+	separator: [
+	arg: [u'number', u'flag']
+Command: DYaxZ
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.8561560247
+	separator: ~
+	arg: [u'number', u'flag', 'random', 'random']
+Command: DSgu!$2N;]c\^~Z~HC12
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.8561560247
+	separator: ,
+	arg: [u'number', u'flag', 'random']
+Command: D2P[bMH65u[9a3(,&,Ro2;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 92, u'type': 'letters'}
+	score: 2.29713420246
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dinf&DQ@;bijxchqipqxxecnsfxfxkuxdovsdinxvljbgndpneynwgizdhsevvziwfkxrygskplnavcskypjpwz&8O
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': u'digit'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 92, u'type': 'letters'}
+	score: 2.29713420246
+	separator: &
+	arg: [u'number', u'flag', 'random']
+Command: D6607254&Hv|yh;aojgeutgthwnvhlhiwgtbsvmfkkxduhnpyrjqjgtgmtdhajlabfsywixdsdb
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 2.04916666059
+	separator: !
+	arg: [u'number', u'flag']
+Command: Dc'p<^R]y)Iv;5@Rv}
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 2.04916666059
+	separator: !
+	arg: [u'number', u'flag']
+Command: DAo]C~50ura~$7
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': u'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 2.04916666059
+	separator: ^
+	arg: [u'number', u'flag']
+Command: D5700
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.89769095436
+	separator: )
+	arg: [u'number', u'flag', 'random']
+Command: D&hXQJNqn5D];NhS;LEdm6)vO+2Z)vqn
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {'values': [inf, -inf, ',i7gT-m$d7'], u'length': 73, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 4, u'type': 'fixed'}
+	score: 1.86053476897
+	separator: =
+	arg: [u'number', u'flag']
+Command: Ds;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 2.30583063086
+	separator: !
+	arg: [u'number', u'flag']
+Command: D~t7OkReG,!lilnjxpharbrcufeulmpgmzykef
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 1.93172848951
+	separator: !
+	arg: [u'number', u'flag']
+Command: D0!tmgsK$2*wU'|T;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.92528490627
+	separator: !
+	arg: [u'number', u'flag', 'random']
+Command: D1.KGyo1!P!ygKg
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf, [inf, -inf]], u'length': 18, u'type': 'fixed'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 92, u'type': 'letters'}
+	score: 2.03937582754
+	separator: >
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Dinf>-;gR
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.90658042133
+	separator: !
+	arg: [u'number', u'flag', 'random']
+Command: Dw6<s6!k(!~,;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]'], 'length': 4, u'type': 'string'}
+	score: 1.90658042133
+	separator: !
+	arg: [u'number', u'flag', 'random']
+Command: DTnBK:|W{x__SWrQ5q(!e>iF!$>;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {'values': [inf, -inf, "i)&YW6jG0'"], u'length': 18, u'type': 'fixed'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'CCn;6ptZPe'], 'length': 92, u'type': 'letters'}
+	score: 2.22426444812
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random']
+Command: Di)&YW6jG0'&6/iu&zlxjyjzfoetbfudlsjbijyrqmvdfgffweqfchiaqevpcmzvuvkikyvbxfsrnbiwdujiwxcruvqzurespxdewo;i!Qr
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 4, u'type': 'digit'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'string'}
+	score: 1.56410378477
+	separator: }
+	arg: [u'number', u'flag']
+Command: D8359}7]BS*Csk/UZ=N00$OO6:f{;
+
+Grammar:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'dzBNr0i">]', 'n.Bb{/AA`}'], 'length': 46, u'type': 'letters'}
+	score: 1.55700566189
+	separator: ;
+	arg: [u'number', u'flag']
+Command: D5:x;
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null']}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random']
+
+Commands: 
+DinfI;;I@}$B:
+D-inf;;IrX$t
+DinfI;;I;$)p
+DinfI;;I.$zS
+DbhLwf016oJk%dHI;x0D;I&
+Dh.pIDk~U[FUVJ(`G;K.k4;IX&
+D.%*0EWtw.TT~H,I;4;Iw
+DQdEzN]ewGXDDv>id;V>=kEeby<;I_s
+D]h*F!/>+JYKI;@w{u{;.;I;
+DR*(o0A\2Hg)G;IJ
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {'values': [inf, -inf], u'length': 18, u'type': 'fixed'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', 'IQXU!m%jSZ']}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random']
+
+Commands: 
+DFs)I;Iy3
+D*j')I;IB3@-Xq
+D244-inf;;I_p
+D932681037550650-inf;;Iz
+D883-inf;;I[D
+D465inf;;IJa
+D85987733377inf;;IRk
+D-inf`I;IK$
+Dinf;I=Xe|
+Dinf`I;ID96+
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null']}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random']
+
+Commands: 
+D9776810433;[inf, -inf];Is]qD$(L-
+D6398945636867965;I;I[b<z$ePJ$
+Dmgyquefvx;IXXkd
+Dacdehhe[inf, -inf];IQ
+DljI;I,M
+Dvgdi[inf, -inf];Izv.j
+DslejrkcyI;I~
+D1R:p(:;;I0
+DDDGR\|`^i^8;;IAw
+D4V]x"EySI;;I@E
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null']}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random']
+
+Commands: 
+Dvgdi[inf, -inf];Izv.j
+DslejrkcyI;I~
+D1R:p(:;;I0
+DDDGR\|`^i^8;;IAw
+D4V]x"EySI;;I@E
+D;Vq#Rc6x='l#53;;I/,
+DBm1:>"z9A;;I"
+DpoehxnqixasG;;IB
+Dfbxwzfpnrbtkkpsh;;I`WMy
+Dlcyvlx;;IBa<}r
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', '`6i*AsT\\`w', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: {
+	arg: ['random', 'random']
+
+Commands: 
+D}*Arw8KuMIDdD9:~^s,IQXU!m%jSZ;;I^f:j
+D5{z9G#1Oz]vz0K,I;;I3b=
+DWYT(.e65)=vw8|,I;;I?
+Dm`G8kbE_2$&hdrhalnygbwmjyhiehdybuogktfyqrni;I3K|<L`8[/h8)~:
+Dinf&djjlmlgohvjzndfnytvlljsrsfnxnwhkrkrrytbiwdtkiplynmcsurfodotbfltgwsgcmj;I3SMOFN/&U
+Dinf&wkmjhsfopeuqetoqidtqvhvkznltktzo;I%pb5f!mz/)"B$ax7
+Dinf&ysyjzmzsmshakzrbgbxwawdcrhxpezezfqhhmjkrmlboidihyrcsdoh;Ib_$^y/it:<
+D-inf&eg;I2}7{S][Qvs/#Qsx9$Lm
+D6XY/9~ia%7N\OfZ&G;;IU*{j
+DRvy?#y.Y$Vi!T0&[inf, -inf];;I9{-
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: *
+	arg: ['random']
+
+Commands: 
+Dinf&djjlmlgohvjzndfnytvlljsrsfnxnwhkrkrrytbiwdtkiplynmcsurfodotbfltgwsgcmj;I3SMOFN/&U
+Dinf&wkmjhsfopeuqetoqidtqvhvkznltktzo;I%pb5f!mz/)"B$ax7
+Dinf&ysyjzmzsmshakzrbgbxwawdcrhxpezezfqhhmjkrmlboidihyrcsdoh;Ib_$^y/it:<
+D-inf&eg;I2}7{S][Qvs/#Qsx9$Lm
+D6XY/9~ia%7N\OfZ&G;;IU*{j
+DRvy?#y.Y$Vi!T0&[inf, -inf];;I9{-
+DgK/;;Ign{_
+Dp5}fu7XI&G;;I\J{>
+D"3)g9hz/jyad&`6i*AsT\`w;;I:{7
+D!z#BzE7TmdeRY0<h_8O5Keq5$!Z_e|b;I;IaE
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null'], 'length': 15, u'type': 'string'}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: [
+	arg: ['random']
+
+Commands: 
+Dp5}fu7XI&G;;I\J{>
+D"3)g9hz/jyad&`6i*AsT\`w;;I:{7
+D!z#BzE7TmdeRY0<h_8O5Keq5$!Z_e|b;I;IaE
+Dc@(1dtttw|m'R@%*;I;I\
+D*}'AO_D%e}"Ua|gA!Z|KO!;;I")
+D=2'(4#{;;IX
+D\~J(rIn-eRX;I;IA
+D@aS8),gB(H*|GjZ+@6)dy"S_}adh"dQAJ;IvO%4$V
+DOoWBV\g.RNv)6c*!d;Il!,s
+D"[~$)T*Ksn.Sw`o;IGmH\dkj-
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: +
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random', 'random']
+
+Commands: 
+D~A#D>OZUM~;II?K9U
+D:ISV`Y";Iy[0Q*7E,~
+D';IBU$a3gvTT
+DzjhqregffcI;b;IFC`g
+DilmtgjtewkrG;dpE|;I)1jE)
+DijhmfvgljI;Q(A&;I,l?Jt
+DlzwtedsdcdffeiI;mGA(;If:|[f
+Dfxgcqrhtwzpgmkpqah[inf, -inf];l;;d;I(2X
+Dwkzabf;;IMZ-
+Dxup;;I/j8
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null'], u'type': u'fixed'}
+	score: 0
+	separator: +
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: 
+	arg: ['random', 'random']
+
+Commands: 
+D';IBU$a3gvTT
+DzjhqregffcI;b;IFC`g
+DilmtgjtewkrG;dpE|;I)1jE)
+DijhmfvgljI;Q(A&;I,l?Jt
+DlzwtedsdcdffeiI;mGA(;If:|[f
+Dfxgcqrhtwzpgmkpqah[inf, -inf];l;;d;I(2X
+Dwkzabf;;IMZ-
+Dxup;;I/j8
+Dropxthq+G;;Idq/
+Dthyyfnkgiyulrlwm;;I3a
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1'], u'type': u'fixed'}
+	score: 0
+	separator: 
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: )
+	arg: ['random']
+
+Commands: 
+Dthyyfnkgiyulrlwm;;I3a
+Dsifewblmxrv+G;;Ik]4
+DlG;Il>V?Fk-
+DikhrmipG;IhOB>|0{8
+DyardqvmrkI;IjA=>fc[zk
+DtsooijI;I%/A{U>Ae:y
+Dceho[inf, -inf];IY>eS
+Dy-]A5L.4\I;I}4+"$
+D<RV:,.KWG;Imen.`
+D9I$#I;I7
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', '`6i*AsT\\`w', [inf, -inf], 'dB_]6r+elI', [inf, -inf]]}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: /
+	arg: ['random', 'random']
+
+Commands: 
+D<RV:,.KWG;Imen.`
+D9I$#I;I7
+D_%55K[inf, -inf];IRfDnI
+DP,y8mUG;IR[bM"
+DKOlO%Mc;I7(U(RHvn
+D:>slpn?nc@2\x%|},Xy;@uv&]BuPD*SJAv%;IGd:(!.Y
+D1:M[e[O0HRr8YF%%z!;Ix1d(=N"
+D)iI%$>WV,aoI@~R@Z\zF>-%&N#lJ'C1$;I](g?
+DsOA3t$sgF~HW'\-%b;IuZyg(<
+D)/|Wu}IR;I;I[9/`G
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', '`6i*AsT\\`w', [inf, -inf], 'dB_]6r+elI', [inf, -inf]]}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: /
+	arg: ['random', 'random']
+
+Commands: 
+DKOlO%Mc;I7(U(RHvn
+D:>slpn?nc@2\x%|},Xy;@uv&]BuPD*SJAv%;IGd:(!.Y
+D1:M[e[O0HRr8YF%%z!;Ix1d(=N"
+D)iI%$>WV,aoI@~R@Z\zF>-%&N#lJ'C1$;I](g?
+DsOA3t$sgF~HW'\-%b;IuZyg(<
+D)/|Wu}IR;I;I[9/`G
+DTZI#tJHo[,;G;I@rUq/lV
+D]3P~;[inf, -inf];I'jh/k
+DVNWCz5zkK]/]6l":",;`6i*AsT\`w;I?}b//5K
+D-g[Gw"d>,g&/';[inf, -inf];I]t/-
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'letters'}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: ?
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: |
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DO2{nS4:edV,T3W}@0x,;Iv#BaXlF
+D#whU\Jp'nf[XcN;I<
+D0wxoIx2;I>@&VmBojW;
+DCOUP%/\%P*Z0;IKy*
+Dp;It5@}KybxJxlN@E
+Dz;I8_,d/9a@Lk<yEgC/3@j8
+Dhwldfcut;Ip+[S@R]EQ@*Zi]x
+Dywuwnx;Ia9Ub@$34=@8o@ARF"stRN
+Dpulll;IJi`@B6@gFFt%"6>
+Dfid?X8;I7|||y|h
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf]]}
+	score: 0
+	separator: {
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: )
+	arg: ['random']
+
+Commands: 
+Dp?e2uC^TLpV/(Lk:zEM`!o0x^%l`?qj{c[L|eu=;II|4K|"
+DF-m=V|/h;ID
+DRO{G;IF%
+D[LduW<>{G;I`h
+DK;S;Iy
+DO{[inf, -inf];Ig
+DOdxsVD[Pj<_l|wd;dg;ICAs6X
+DJ_gU{I;I@<F
+DilFT:S.$7]ocycH^,S{G;I`-2`s
+D'J0|O/k;CKv'jy<H*v{I;I/%
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: ,
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: )
+	arg: ['random', 'random']
+
+Commands: 
+D7ypO5x9&[inf, -inf];;IS:
+D{dJtB%]&`6i*AsT\`w;;ISc
+DBr)g{28/b}DPfnI9J\]p4"A^&weiw;;I9/*/#R
+Dk&fggafhrik;;I!/:Q/jO
+DLV&bpqit;;I:&/mb/Y
+D]=bDSNZM>_^X[-z=&qwxkzwhr;;IE/O/EP
+Dm9iy?Z#?,t]D:2W`F:$5nBnk2%1v@u'e}R9&wfxzfoux;;I'^/F/=
+D!m)%G#a}Phb,[inf, -inf];I)/)WZ
+Dv%hQD;IAP})Bz@
+Da_C'%N?\gjLi,[inf, -inf];IQxe(X)J@y&
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 75, u'type': 'string'}
+	score: 0
+	separator: ?
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: |
+	arg: ['random', 'random', 'random']
+
+Commands: 
+Dv%hQD;IAP})Bz@
+Da_C'%N?\gjLi,[inf, -inf];IQxe(X)J@y&
+D(,v4o[&h.6R.',I;I<_)|F'vN
+D/umH,G;IRlp)?NC
+D9*0g}87J&h|T6n[{G;ITu
+D]r|wFyfRJ#Gmdm;IE
+DE0C{Ej3j1-*WJ>&T1{I;Ig
+DmP&~Dy:/F\x2a("!g{G;IS)
+DnI0H{I;I^
+Dsg;I3|6|Yf
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 75, u'type': 'string'}
+	score: 0
+	separator: ?
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: |
+	arg: ['random', 'random', 'random']
+
+Commands: 
+D9*0g}87J&h|T6n[{G;ITu
+D]r|wFyfRJ#Gmdm;IE
+DE0C{Ej3j1-*WJ>&T1{I;Ig
+DmP&~Dy:/F\x2a("!g{G;IS)
+DnI0H{I;I^
+Dsg;I3|6|Yf
+Dwlz;I$|va|@
+Dlapypojm;I!|RN|B
+Dccnubwj;I-V|^8|J
+Dlajbbrdeba;I@-|\x|$q
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', 'xS99.,V%}S'], u'type': u'fixed'}
+	score: 0
+	separator: #
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ;
+	arg: ['random']
+
+Commands: 
+Dwlz;I$|va|@
+Dlapypojm;I!|RN|B
+Dccnubwj;I-V|^8|J
+Dlajbbrdeba;I@-|\x|$q
+D591928095;IM~{~/x
+D57285;If{~8*~_
+D9136665733;I!r~.~"p
+D4317144473675434;IrW~Zz~dc
+D2;IbW~I.~K
+Dx>4AL#G;IUK
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf]], u'type': u'fixed'}
+	score: 0
+	separator: ^
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: <
+	arg: ['random', 'random']
+
+Commands: 
+D2;IbW~I.~K
+Dx>4AL#G;IUK
+Ds?i}A#xS99.,V%}S;I+
+D3lA7A#[inf, -inf];I|
+Dq#xS99.,V%}S;IM|
+DnYo4#(>e2^7;kw1;IsQ
+Dbq*j'f)p^I;I(<mC
+D>OAw;I`*<U4
+DzYBuH^G;I$<cZ
+D60t^I;I-<I
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], u'type': u'fixed'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: ?
+	arg: ['random']
+
+Commands: 
+D60t^I;I-<I
+D2#fbq)^G;I?g<N
+DXZA2p+5GOC4T!cDzzbH,G;Ia:~
+DwJ>AD6_*FsC+/9'szKw[q4U",I;Iqw
+D$:;'K]yJp.BjV(&d,G;Iq9
+DqiHj:T),ki?\@6[!b\;Iv
+Dr"?3,ki?\@6[!b\;I&s4l
+DRo;ki?\@6[!b\;IS<*
+D&B!nkHK^}b6qU].k#Y;I;IS
+D+p?DYre\7;G;I{Cmc
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', 'xS99.,V%}S']}
+	score: 0
+	separator: #
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ?
+	arg: ['random']
+
+Commands: 
+DwJ>AD6_*FsC+/9'szKw[q4U",I;Iqw
+D$:;'K]yJp.BjV(&d,G;Iq9
+DqiHj:T),ki?\@6[!b\;Iv
+Dr"?3,ki?\@6[!b\;I&s4l
+DRo;ki?\@6[!b\;IS<*
+D&B!nkHK^}b6qU].k#Y;I;IS
+D+p?DYre\7;G;I{Cmc
+Du;n1$&`iDvQpL)=Jk=)';ki?\@6[!b\;IIs+_
+D1@\!Zt[!II-EW2Z5;dgDPLF!SfR;ki?\@6[!b\;IA
+D';I]L
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', 'xS99.,V%}S', [inf, -inf]]}
+	score: 0
+	separator: #
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: ;
+	arg: ['random']
+
+Commands: 
+Du;n1$&`iDvQpL)=Jk=)';ki?\@6[!b\;IIs+_
+D1@\!Zt[!II-EW2Z5;dgDPLF!SfR;ki?\@6[!b\;IA
+D';I]L
+DsJf(ABA]O;I4x
+D]][|Up5T;IGm
+DTuDVn;IL
+Ds_>V;I/N
+D95[#[inf, -inf];I-
+Dyl#(>e2^7;kw1;IX#N/
+D9vBB<^#xS99.,V%}S;IHc*
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf]]}
+	score: 0
+	separator: =
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: )
+	arg: ['random', 'random']
+
+Commands: 
+DTuDVn;IL
+Ds_>V;I/N
+D95[#[inf, -inf];I-
+Dyl#(>e2^7;kw1;IX#N/
+D9vBB<^#xS99.,V%}S;IHc*
+DM'#[inf, -inf];I)
+D+y;R[7B#(>e2^7;kw1;Iz
+DE@pRWo+Oew>+6;;IJr
+D"cY}wUA7bj+A=[inf, -inf];;I_
+DF|%,VQ&=[inf, -inf];;I,
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'type': u'fixed', u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf]]}
+	score: 0
+	separator: /
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: =
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DM'#[inf, -inf];I)
+D+y;R[7B#(>e2^7;kw1;Iz
+DE@pRWo+Oew>+6;;IJr
+D"cY}wUA7bj+A=[inf, -inf];;I_
+DF|%,VQ&=[inf, -inf];;I,
+DKFS=I;;I3j
+DRmev9B@>v2=[inf, -inf];;ID"
+D`EEP\K%gN,1KA,Y/(>e2^7;kw1;I"=u=D
+DR57>lTEzo=gc4xGFDy$V]P8Sb;"^<>:M-/G;IN$=r=[
+D3(,q_/[inf, -inf];I1=M=c
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'digit'}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: :
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DN_#Gow`ki?\@6[!b\;T55Q;IQ
+D:$R<'D2L8`OCD}"2.;ZS[];IP1FS@4
+DQu!E3#UY`GS3H&m<T("RK820WF:N~$@%/F[*yGE~|O22LFnsqPF="~R0)y;;IP<.l`jQt
+DQ:e`0O){sQeZk"}6GBmS^rwS}DiI*P~4BZ!<aU;UsDL#}GLBI9N4]Yt6FO9JNj:Gls/V-+2="|nQ~\e;;I`@.Ml
+D[^<wQ78I`h{Zz7{}H8nUq4YE5n^^JMb\x`M]a{E*^N"x9+19U(H_1;b[QONpS+)&fCoM!_g;;IdU3(l.!
+DX<Iq|1EAK2BPkKdUp~M;Zg5oVHx!`P;P\&bE2Hm??%o44F'T:vg{bC{wV`rm"[\1QVMx+x;;I".P
+DJZZp$*SL]d(nu;aG`&XCRGn)ttRw9C"UIXS{rxQ/-X,7!;;IRe!r.|
+D6584;;I!:ob"~SI7=w~Hhm~~j%;
+D36203;;IuO~WwAsF~vf_IA~/
+D55512641;;I,xs~U*SO^~K~i
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'digit'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 75, u'type': 'string'}
+	score: 0
+	separator: }
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ;
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D55512641;;I,xs~U*SO^~K~i
+D86974063841605921;;I8+.~"~nq~NI;=~J=yCq
+D266757241393;;I$4\~u1rh~JoT|~A$K"\
+D-inf;I6Z/=tOH@=AcFs=:
+Dinf;I#_4v=O3R{q=^L=/
+Dinf;Ify"Ei=).X~=[eiIQ=YFP&0
+D-inf;Ioiq=51O$=2;qx=H\
+Dinf;Ina,d=a1i@=eF4S=I
+D10167;It=5l];bxc|;#Td
+D8320890854581574042211;IWr;ra@q+;_\
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 75, u'type': 'string'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random']
+
+Commands: 
+D653695720654082664466017879778;II;RVg;Ql
+D3527702437960350277023826528;Id;a;c#
+D93858253011079801591512904;ILAeYV;TPD.;-
+D44h%,'R!qwC;wI2@qtji{h">;L_iTTG'NudIZ6&;I'AQF~"24~H
+D@/F;(~Sm_NA7x;Id2G~Kyj^J~B5n
+D|k,p>yq5l&xXML\;8_ff|jmCd;IE~3{~<o7t
+Du%+;\MQd59_wN(Dn!3brn^gksA|KX;I\Pz~2O~1Yl"L
+D4Pg;y~;I2~OOK%~De
+DL't(]s{B??[=;m:l>;@Hr2T$>;I4)m'#''
+D='y8^QIo]Jg5Cnsn'p^4rc&NQ'fJg~;I,'!Z1|'8<:u
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], '!5vCN?1w;:'], u'type': u'fixed'}
+	score: 0
+	separator: {
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: =
+	arg: ['random', 'random', 'random']
+
+Commands: 
+D='y8^QIo]Jg5Cnsn'p^4rc&NQ'fJg~;I,'!Z1|'8<:u
+Dq+t&{JimA>H6qNv;I@)\W'H24X'5w
+D&,|O5~|7by2;IM'>s'z
+Dh.rUm$?:+r[;&*'AUEwJ/&usPd@SvJPD}$5;I|\'N'\o[
+D2179449372408973431981960593839425;;I2c|Tq]J|9
+D20743383385022044971589178440205;;I[f!{|ZP~|Bn
+D954516334325504654;;INb|&s;|=G9
+D25392239034167760827129;;IG|V')|z,
+D807101321899958234242655023;;I`C|?|b6*
+D7N.aIJQIpM~crf[B$[!RF':=hjx{G;;Ied=O=C
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 78, u'type': 'string'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: .
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DSgggn~[inf, -inf];IyN
+D=-l~4W>~(>e2^7;kw1;I4*
+D"e4'=}(!c~(>e2^7;kw1;I6
+D|bAU.Q\:YfV*[i2>wjcS&PHi,bz&wqvd;tXdv.TU-c|L1[)^J$8;I\;%q;J;
+D26]KSf+i8%2*^_V`*d~-&N\sB@;Tt})=$3(_;IVC;`1;-J
+DM:b8};w7GTNXzcSzH7Q*6q!aOL9s{];@;+Yq<=vTMlS!)R8s;Iv;o@;$
+DOb*x#8ZfbD/*3rfPL%u#W171n\wCJ1;+M|U6)cE+[4;I;1;H;1
+D{o_rn+*NgD"MDqW`A}QQ*o|u$;G*/IR5p(o+4S)&);I}m;d`;(A
+D3th=kXK=R`{<.a?B%`otm=c<~y5k+f_H~g@W"C,IRWrxZ7-v,Uo2;N@{|*;IA.!.bm
+DkeYjY`w(1]@"yb}B2[,?`:+*9:..5H$2meKbVe|,9sw[5VgERjI]u%7@UY7G0b0ycD6vC_=T4-vjv){EJlqdCL`y4;';.;IZs.]^.j
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'digit'}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: @
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: ;
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DD.9*%sT|[3NAxS1lwi_\XSRA$CL,ylVg;P(#:rOk=vY0A/b%iks@`ViYXM0&v&A,8`pw<IRZD)i*j(lB.r&P*i@`Q`gy+;I!E>,>G/>zQ
+D9RB:2D5JU;Byte6QP/hSE%`bUw'-'0*g=b)J8@YR/SeZ^_V|ixq~[:,]fsGdysDQwQoS{z}*.m}S8jY5fXmkx`QWuG7`0M;I.>y;>d>@
+DM&t`Rq\SC5s6~hgeLV+Do>.tOML%;n7D5RQeQ<-SQ8N"I}E$36lr&)#D|ml=3;nxbcu}{iZ<>i(}H&=(u\{cRs/:'O"MF{I%w{qb.#`3`'i;IL>">f>U
+DUW!1+K:VjV5CP!I;-Kt+GM=4ons{f7~0GJPZX1NbQ[{|)I;HEqt!3W;I`u.zA.>.X
+D4QJU6m%<~eK^Kq+Ouh,tdLN3Q!=:a;EprU|N:P!0\K;IS%.\.6.6
+D!xqyC&WXs21?\*/wnDJ.%yq!f8g;t?r,mV,]}UM^9IO<Q0_H9HWb/v$dg(of;mM6u`P!v<Ve;IO.ZX.;P.r
+D*,;&:6{b{tY)/sy@YL!tf*;j,:!h6?~T*a)Qg.ao5!}Hx;I%1.%.T.z&
+DvFH5`!E0;}oRB!.y;Iu.K.-.Y
+D62898136954129;If;5jR<;p%Av-{LO@
+D46312038395249903104912280802973;IV,Yt?g^;P%}Odvf;8TDwz
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: ]
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random']
+
+Commands: 
+DPeCJZNl=1,qU_zUEC.L\"iS%c&s.$:(O0U-k`&k;IE)#UXJxP~:=>ZFm,?GRWY(S\jC6$Jq|qKv(@4`AQ*63":VY0x&On?@X*_@M.\U"B+$$!y;Ix'J'kv'o&
+D3`ucE&q'opU(YkDD{s<ZVLS"_^_Je;7F'W-u-*ta3t8`89Lzm>/EPAJD]S9+R{'9ZeSQ1p5C[!VT>;I=t'L:')k'xA
+D\3s!`wcAJ\cDW)p4`)w[cxu()Db7+~tb660fNMU#uM/-YG=181R@A;"JewGh@/>g7r8sq57y$9To*N`0Tj/v4oi>,5On~MQ)8rH#%[E<iGZ;aj3$AL7ElFyi{jf_uv>3A'&PEqyF,[Q!FN}R6;I@'.']s'Z+
+D'wZm)&n*<O5Edv4`7PrnK]WOY_(("A0U-t\FtDKiv5d-0@5!;I]'@'Hi'=
+DVx=s<hI*5oT:-Mx9#=^*OOAAm]=XNg^BJ?/`$^2>,+G10LK3;_0D;sSysX9x_Dta!pBZd:IyG'FH5O.2>4Vs.yU+idFr_jB4*C)9Z56#qoQY(h9b;\!gCQF5_4fF0V8cHjOv,`kTgTD[g;I_r'}'+9'v~
+D?!Y%:My};Km-halt/%Q%VRHZI]>W20tGo80~},&4^37gEW:oZH_.j=8M>yjW^T6'54pbvJd;I:'dF'Lq
+D}^;I$o'>'ek
+D,mw{PaBE.2Q0^dP?GzQ@PWTv(:%\;I0G'~'g
+D9UKv%yHq8&c*\QePPm%!zW*vJSvNWVpyvUG:g.4?6R7JXGXXcg2Mrcmv;9ZjOIK{Ri\Z-N|D;I''m?'K
+DqR4&BY#\-KLge"zf,X&P1Xr]^GG?q*D{/Ldrf,ZP}n:\@#Cv;r_(1O[?eqvS2GV;IN'z'Jz
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 78, u'type': 'string'}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: >
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D{~22423434368766087872681203177578945877627184422602129982314589566716307454282;;It
+D,xFw\Z+Jz~465947820905482090419776918272030254990019499890912847986717301847196985442072;;I}6
+D5htDl5~194121636591756068718686504841;;IK
+D=R#ZliFg30>e~7640853315255797092325858598876314;;I5U
+Dx8\G;Ib
+D5tve0|/xf\G;I9
+D1'-;I_
+DBYr>biCfa9\[inf, -inf];Ib
+D->3,6Et\G;I_
+DFv0L?AHr}gx1I^tm6/)_y2ci0PORf*>m}N\8,]_BdL+L!5_>l{S\!Dm*'CA|8vU#]*`WSNQR,`!0B|^_N\e`aS[^eQ\G$oorS^=FaJ&/w74J$HnMgA=`7ZdZw_;;I[i>b>7[
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'letters'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 150, u'type': 'string'}
+	score: 0
+	separator: ^
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: ;
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+Dd&fSuxYA4#wCa:c[;l`;dWT2[kLiJG23y\zE-_}PbM=uKTwC^;+;6;!;I[m.B.~r
+D}IZ3sW>-9@0t9wm]7EP^1;R;0>;P,P*s[n=]-!~ksouEn<Ge@w>o;\;A1Or<;IDU.C.YV2[
+DJ&W8C/09I9WotfP(J)m=O|Y|3>,pDM';';QfutkmK2MnS;{;e?}lw;I?7_&.Lw.z
+Dcsvev8j;r2;dw7rEyP/`E;YU\/;jb>;IAuM$.I$.8SP
+D-inf;ICX;I=L4
+D-inf;I<Zt=5V
+D-inf;I@-n=B:HF
+D-inf;I'k\=m
+D-inf;I7w,Sg=}Z
+Dc^mC~I6`\WL$#-9)lK#Q*knz=Myqk&w4L,A8VT\Hyo<Y(CnCeJrr#]gX^B7*"J6^Pz/&'vg1CLE5yvZTIVHb"R_"e69Y<u9n?K.FBE0;I~3B,fm;f65iO;^J
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf], '[49iVwabQg', [inf, -inf]], 'length': 81, u'type': 'digit'}
+	score: 0
+	separator: (
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ^
+	arg: ['random', 'random', 'random']
+
+Commands: 
+Dwmiyitchqdpiuaxwkfed^1f`zO8S@CuxXJffg-r9b|J$<(w0G_f'.UP@UUkQfro3]ngzJtt>?Z+-T=-Qd}Lg,}>!LEI;e&Y'L)LnvgPF(w=J5dUFY:"+RaXvH%@!LjN$f8)l(k].2@~f)taTbUopbOHS3!AI-R3"u/4`F@\J#3s;Ii$C!ZP<U?;F;/
+Dgrdhuzpgxlshrcrwaxgbfldekbsfyaet^TdL~_5GE}-9|n"a~Jic`~]X!:Q+?<x_2j0';[){cL|FB2~:+=s9&z_kz-_$3JX%cn[9W/BnPY5uF{B.CyQsWQ=D0wf(OO;I\U];+tTMI]R0;Op~P0Kx
+DO9L8jAvsE;[inf, -inf];I8|
+D?X()$%;[49iVwabQg;IS]
+DX?4q;[inf, -inf];Im)
+D1`}H);Yue%ELc9\]2A;VJGL#9hA3@;I+
+D:l;[inf, -inf];I9i
+DDNheH"/Gj;42819206221916105013550838138057123346742453456545256076821365063793955452;I4:^[
+DSw$;846324050733708589464194164058408842031166291227463350982315839596482446823;I'K^N
+DN;850839010407547325709341884092887119420691521404;Id^z
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 78, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: ,
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: .
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DO.61\~L-w4G{mv]F;IpQ!B6
+Dx:t;I'!/t
+D1uVi;I:6S!t
+D]_trav#950421781480390108007598477923717090922555276519;IPro
+Dxet[fMSU@#17677708772063991513869771912;I:!
+D@<h{a9nLrXVmN,bxwJ#602082618099783816949;IX.
+Dz:2F#694120498075276451475646421138038359;I3R.
+D:s,_QYZ4_\#484656887107488653672240632256008984921005386665818342416632995384;I_%
+Djp;rZD0O+X9=fOr["4.FM"_|:0XHP[bEFS|Ii|hS>8>"`(PaZPv*,dYVD,P;'s]HK,:v;IJ,=.>#6.l8ky
+D<)Hey/7+:x.A6yc-KG$[sakfd6i!1,D`hW>nb:(`+-L}C+$s:;e),7B;I-.m2Ne.>Kq"
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', u'semiCol']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'type': 'fixed', 'length': 81, u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf], '[49iVwabQg', [inf, -inf]]}
+	score: 0
+	separator: (
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ^
+	arg: ['random', 'random', 'random']
+
+Commands: 
+Dpg|;<&A|<@qnX2%l0cG]C9%>fH&0&C;I<a|7.H~
+DJnL3Y|V5-pwDulcti4_VWl4;B&scRBhk`<e([c7nhee1`D{sP>&r&[o;I=.0zV
+D}Gx}g;{+L0]*u:Zn9e;IV}6
+DhE>Ps;r.x1[4dZ<Fj.iz0PHstfwiel{yyU7@ty[[20*S;IO}g
+D[M;c/axz|DR(8XL"Y%-X3RF4#TC,(b$vXzQlQXX;IC5p/}:7Gy
+DLcZWt;#OO[qwx+g=9xG4|mt/5,W;Iw}VF
+D)NLSH,mX;M~?,;Rg~;IjF#Z}ban`
+Do[p([inf, -inf];;ICT^X
+D|]"BZ@hz(VJGL#9hA3@;;IeQ^=J
+Dv6]H_3"([inf, -inf];;I}^S
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'type': 'digit', u'length': 99, 'values': [inf, -inf, 'n+cBWNLI.j']}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: @
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: =
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D[M;c/axz|DR(8XL"Y%-X3RF4#TC,(b$vXzQlQXX;IC5p/}:7Gy
+DLcZWt;#OO[qwx+g=9xG4|mt/5,W;Iw}VF
+D)NLSH,mX;M~?,;Rg~;IjF#Z}ban`
+Do[p([inf, -inf];;ICT^X
+D|]"BZ@hz(VJGL#9hA3@;;IeQ^=J
+Dv6]H_3"([inf, -inf];;I}^S
+Dz;;I"~^`
+Dq,Kc8(I;;IK^1I
+D796596372;IA4?=(5Y
+D32104018822221844891636540345524084539396585486809691849189205466313832;IO@1.~=vd0|D
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {u'type': 'digit', u'length': 99, 'values': [inf, -inf, 'n+cBWNLI.j']}
+	flag: {u'type': 'string', 'length': 75, u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1']}
+	score: 0
+	separator: @
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: =
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D)NLSH,mX;M~?,;Rg~;IjF#Z}ban`
+Do[p([inf, -inf];;ICT^X
+D|]"BZ@hz(VJGL#9hA3@;;IeQ^=J
+Dv6]H_3"([inf, -inf];;I}^S
+Dz;;I"~^`
+Dq,Kc8(I;;IK^1I
+D796596372;IA4?=(5Y
+D32104018822221844891636540345524084539396585486809691849189205466313832;IO@1.~=vd0|D
+D762376233328054565469780990932308415498698890;Ip2tTF="90K
+D47769918741253595580675251191940998083407141803106004744508551963606;I|=#=v@O$
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 78, u'type': 'string'}
+	score: 0
+	separator: >
+	arg: [u'number', u'flag', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: `
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Das<x/&1k'>!0paTb+pz1muU}Oi}4xBr{}c*Y\Xq<XAZe7'12_DxzlO=1`J:M!V^zBD@oX|:=L>>YM6,D$E\r4P]/':}>:aMs;;I+:`owcy
+D,~!(h2P(<29,v)+[/r}_j"}_s}E5v;;IU2ri`1
+DL]xah}9}1P7WF}SS%Ct5*tu,Y1.j-QKHpfKH+{F&,+hG\XPx;;IWqF&`AJ2
+DW0y?8I}2AJre$,nTrJ<Wcrm(\O^NS?j}G}1}4k7H_qH2g+`T~"ry;H0sn`)pJGP2)!YK;;IoFH1`$
+DH+?(CC{/z\9[[D12tj@_:}hKmw}1}O]q2XM:96TR"NuS?eZiu-H78[UOv?T{Rh+eNR%}D]K^0m1BV-V)p(]8nCuj;;I&`mIu
+D2,UE3L5t2w3ud1EzJ;~-H:~>x:[b%>7Mo{r+:.yl>p^EU;I=`zP`LqHQ`/"q
+D'&R@)KH*tT4`;3U;KSs^Bo%d:/e];0>Bh>7gy6SwSw)jMvr)_!q~aH[6$GMp>Z;Ir:9`S``TW`#epd
+Dz-3_d5gQ}G&>$>(x-vetBZ)CCPL~'X;c~`>)@k{>O=#;Z*Sn0VYAH5;".AiF4PEnJ=pw@(!&nm|{@`zHqAa;`0>q~Ks.;I1g`r~/=C`A$N/`2%?@
+D~RZ@\qkgyVU:Nph^7k2`h;{>p;Bd.>f[&7<DXkz@eH8P,WC;Aj7*x1WX?8aB>&L>]W;I1fi|`IyS`,`6'
+DA(J?Ok"U`0rQFU2dAF?\h2@mGb%*W*Ui(;I":w/>}>oJ?1ets+rj=tLv$Ii<k`U1~&gba&8J)~i>T[KR;I;2:y-`I`ew}``u('7
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number']
+	cmd: ATD
+	number: {'values': [inf, -inf, 'n+cBWNLI.j'], u'length': 49, u'type': 'digit'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], 'c3FB$+N=]1'], 'length': 75, u'type': 'string'}
+	score: 0
+	separator: @
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D'&R@)KH*tT4`;3U;KSs^Bo%d:/e];0>Bh>7gy6SwSw)jMvr)_!q~aH[6$GMp>Z;Ir:9`S``TW`#epd
+Dz-3_d5gQ}G&>$>(x-vetBZ)CCPL~'X;c~`>)@k{>O=#;Z*Sn0VYAH5;".AiF4PEnJ=pw@(!&nm|{@`zHqAa;`0>q~Ks.;I1g`r~/=C`A$N/`2%?@
+D~RZ@\qkgyVU:Nph^7k2`h;{>p;Bd.>f[&7<DXkz@eH8P,WC;Aj7*x1WX?8aB>&L>]W;I1fi|`IyS`,`6'
+DA(J?Ok"U`0rQFU2dAF?\h2@mGb%*W*Ui(;I":w/>}>oJ?1ets+rj=tLv$Ii<k`U1~&gba&8J)~i>T[KR;I;2:y-`I`ew}``u('7
+Defxtstaarmbvxgjcpuvnrxismhnphanviyiwvrdjwkkxuolmzzdtxrfjldezuvudjrtrjoigzewgwxugngkoogvxm;IAO
+Dmxcwvdhlxswtydbdcnjoavczmurtheofkfagcwdjfgcgfqpc;Ig2-sq
+Dc;I~H
+Dqtvmwgctgigusrjphydl;IRW
+Dbpnloiykhifseegitadxpwtorrjjcj;I^
+D972890736236100407355445421863103372;Ib,&T'T`t+'=Rza/Ax*&u
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf], '[49iVwabQg', [inf, -inf]], 'length': 20, u'type': 'string'}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D790752981341182871318;IIpkj+j%3Q%':1XoSh5:'BAYO*iUY4
+D304583310469597002754502172088335049256797;I41ba8@AH'[.x'OEZt'R
+D378409134112275;I>ZHsuVvIa'PptS'3
+D5750521934577;I4n.{lGgZ05'Q%+/"&{R'P
+D(+;V<&:AY?@<Q+xWW+~fRbmw2:}b;I(}L6
+DBG:n;S\CtPG!zpy,h`E]XCw#U%b'O:T$;I,f=*}f
+D~W1;NNFW[\?&@b|0.5d.Qxb>(]g=]m7'60g%&X_[KG?K:~D;Ivj}yI"
+DmNKNu`?};*L'T"v)M?TD!yV:P;I$b}/5W
+D;Q;;~X)O/%;%4#r{fH~Ko"V5~Q:xs;IGQfo}/
+D%1+SJSv"Hlh';I;&`}"'}y
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf], '[49iVwabQg', [inf, -inf]], 'length': 20, u'type': 'string'}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D378409134112275;I>ZHsuVvIa'PptS'3
+D5750521934577;I4n.{lGgZ05'Q%+/"&{R'P
+D(+;V<&:AY?@<Q+xWW+~fRbmw2:}b;I(}L6
+DBG:n;S\CtPG!zpy,h`E]XCw#U%b'O:T$;I,f=*}f
+D~W1;NNFW[\?&@b|0.5d.Qxb>(]g=]m7'60g%&X_[KG?K:~D;Ivj}yI"
+DmNKNu`?};*L'T"v)M?TD!yV:P;I$b}/5W
+D;Q;;~X)O/%;%4#r{fH~Ko"V5~Q:xs;IGQfo}/
+D%1+SJSv"Hlh';I;&`}"'}y
+DiVoK"Wy`'f6x6B2krWLA0;ISHr}R}=)1
+D^"s;IS!}zo}_J]#b
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag']
+	cmd: ATD
+	number: {u'length': 9, u'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', [inf, -inf], '(>e2^7;kw1', [inf, -inf], [inf, -inf], 'VJGL#9hA3@', [inf, -inf], '[49iVwabQg', [inf, -inf]], 'length': 20, u'type': 'string'}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D(+;V<&:AY?@<Q+xWW+~fRbmw2:}b;I(}L6
+DBG:n;S\CtPG!zpy,h`E]XCw#U%b'O:T$;I,f=*}f
+D~W1;NNFW[\?&@b|0.5d.Qxb>(]g=]m7'60g%&X_[KG?K:~D;Ivj}yI"
+DmNKNu`?};*L'T"v)M?TD!yV:P;I$b}/5W
+D;Q;;~X)O/%;%4#r{fH~Ko"V5~Q:xs;IGQfo}/
+D%1+SJSv"Hlh';I;&`}"'}y
+DiVoK"Wy`'f6x6B2krWLA0;ISHr}R}=)1
+D^"s;IS!}zo}_J]#b
+DDV:yKu"^(uA@y:e<?,'VJme{jo;I}}u[_//}'=
+D)-".O%H{aOe/{LgY;I8}W>}+
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DiVoK"Wy`'f6x6B2krWLA0;ISHr}R}=)1
+D^"s;IS!}zo}_J]#b
+DDV:yKu"^(uA@y:e<?,'VJme{jo;I}}u[_//}'=
+D)-".O%H{aOe/{LgY;I8}W>}+
+DIH7C+wR:Y\Q;/XR&\YKo95!Pk>'O7;gVYxNBnaeMF_d!+6wVN3a^.er&s]6|z&}kC_N&'p-;I"[Mr->/~A06X
+D|1[l-xUq~{4NP<1?p%,?c"!*8Wi;0_&XK&;p`ui&<%%&l?#;II~~wr-L
+D;G1w]bXu.h>";m&V#z*DB{YMw.,[)S#&k[_&3G~&AwTj;I/T(-zC@F#xm
+D~HNPX#M1rX1&Wq>K&dS;FlW&#Srb/_X7wgZpqFD"13&zEq.&/_$&UfEgZ;I{ta--IP/
+DX6i;!R.kF1+IVCVwSW;\&je1^&IS&}H+5&Xp9=;Id|-g
+DpdI&6'ba%eDXfXXmJ5GG0t)c\NBo*38&]{j7E3jF<Q&-Ec/;X&p|69x&.r;IIsUT
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', u'flag', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D.!p]Z9px$"^&&jt;?z,L+Ex@/"KRcwU~yIV(lz:a+UmSeXSn&:y}u{;H!&ez2<<&:P.I;I(B
+D/G*\.H&(HGj{_|tBZ/Rj#pz=+Iza}^WlJ>fZ&ACqqho9l)lf/aaYs_9>_%Tu=.nRw8a#hpv/&fjb-*;(-zx1&^k5rR&UB%;I^`S
+D0mtIy~LF]h"OwDq[MfjB%S&o?A_NYEmJy&R[;Q(=&:N2bm&j_n\;I'
+D.S*DK7u|[_>N`2Naeo)4J]e&!;k&W2Zv7Pb&C;I!1D/:t
+DQ/^&aU;%&K&K#;IM7T+::
+DN%PS,)OR<(T1B!@#g9|tWSS:vIN#&K&;I&On[ssJ1/sjWLi+C8MLF"b&p;IE:)PL'p
+DYAoLY6c?fE$['LB@0(:e-I)EKMMp)EK%8F=&x>;H|&-4X,z(e"j%PkzNjdMQI#Xib3_`zYV{?'.)zoh&/';Iq`O3:01B
+D<5tT4{ix]mmC'#H^>ZG2GtE&r;dE&}9i3#W5g,g,fR|Nn{e#.<R`n+Jytz8B&z\;I#F$Z^:vu
+DQ)m`\8&+i}.&ng>\;ifwm9?3dmN~*V2'<w])IYxr9p@>W8Y8|ijtL9oT&3y&?]/95&Bn#;ID^.s
+Don+&.~2&xw7d";\8+M/8mItrA&j8tR&SX|QB&=l*;I\{DURxyI
+
+
+Grammars:
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DQ)m`\8&+i}.&ng>\;ifwm9?3dmN~*V2'<w])IYxr9p@>W8Y8|ijtL9oT&3y&?]/95&Bn#;ID^.s
+Don+&.~2&xw7d";\8+M/8mItrA&j8tR&SX|QB&=l*;I\{DURxyI
+DYL&d"&C.aI:;[RE*(hHE1kdu\u]wd]32a&D`.$1|&0K_t&a&;b^Vv;ImQF{Kx(|
+DIU5e<3-.&s!&OZ;q"u92C:&1?[&y1z&ZNO|g;I6Z(IPm
+D](?IL#/:PInzG/;a2M6&myTD@X75#iQ*|#&9_Z\'&|;G+H60#>tfvlU_k\PH[;5/XAd:]z4b&&kG^&@a&wO;IWgR
+Dl1b8u,!';Bi,!3UdD;uj;r)R]r5vGt`8Rn6?v$b)$;yY)c5)x;IqE
+DRv56Jl4HE[KN-W(V94)|LG(3)qynGyLSd2.)Xn&y{hJ)r=;N3),M)!D;I$
+D+|=A0a-3xhgMMk#t8ASmah"QfXZr{H2hV;3)_jpDLH+fI)(;3)m)'I;I(
+DngXB4+*5(HBVt]3WqwbffvbJ]bD-sa\04#&/)!CyjvUw~m8R,#Yz3XXZd!(u%H)?;Gz)wl)=/;I~
+DXWtI617Hb?>/v18EsZXrY8PkxypK)5z|eCwQ\{o|H>y5`,)eqXt;D)."t0HT2jp9yL}I)|;{)Hr)*G;I1l
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DYL&d"&C.aI:;[RE*(hHE1kdu\u]wd]32a&D`.$1|&0K_t&a&;b^Vv;ImQF{Kx(|
+DIU5e<3-.&s!&OZ;q"u92C:&1?[&y1z&ZNO|g;I6Z(IPm
+D](?IL#/:PInzG/;a2M6&myTD@X75#iQ*|#&9_Z\'&|;G+H60#>tfvlU_k\PH[;5/XAd:]z4b&&kG^&@a&wO;IWgR
+Dl1b8u,!';Bi,!3UdD;uj;r)R]r5vGt`8Rn6?v$b)$;yY)c5)x;IqE
+DRv56Jl4HE[KN-W(V94)|LG(3)qynGyLSd2.)Xn&y{hJ)r=;N3),M)!D;I$
+D+|=A0a-3xhgMMk#t8ASmah"QfXZr{H2hV;3)_jpDLH+fI)(;3)m)'I;I(
+DngXB4+*5(HBVt]3WqwbffvbJ]bD-sa\04#&/)!CyjvUw~m8R,#Yz3XXZd!(u%H)?;Gz)wl)=/;I~
+DXWtI617Hb?>/v18EsZXrY8PkxypK)5z|eCwQ\{o|H>y5`,)eqXt;D)."t0HT2jp9yL}I)|;{)Hr)*G;I1l
+DeXnG>kLU=.B|1&Uo!qe7]av/-+u-&*?>]t=}j3?Si~UfrM;Z,dn&p&t'eX;I^cOP?AQ&
+DgY]1pDm}\&a3t8..m~(<<;R2|2(<|8bE;it#&pD&fa;I*,
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: !
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D*Z_ClaZ[~#?)2^pA7q=T6)1(@dmu]d7bGVd;Y&u#b08bZ1c+jKE<9cL;7":uX2%V>&7xKYq&`V\BG;IXB}|
+DsNg?2SO1f$<uBwN\"o.>E8:[-G3=F`cu{p;8R^&JSgnLtH&p1&<c;Ixs-M
+Dw}qK;eoty_&f2N:;6"q&E$ZuN}&]\0-/&u&MI;IhQU
+Dk}7C;rjx-E&y%Uu(aYigU-BoJ;`^rc<C2a:7]&</`&&3SF.;Ihf
+DsJ&nGeBY3!a}RUg[lLOxZ5KJnTDXd>O}497Qd}&e!&S2;}&v|&=;I%
+Dwc.U$nz)}f*M7{cYs2\gE1&^uo]h3J:eOZu|up<O5.++V\x&7{&%;"&l[&wy;IH&
+DRW`&vPIdn>HGuZKj{:EC&xRl+]&&&s-;I&c1&&e;IW?w4A
+DK5)1SuQIgVv#YAxQ3x&SG&m~&le;?&Y&aH;IRI]NN+zA
+DKhy*+aF8y;&yr<)p>fR^N&3s&h;W&t&a;Im~
+D}xMK%")x~6oQ9k@bWOQ_]q%&$csLsF@$~hR;gTX&S&#7!3&K@G4&Rtx;BW{W;IO=mv!@
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DRW`&vPIdn>HGuZKj{:EC&xRl+]&&&s-;I&c1&&e;IW?w4A
+DK5)1SuQIgVv#YAxQ3x&SG&m~&le;?&Y&aH;IRI]NN+zA
+DKhy*+aF8y;&yr<)p>fR^N&3s&h;W&t&a;Im~
+D}xMK%")x~6oQ9k@bWOQ_]q%&$csLsF@$~hR;gTX&S&#7!3&K@G4&Rtx;BW{W;IO=mv!@
+DuSq]4>%Cd>|K5.|}"8w+a&8gm&{6)k|Aw?D!.~:K?t|fBs'r)`g6E^e2_3d>qvmPD&*&LZM&z&t6$MG;J;I>DP{o!7
+D`WU]1y,q+I6`mPb$\&aqe+VZ8[k,|JkbV%1;bOXb>H<JkN@3qv&@&f&&R&};O-;Inz!O
+D)E\j/N_q6|FoAN#7q[n&v3P]TIy"k7s'`pr\KS#yo\N\h2x3W+0##>u&@&z0&=my&(;z:;I-O!g
+DMG1iw4O4%'.ETd9&ync"WdER?Fg{'sS8v8ja\H&]khq>*$&d3q&V&:[&A&P@]9;-|@";I1/fC!&<
+DoAJV>=E,thgaKNb:{*i)6w]{YbwNU+(^MlwI=N=c\?"SfP[+)Q;.&l#Z)2+#,|)]w)K$8V%;I.~B
+DDj'J,_':AHrGZCTYO"F~)*ahWo6mP5[jb?b`M$L$3*ykv`vnI5-7")YD;f-)x7Z)|Jr)m:b>;IS~n
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: !
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dwj9^ZUT=!&bo\Bzs\|SO\aQd|QU["(.''`Mv=;tj,{C1-KOI\|.\K1\K;I*
+D\/8a"1QyLZY8Y-Y"o/BZ03#CRI)Qy\Z*F7\r;~19@aS`)Ka~-H|Y;d\xx\H\UHx>|<\hJ~T5;I;@
+DlP8"x|)LxH~sgY6RFF\=^(D3>ny?I]k1/E'&%<wm`;owpBDt'vj'~!w`F{X~f^;I/
+D@xKveTDYaw{e,V$X'L{'G|;QU970'P'GV,<u-c;I2Qo
+D">?rF1)BNq{$+aVBE]F)>D3s3`:g-q%M':XOWxCC;2mCT5V[l,'2}cLg'42z8(_&;Is<&
+Dt%f.vk9~D&(W~/yBf6&'%{[;Y)7',[N'}b9O;I8e
+Dg;=i|&"$e^;z~}2:C-'|#)m;v/lW/6v'2='@[;IF;
+Dc~?~Iv5hNhoco&CpjIdC03B!W)HBc&9uz"WzW2@"gN"<4p"BJ!a"yo~Y;u`B".Z;I^U-A!vr!0i4
+DLB%.*"i<:`v"Y/B"=v3{"$s\"{z>WT;i)7G"^:;I=!D5!<khr[!0KVFE
+Dy%iVzu6\"xW'O0vFU)e'#ex>+^{m?xV)"wqe$c;YQ-#+Dv<R['VctoXu#V2sSD%5M52oh"a"H&"cD)"+*r>;Z."@7cka;IiQ]`!{J@!V
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: !
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dc~?~Iv5hNhoco&CpjIdC03B!W)HBc&9uz"WzW2@"gN"<4p"BJ!a"yo~Y;u`B".Z;I^U-A!vr!0i4
+DLB%.*"i<:`v"Y/B"=v3{"$s\"{z>WT;i)7G"^:;I=!D5!<khr[!0KVFE
+Dy%iVzu6\"xW'O0vFU)e'#ex>+^{m?xV)"wqe$c;YQ-#+Dv<R['VctoXu#V2sSD%5M52oh"a"H&"cD)"+*r>;Z."@7cka;IiQ]`!{J@!V
+D,?5RO!&0&Ktmy"+3"LcR3\}-J6~6W|(`8rBtK4/rY-2slo"`")"Z[.~"%>2;df2+^"?;Ia!$!XD
+Dq".#mF+"Nj`3otb"U|4f":lO("i.1`",o;#(";E?;If!*+!T
+DE`a^V*+wafsLJrtw"\MQ-~$$pffJUUHQf&-!E@E}dbO^qot)&=&dV`Ee&~&sW^Xn;z&1Xnmc;I>1u
+D|G'!cN-R{^uVo_0^q+uI&u>>+qNt7;MP+H+\v>D<o]/5>cM9Gi6Z*q$e#^0&J2&=:em.&W,]|&t;L(e&B-'D:;IXs
+DE.;7s/ML)NLb;U0Z{q99^#&vg83qj%xh'&9@=4&sx%y&08&dS;>28&Mv,A@;I\uig3
+D<ivo{+6'\'p7H0OAjc*AA8X9]$..&wAu{XlF#AdE;\,UB,$De);30vBi>Ka!BY&\w*>&Ag^(L&"u5&q&w9lT;~&|;I9rs{36@>ek
+DpkNM2Y@;F*a./1`b^jsns<wl[T4o[Esmn/1&X(<}]\FX=}0&X}&Dw!&Y1|n&5%p;fsdIT&s5H)0;Il+O
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', u'flag', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DLB%.*"i<:`v"Y/B"=v3{"$s\"{z>WT;i)7G"^:;I=!D5!<khr[!0KVFE
+Dy%iVzu6\"xW'O0vFU)e'#ex>+^{m?xV)"wqe$c;YQ-#+Dv<R['VctoXu#V2sSD%5M52oh"a"H&"cD)"+*r>;Z."@7cka;IiQ]`!{J@!V
+D,?5RO!&0&Ktmy"+3"LcR3\}-J6~6W|(`8rBtK4/rY-2slo"`")"Z[.~"%>2;df2+^"?;Ia!$!XD
+Dq".#mF+"Nj`3otb"U|4f":lO("i.1`",o;#(";E?;If!*+!T
+DE`a^V*+wafsLJrtw"\MQ-~$$pffJUUHQf&-!E@E}dbO^qot)&=&dV`Ee&~&sW^Xn;z&1Xnmc;I>1u
+D|G'!cN-R{^uVo_0^q+uI&u>>+qNt7;MP+H+\v>D<o]/5>cM9Gi6Z*q$e#^0&J2&=:em.&W,]|&t;L(e&B-'D:;IXs
+DE.;7s/ML)NLb;U0Z{q99^#&vg83qj%xh'&9@=4&sx%y&08&dS;>28&Mv,A@;I\uig3
+D<ivo{+6'\'p7H0OAjc*AA8X9]$..&wAu{XlF#AdE;\,UB,$De);30vBi>Ka!BY&\w*>&Ag^(L&"u5&q&w9lT;~&|;I9rs{36@>ek
+DpkNM2Y@;F*a./1`b^jsns<wl[T4o[Esmn/1&X(<}]\FX=}0&X}&Dw!&Y1|n&5%p;fsdIT&s5H)0;Il+O
+D\@g~~[i#kamv<Uz)he\cu&zJfjl&FbU*/;-CEe/0WMJF6]&\3;(@0S&O82&t*i*&TXs&;O;I!7[
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', u'flag', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: }
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+D,?5RO!&0&Ktmy"+3"LcR3\}-J6~6W|(`8rBtK4/rY-2slo"`")"Z[.~"%>2;df2+^"?;Ia!$!XD
+Dq".#mF+"Nj`3otb"U|4f":lO("i.1`",o;#(";E?;If!*+!T
+DE`a^V*+wafsLJrtw"\MQ-~$$pffJUUHQf&-!E@E}dbO^qot)&=&dV`Ee&~&sW^Xn;z&1Xnmc;I>1u
+D|G'!cN-R{^uVo_0^q+uI&u>>+qNt7;MP+H+\v>D<o]/5>cM9Gi6Z*q$e#^0&J2&=:em.&W,]|&t;L(e&B-'D:;IXs
+DE.;7s/ML)NLb;U0Z{q99^#&vg83qj%xh'&9@=4&sx%y&08&dS;>28&Mv,A@;I\uig3
+D<ivo{+6'\'p7H0OAjc*AA8X9]$..&wAu{XlF#AdE;\,UB,$De);30vBi>Ka!BY&\w*>&Ag^(L&"u5&q&w9lT;~&|;I9rs{36@>ek
+DpkNM2Y@;F*a./1`b^jsns<wl[T4o[Esmn/1&X(<}]\FX=}0&X}&Dw!&Y1|n&5%p;fsdIT&s5H)0;Il+O
+D\@g~~[i#kamv<Uz)he\cu&zJfjl&FbU*/;-CEe/0WMJF6]&\3;(@0S&O82&t*i*&TXs&;O;I!7[
+D]7EdD;]H_khhh3+ut{2[`$;QC%v&Y[@/&BK;HWq`ub*&pG&:hECn&Or&Y6;I$z%@3~
+Dt*|8,hJ~rwS(g8;F&"_Ysh&77OK.;wr&NOB&2uE<&?Po7&<*w;Iuu4C'D
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DT(>lt].ddyy>"H_m^B:~[y*&-X%+2&!;'7Hm#&!/T&a]z&^_4V&8;I,-Ek1p
+D7|D3$7ItYq<h&{f&GPAn;z&.[&~eVa%1z}*hBml,JG9&@)``]&rH)y;IU36XV=>9"/hxCH}
+Di/[U+F"gC&.@Ho}&&L<;'$wI&!v~KLx?/naSQL&rD&c:';I9&#?!{FB1$
+DW[yF{al\7C@o|xXC+-S}"2<1cbtHReK!CSeq&Y&$~Ui;r)`h&&b0.O>_@_#VkIpr.dASn(u]?%>3|%W@G&CG~T&tff_;I$l
+DA1=&ne'^_(&jR/9\&H\"S!;Tko&3xxcSgrbq3&]*&R*;It+JQ,'\=qKiZ^%b
+D~gtnjU"CNQ<lfd9`@x_K?k{?&pP&/;WT&KK*l60$'j,A~Suo$`&~=Cz&C|!6;IQ$,yQ\dr
+DtVnWp')DM-L06r!nJs:hn*#wo-.MShvG85%'f4>ZV_~tN[b]g]5U?x:WM_3BfT:Z9eFeZ7'75;mdUQ'aC;'?gC'j<h~z;IAO
+D#O7i4ERa\)exNa(D7$*3+m'|i,T3|'I[ONO'9!OlAFz_G~_b.'-YW^nGO'!E);K?'5^2'">PW?'G;I9
+D+j"{e#>lX/%$<SK3O|sF_7FLnRskG<j\R0f;a%5"%fyyB7?zx;j)LNI$GEwvrMYxEC`Y!s~Q';37iW;@VRV^G*.4,x!U*MTx,!'CkCJ;odkS'y'*x}H''s$]7m;IRW
+D&neZRg*,):[l\9&'Hu?d*Vn|HW'WkL_p1o$vOOAy]C1$?zWHX0#'V;%8`'o{d'''`:En|;IU=
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: (
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Di/[U+F"gC&.@Ho}&&L<;'$wI&!v~KLx?/naSQL&rD&c:';I9&#?!{FB1$
+DW[yF{al\7C@o|xXC+-S}"2<1cbtHReK!CSeq&Y&$~Ui;r)`h&&b0.O>_@_#VkIpr.dASn(u]?%>3|%W@G&CG~T&tff_;I$l
+DA1=&ne'^_(&jR/9\&H\"S!;Tko&3xxcSgrbq3&]*&R*;It+JQ,'\=qKiZ^%b
+D~gtnjU"CNQ<lfd9`@x_K?k{?&pP&/;WT&KK*l60$'j,A~Suo$`&~=Cz&C|!6;IQ$,yQ\dr
+DtVnWp')DM-L06r!nJs:hn*#wo-.MShvG85%'f4>ZV_~tN[b]g]5U?x:WM_3BfT:Z9eFeZ7'75;mdUQ'aC;'?gC'j<h~z;IAO
+D#O7i4ERa\)exNa(D7$*3+m'|i,T3|'I[ONO'9!OlAFz_G~_b.'-YW^nGO'!E);K?'5^2'">PW?'G;I9
+D+j"{e#>lX/%$<SK3O|sF_7FLnRskG<j\R0f;a%5"%fyyB7?zx;j)LNI$GEwvrMYxEC`Y!s~Q';37iW;@VRV^G*.4,x!U*MTx,!'CkCJ;odkS'y'*x}H''s$]7m;IRW
+D&neZRg*,):[l\9&'Hu?d*Vn|HW'WkL_p1o$vOOAy]C1$?zWHX0#'V;%8`'o{d'''`:En|;IU=
+DW#ECLf3:g3Z=p^t^[#tG1bhDL@>(Ei#"{y_;X+%K@__;K&'BJ9)|dM.hD"9ITF>{Q32<d5o0(p5q/0G5'e;Ck'C'_([Tt'0_'aco;ISD
+DE])ApK'b5GgL@)M>)c6'f;){n//};tCJ&>)j;I*2Z(s(0]_Qy<[;
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', 'random', 'random', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: &
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: !
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D!,)9,djF)KF7D1,d+-&Ck4)lHIBkjxShB]O??U}6K(L"'W5F0*gm:');Gl])zZq<)h;,MA)2-_;Iy(FfPCq(dvn4f{??8d
+DVZRR``8_/q2:f=,VhX.!$@>)},Y?dXE3oR;>Q2YUr[;qrBp`),)S\\)MF(Q;n&b)W;Id27@->zH_(^_(Y.f
+D(g?%,z@DSVkBk68q/Q-ap;7!P!f+))wL&F)AA)_)<*2A)';QAX*;)G;IF66(FhYJO`Y(NzMUt/2
+D.O1>.6!Ro)TiI`0-v.Z}N_.5YK+j?.)g~G2Zso7?U8_[G\i7`M*:2v|Mf)3?9o)2kW>)3L";C])jB;Irx("6NbA7,BG`(|s
+DnKq*'R^,KLI!za&D`W$6_8Gc)UxM.fS8AN_`gz}V6Nk@,*zw`OVL@}_Fu3l{#5^gn!N-u&3-8xAE-{C-'TFt;W7+~&-b(C|`-I;IuVq)Q8G
+DB7}r/7#l{khevL?,u[flv`iJBVtppX-a/L(J}e\rVjYJ43m:@-I-G^&_p-"n-BI-SD;Y,<g-F-sP;IJHi;
+D!1eL}9N@'E!1@to|%l~O.~'`.S`<8-ki?\@6[!b\-7do-'[N(-l~so;-EMgS;GFv-FY->E;Ic4h`
+D"opL=?<O";BmKe/vG!Ej=|h.J~4e^"-G-2.&M7-kXa-/Pcq-k*JD.;vMq-|cu1-Qam9{;IkGm5%aU*s|
+D}j{hw]E<t_ms)wkUlqui#"D5?E(>#pNX}0Dnr+-aw!pP{j]+w'Tsba+aC-I-rH-KKQ5-y>-j3\;u)-tN6-1F_;Ii[[
+DXVqx.;C&!&n(Xl9&INY&5/j4Xb<AsBx&~*(f1&gs;Ii:
+
+
+Grammars:
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 8, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DXVqx.;C&!&n(Xl9&INY&5/j4Xb<AsBx&~*(f1&gs;Ii:
+DSwyd:UeYnA{EEu[^2;o)7-&?&y9&fRgp<&{$C&~99G%ZgZ,u[Pb1|{OkR'Ew)S-&$:&X^fQ!;IT{/et
+D)#L!];OqQ@&@Vc&oas3&wodV&]$K.w&)Y.&.TMf;I8!Z
+DqId>@E|DZGko#|&o%Yo#Db;Y&fi&+dBe&C&;bN\`F-Ue&gGF&R\B;IU1
+DQyeYkX/F;~X<-]&QfMB&&)d6Fk&_N@a&o|lk>Q\r1Q)0!=.6F2}F!.d&,6Or&-;IJ$/vI
+D|:5ht/nU%"_Uh|Cr594M\4'c85);f>t2D,eGcqGB5,U'z*?%!;/Dj7n@sqf:t0rj&d&JH#'HCBZ~@FK;ImXwT!
+DM?1i$3$:H9^hzJA<og)D=G&VWEt:cuW'@k'^jj2"oC'>QKZw\V7'#K;#<v"'ms8M7}Yz%wj+HZ;IE!=5V'
+D#9<ys,~m-n`s/f'a'l1?;];$g";9W&'M>g'{<c7';(HWl;Il
+D^>,'E{:45m=Iox';gPB!;vmVSPD'R`|@~+yGF[;IY%!#
+D{6bOL8b|/t>I.+!-O%+.'PkIHwAV[kC$Lxbz@[pgx'dQv-";i,'PM;IH;C`
+
+
+Grammars:
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DM?1i$3$:H9^hzJA<og)D=G&VWEt:cuW'@k'^jj2"oC'>QKZw\V7'#K;#<v"'ms8M7}Yz%wj+HZ;IE!=5V'
+D#9<ys,~m-n`s/f'a'l1?;];$g";9W&'M>g'{<c7';(HWl;Il
+D^>,'E{:45m=Iox';gPB!;vmVSPD'R`|@~+yGF[;IY%!#
+D{6bOL8b|/t>I.+!-O%+.'PkIHwAV[kC$Lxbz@[pgx'dQv-";i,'PM;IH;C`
+DI$x2@8u'yE\L4#l&;'M'+O'}ZFX/N\'<'LRUhU,1a:$,/u//~Ew['kST\uyrDL_x^4;Iq
+D}Byp0D]hmX0'@7`^;,/R*TI'o,](W9d%KN/hx6y/}+`'twY(prj':h{yUT;IXQ
+D1l)r%];&<F=\'R5;],"x5U-;x2&5WN'8,?m\Mkkjz9Y4|Vw[0)'f*?O')$9\;3Sq%`FSf'9I&x+D;I,c
+D~k68~M!P^XJ3@F//;2h0SaO7"bl_@aB'_2kJt5hT<@y+F5Vh:ah;OuMBM=@VfbMA'im3[(A,lx52o.*e;'E*;y.:+!C/C>?dKOBq'w*o|V@\HqUue<ksGKO;IMM
+DDrbYtn#nvTd*#5Xfvl)Oje>&&w'Ahb^+DS=PUeL[Bm;*b=2xEiUo]zl(\s>qgG'HG(((O&':Uk5h-FaH'#Z!-VJQ,_sI7fH{jM0S<>"Z+Ah;IB
+D)=82u^]kMec>>^6X3DpSM4eS&V@6,QNK>V*UMTFfI'=V%WfiQwW{?{LG0QGT[)Q~s2P32@3V%'7r;$'r8'='8'Z;I7
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', 'random', 'random', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: >
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random']
+
+Commands: 
+DPA%F%vaP^,;1Y!$"%)SH!4%l79T%(7PO+;ITF~
+DqTL*Vv$hNqwG;!-yP%2F/:]2T6*mWx%z]Fkq%|>|%TmJ;H$o:%R(o=%si%<wE/f;ID
+D?*E!?H=B,g6CFyiTQ=k2XhA~/6'"@k.Q-BAC,%5%3b;~&J%YP&%kT%4f?{e;Ik
+DtL0loZ)qabzJ6;j~:+sS]gmh#P-.u[2wvQQd%DDxL-~`m)(bn;=syC*)DxFG_)IM@&g;It+$
+D+*)})vs-[dpWIC`M,cF,v]M\B.eiUWy));?OM)w)O}A;IWQY$n
+Db3q.~_))Gxb+a)Vu5z1A)A#;]'R)@1)~Ob4;I9NzB18|
+D~X'XqIt\BKL)6ptMGr#Yv))s,Mb~;aq)v)gA;I1~20?|J,
+DnH)@`U/b~[`0=*}6D6(kG'05)7eD1;R85)7';)v;I*GcF+X}+
+D(hC7>CQUK\>UFid;`>l>qdPvS>j$u)OO==x$!;I!
+D8e$[+*ETy3zNv3>j&YE~>cZA;PC>"C=\>#[3>b<~1j:`>>39HkUGlG((*:p;Ib}bF
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D.&?`,yv^])#@]BJvJaI`JR3XX2?Fl:r1<K,d@,y/0-H5X?C[;iw?De%'9?cKB-?;ItVYX#x7wR
+D^?q|zKO-n3_%\{"ye},2cuve#M%lDleyJ:v7?^;)TV-I?c2?FR;I<dH7#qIpV
+D%9,YM]o#Qqwld|N,4/sHii'wUk;4g#H3q'*cWIiW'O9$\bdjwQkl(IBwV-L;:g]]nQ-6x!3^(<>w!.Cc'N-QQ,eH.+Ce@U*?'HOHIw"\9pJZL,0V=4yxeeg.xUZw%Eh|Ga`U;IK8wfY)R
+D-l3myC,K5&x7k'AIVM?)QGxGd'F0@D^x1lxbeZC*|D;aq-A~'-%$-t6IXbD%9'B',]tO)p2Jf=awf1(;IG!LU{8.s
+DLVK)mdHA_?a\E@W\,'I{s#/3b'y4J'zH{]px!>k.nHk[Gl@;t0P2&xW39bzyVQ'?;[s\Z'Ht+cjo@=[Eci&gt5;I@*0){
+DR$;\K6A^{3,Z3W]?0H90l3D,':<V^}<b87mWN]'UFuVzd^(zF(k[;/a1('<~$G+|Mh'65.vly1(Z_{!}B[[]?^m8ap;I"
+DEz*IDl5!wBi)f'TS'YIOUw"Bu0F|.tL:<O,,;|SDT|W'wRel^@v0-/72}'W+8k{SbOWkr!g2vdu_]wZc;If/+/Ka%\
+DMZ&zUKXu'5b62;XM'%MHA"h/M:'ayrC|^M:zGI@{Za;>;'\;Io@-U
+DUj>r\sy<Gd<a`o#@b{/8jmA-UI{]C7goW?d,'36GU'P,e&a`*e%lynQGX29N2'SJ+-uH'r^G_YATS~Bn&;Ie-)n
+D]N["#oSB#w/N9V#F\'f'bx=Qo<Z,Khs)^N'U1#'v6|!)<V,;;I}-R*
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 2, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: }
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: <
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DUj>r\sy<Gd<a`o#@b{/8jmA-UI{]C7goW?d,'36GU'P,e&a`*e%lynQGX29N2'SJ+-uH'r^G_YATS~Bn&;Ie-)n
+D]N["#oSB#w/N9V#F\'f'bx=Qo<Z,Khs)^N'U1#'v6|!)<V,;;I}-R*
+D*6$f<eM'tQ(\~'QN.'>4r-)>dO|'sNS8?Z;I"5-%a
+DorN#<dzG[)'BQe^`3M_gT|w}ucmv1'fJ{}z'[?#?FM`)W/~:enb'_Hp.?Sm29.SR3v]Dn;I'-^
+Drr'=vlOvXa-+Jrg3_$L~OoHbAB1bm{5t_nL;Z&s&&&!+%n)-ml<61JkAY}EP&4CM>OtE++RE>A!&Q&K};I|yk1d'(NVPyL>?
+DQkhn.;)8j+[<i0qL!'`}}.lz?*;J&/4&c&W}<3>OI(*^INg{O!+zvZ9<qI&PN&q&$;Iw(K
+D,?I+md`JYPDENfezI2%=h$y/;<Yx;Q&,&3G&9I,`|Ol&Y&{";I5M(!,!
+DLMUzEj}R'nSI-^4|s_zJWEeFx]^T^hd;MD&>&d&j{n&=M&XC;I8vw{[<0t(,+N1:0l
+D*"78:Z';[&!<&`&_9~2D#|"&OJ&$;IfH=2(ng9Ym
+DiSdK_8QO17;*t,}?}85}v}>}`Y}Z}q;I^ix::<5#$#'
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', u'semiCol', 'random', u'flag']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DLMUzEj}R'nSI-^4|s_zJWEeFx]^T^hd;MD&>&d&j{n&=M&XC;I8vw{[<0t(,+N1:0l
+D*"78:Z';[&!<&`&_9~2D#|"&OJ&$;IfH=2(ng9Ym
+DiSdK_8QO17;*t,}?}85}v}>}`Y}Z}q;I^ix::<5#$#'
+D7Uz[qNi&zVO,e;hlBu^sgWpW}5}@}4}9{}T}x;I$<$&{v#
+D|Nokx}[nzKqz`*]4I:9Y#^ea[z[&;Zvyzj&IxGAY+-BAXk}Di}0S}t}Qo}jT}A2;ILe><x
+D`wXb1"YHi8(S#O2*{OA~`Y$ZwX=m&I/9&9/{;+%C]Xd"/%Jwup|U[t'EROoJ}1j}!A}7}B}u~}S;IS0k<#Wy
+D1<UV`_kfy8vs8c2];3Fig%0KgM);][[}otW]0"oG3q`:%=pT.9I>-w;}(z}=o}>}0}e'}}%;I5BD<1&Z
+DINOoSRh"JcdC'CUc37Kr|;%sa5[;~2NU;\;`mP92"95Y;$n*.eD;IcnXK5#dF#X
+D:Ju;dbHrj:XdMk[<,;K;wx;fy2m;Q<Am*LhzG'*Oi,PcDNU`+[D%F0;Ip#}#z
+D:Hxl,UX|fFA=;ZZCi~`U:UbH@$\^\zyL;!n;f;!^;Fazvs-sY^~nbwg]=QXb7*;I{m`y#i#h!M
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: (
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D`wXb1"YHi8(S#O2*{OA~`Y$ZwX=m&I/9&9/{;+%C]Xd"/%Jwup|U[t'EROoJ}1j}!A}7}B}u~}S;IS0k<#Wy
+D1<UV`_kfy8vs8c2];3Fig%0KgM);][[}otW]0"oG3q`:%=pT.9I>-w;}(z}=o}>}0}e'}}%;I5BD<1&Z
+DINOoSRh"JcdC'CUc37Kr|;%sa5[;~2NU;\;`mP92"95Y;$n*.eD;IcnXK5#dF#X
+D:Ju;dbHrj:XdMk[<,;K;wx;fy2m;Q<Am*LhzG'*Oi,PcDNU`+[D%F0;Ip#}#z
+D:Hxl,UX|fFA=;ZZCi~`U:UbH@$\^\zyL;!n;f;!^;Fazvs-sY^~nbwg]=QXb7*;I{m`y#i#h!M
+Dc<;uD:OD;U;u)NJI;kz;Inga8@#77DL0#]
+D9?j>J:H)'?3$%R.x}w-C;G@Kg;oN;w;\\lA1yH09v4_>Rag"pM-B!6*B5Q;IYn#^2#f
+Dfi2^CtSbi(s_X|*Rf(z[bbX%T|f"\TfIW@(?"i4y;PftH(g(l;G;IA#n#E
+DKtI!)k77ibUPj)tT0(K,#w$`(Sp3HJ;=dO(((c;IY#oE#A
+D!(UGB|=YR8`a`p(F;Nf[(~p-(`<9.o;I8S#T#=
+
+
+Grammars:
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 20, 'type': 'string'}
+	score: 0
+	separator: ]
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DF!{iM'kA|<[+*Qr)i&-VnO't;5'Z*'uL'V@'*';I}H-v]}g&{rt7xn~{
+DF.Y#@J4BFW'v[mGaNA*gi1TIq?|=A'Z;O'd'c*'_',;IWy=Vt2(*7&g^^@
+D-dQuK[Sc"\@O'U|'g-y@be}&id(-_i-!J%d]_"{0ru'$#y=~;%'Zp'OL'8'-_'O;I;
+D>~CQP%]@(d.Jj;^nP"^;&4UPH0~he{<>:dU/LPD'2&'fSTRGb\i?%\Yg2+f;zDp}Jnf3yOVY%p>8A0NO;?B'iR'F'7'*'7a;IA~
+Dj)&U2d3=:~8Z>_/<sk-_V}/jfN1MI0rLdLM-AaE?[_7dVr08cAx\M.'W'@=Dlxte;`)'%:'6'.'q'p;I&
+D9VA=^dka1Z9]?b%d[rB^b+zxu+tJV_i_T$!a#d}=1t'z'77WXdioR$J`+`E_uDs56lqlj3j#bmPG;cU'[a'g'Vc'$'<;Iz
+Do'M7|X9yKe^+3Vss'9)\U.1EsH@t#9yYMnp'*t'(tF)KJctw$oKqa~X^;OP'N*'}'*'f'~;IKV
+DeZ~<DWrUO4M+k<S6!u@3'p&AV$w-^aTyt&^-2cbKol`IR_>]}'U\/;R;i'n_'[[,s'~dA;IKgwz>j'K-(J~yl/N|zX
+DOUy_Ge.K<OP8Du%'J`?eR`aXSnG+'--R;j'xt'y'bL;ICrcFf]_>*{jH{'%
+DV9'0vT[#c3TXh"fG^r=ahAGRE)F`kP,Q'WSb=P^pz"53fP-pFjLny>ks:_NWiKW/z'*;~'$<Y'~X'$q(;I:8,B5U-FQqWqP5?9!_
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Do'M7|X9yKe^+3Vss'9)\U.1EsH@t#9yYMnp'*t'(tF)KJctw$oKqa~X^;OP'N*'}'*'f'~;IKV
+DeZ~<DWrUO4M+k<S6!u@3'p&AV$w-^aTyt&^-2cbKol`IR_>]}'U\/;R;i'n_'[[,s'~dA;IKgwz>j'K-(J~yl/N|zX
+DOUy_Ge.K<OP8Du%'J`?eR`aXSnG+'--R;j'xt'y'bL;ICrcFf]_>*{jH{'%
+DV9'0vT[#c3TXh"fG^r=ahAGRE)F`kP,Q'WSb=P^pz"53fP-pFjLny>ks:_NWiKW/z'*;~'$<Y'~X'$q(;I:8,B5U-FQqWqP5?9!_
+DYB9A]Kd^9dXklm#W[PMJE'Ct+O>zra[Pg^G-vQgt_1b;o\92bR,|u9WNxy'$1;('By'gTl'$;I[F
+D'?&'4ksxrZeKHaT}Ix'd=H2;*'q\?'3':;I2&TQ
+Dg(=G:as>s:|'n'U'&CDh']e'B|'!<2G(;+)'IA^;Ivv0'E[-e.gN
+D[^*|A|gT#DdyOa5{'OXm|69:*F).cQ@Y!L'{Lv8A"K\Jw([+\6X\"d^.m;t{mfRg2Qi'5<:8s'N['ig.gB'O']"'cv;/RBdT'W;Ii:s'|wa1
+DjTA#ns*T%TQ`\XuN?jR?HdHLI.tyK9C4;zV'R"PzyGbM'Y2'*KLb'XQ>`'\H'':;C//q',B*;Ii]tE'L
+Ddj@`;Rbet:~syr:=</5ty,);f59'khgqA*]SK'7kCV.'rb'$b@<v'G7b'X=82;L.\'9S@;I,y`'MBX
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DeZ~<DWrUO4M+k<S6!u@3'p&AV$w-^aTyt&^-2cbKol`IR_>]}'U\/;R;i'n_'[[,s'~dA;IKgwz>j'K-(J~yl/N|zX
+DOUy_Ge.K<OP8Du%'J`?eR`aXSnG+'--R;j'xt'y'bL;ICrcFf]_>*{jH{'%
+DV9'0vT[#c3TXh"fG^r=ahAGRE)F`kP,Q'WSb=P^pz"53fP-pFjLny>ks:_NWiKW/z'*;~'$<Y'~X'$q(;I:8,B5U-FQqWqP5?9!_
+DYB9A]Kd^9dXklm#W[PMJE'Ct+O>zra[Pg^G-vQgt_1b;o\92bR,|u9WNxy'$1;('By'gTl'$;I[F
+D'?&'4ksxrZeKHaT}Ix'd=H2;*'q\?'3':;I2&TQ
+Dg(=G:as>s:|'n'U'&CDh']e'B|'!<2G(;+)'IA^;Ivv0'E[-e.gN
+D[^*|A|gT#DdyOa5{'OXm|69:*F).cQ@Y!L'{Lv8A"K\Jw([+\6X\"d^.m;t{mfRg2Qi'5<:8s'N['ig.gB'O']"'cv;/RBdT'W;Ii:s'|wa1
+DjTA#ns*T%TQ`\XuN?jR?HdHLI.tyK9C4;zV'R"PzyGbM'Y2'*KLb'XQ>`'\H'':;C//q',B*;Ii]tE'L
+Ddj@`;Rbet:~syr:=</5ty,);f59'khgqA*]SK'7kCV.'rb'$b@<v'G7b'X=82;L.\'9S@;I,y`'MBX
+D//\|mO+U2&U*wI|@ZRe4z?oO(|N{U'}MH/6~eNTKpn6z]lQH7@GwG1MN'"^BKg'%q-'viKs'$61_'jm;~'LE("&;IvMj117RFQs'"q\H
+
+
+Grammars:
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random', u'semiCol']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: $
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DV9'0vT[#c3TXh"fG^r=ahAGRE)F`kP,Q'WSb=P^pz"53fP-pFjLny>ks:_NWiKW/z'*;~'$<Y'~X'$q(;I:8,B5U-FQqWqP5?9!_
+DYB9A]Kd^9dXklm#W[PMJE'Ct+O>zra[Pg^G-vQgt_1b;o\92bR,|u9WNxy'$1;('By'gTl'$;I[F
+D'?&'4ksxrZeKHaT}Ix'd=H2;*'q\?'3':;I2&TQ
+Dg(=G:as>s:|'n'U'&CDh']e'B|'!<2G(;+)'IA^;Ivv0'E[-e.gN
+D[^*|A|gT#DdyOa5{'OXm|69:*F).cQ@Y!L'{Lv8A"K\Jw([+\6X\"d^.m;t{mfRg2Qi'5<:8s'N['ig.gB'O']"'cv;/RBdT'W;Ii:s'|wa1
+DjTA#ns*T%TQ`\XuN?jR?HdHLI.tyK9C4;zV'R"PzyGbM'Y2'*KLb'XQ>`'\H'':;C//q',B*;Ii]tE'L
+Ddj@`;Rbet:~syr:=</5ty,);f59'khgqA*]SK'7kCV.'rb'$b@<v'G7b'X=82;L.\'9S@;I,y`'MBX
+D//\|mO+U2&U*wI|@ZRe4z?oO(|N{U'}MH/6~eNTKpn6z]lQH7@GwG1MN'"^BKg'%q-'viKs'$61_'jm;~'LE("&;IvMj117RFQs'"q\H
+D|afk$ps9b\YtRSV:AY4dy~$#;ED=78Y)tvXrS)$b'$&]G{aF$$CtCL8\tic;;I~$#f
+Dw!Gx1WcqUs,M8$(r7Ja,|uj*Z0a;H&#LO$f}2<jm1*U(>WQr$'gljjbf$|ZQ0vV3<]hf5W'jg3rh+;;I)7#TK
+
+
+Grammars:
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ,
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Ddj@`;Rbet:~syr:=</5ty,);f59'khgqA*]SK'7kCV.'rb'$b@<v'G7b'X=82;L.\'9S@;I,y`'MBX
+D//\|mO+U2&U*wI|@ZRe4z?oO(|N{U'}MH/6~eNTKpn6z]lQH7@GwG1MN'"^BKg'%q-'viKs'$61_'jm;~'LE("&;IvMj117RFQs'"q\H
+D|afk$ps9b\YtRSV:AY4dy~$#;ED=78Y)tvXrS)$b'$&]G{aF$$CtCL8\tic;;I~$#f
+Dw!Gx1WcqUs,M8$(r7Ja,|uj*Z0a;H&#LO$f}2<jm1*U(>WQr$'gljjbf$|ZQ0vV3<]hf5W'jg3rh+;;I)7#TK
+DU[*uf+[Qc7lf8WSy?(Gdrv*UPn2^"$04HDX7<6rg{>he(9s$ocM&h1;/:B)aB!)$<?8s!@PAbdL\aX[?^q$pb20o28Jm;;IA#T
+DpF$M:M0?Y2vS:U$V3<dx}\Vi$wpJI!]P./P$lb"0M\zNk;;Iy#9
+DHb{$d3c%Y/)IDx2L*$a`&g4_P2-Mec$)L?o2N6Xm?5/3N$|$oemssf;;I\V#$#
+Dj+kqZ2'/`o@2yzA',-wXp'Z2duPp>(4i'H6tH9$jQzj'qU"E;I.;CE,Nc"1,0H//
+D^MuFW'sahW9HcB'?:P@,:!pvkmoKb'<SVpwBe}Gg+M'c~z~R;;Flo|mj<&eb?;I0J,sm,hJ
+D1b24n%f`z`YklP%'LN'qcDT7'F+$/'jJ)<Xn?,'~;;I-H=Ua,-tt,~}
+
+
+Grammars:
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: }
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ^
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DpF$M:M0?Y2vS:U$V3<dx}\Vi$wpJI!]P./P$lb"0M\zNk;;Iy#9
+DHb{$d3c%Y/)IDx2L*$a`&g4_P2-Mec$)L?o2N6Xm?5/3N$|$oemssf;;I\V#$#
+Dj+kqZ2'/`o@2yzA',-wXp'Z2duPp>(4i'H6tH9$jQzj'qU"E;I.;CE,Nc"1,0H//
+D^MuFW'sahW9HcB'?:P@,:!pvkmoKb'<SVpwBe}Gg+M'c~z~R;;Flo|mj<&eb?;I0J,sm,hJ
+D1b24n%f`z`YklP%'LN'qcDT7'F+$/'jJ)<Xn?,'~;;I-H=Ua,-tt,~}
+D6*c$r`uZf.QVA)'m>'X\O7t{gcm.S&c&akY(_*'auM\OwlPa_FB2$cAu'/fBiHC;U^Ufi#V(m'#s(z{C;Irq-,*>0,9P]
+DUj|"o6p"@'0)Qn,wph\_{KU=Nk@8x'Pib&0's+@gL'vtt7nFJt[{[^6X=E;IN,L,b1
+D~I7p^p@X5`zIehm}#+}4['#ezpe+JCyncNWZ}k(;5_}Hh}/}w}(L;I7*,B^ZKy
+Dl"DHI5<}k}I7zbPd3PQ8Mq"80v=0p?RBVLj<|P}]f;e}[}V\}f}d;IQ%Qr$^_`|]\
+Dz![Kyw<}xe}a(K|XsPxk3l(ZhWx=7G[Uk4z:g<r3p-<EE4}U9;,d}%}k}z}^;I?*<zJ^\8~zf
+
+
+Grammars:
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D6*c$r`uZf.QVA)'m>'X\O7t{gcm.S&c&akY(_*'auM\OwlPa_FB2$cAu'/fBiHC;U^Ufi#V(m'#s(z{C;Irq-,*>0,9P]
+DUj|"o6p"@'0)Qn,wph\_{KU=Nk@8x'Pib&0's+@gL'vtt7nFJt[{[^6X=E;IN,L,b1
+D~I7p^p@X5`zIehm}#+}4['#ezpe+JCyncNWZ}k(;5_}Hh}/}w}(L;I7*,B^ZKy
+Dl"DHI5<}k}I7zbPd3PQ8Mq"80v=0p?RBVLj<|P}]f;e}[}V\}f}d;IQ%Qr$^_`|]\
+Dz![Kyw<}xe}a(K|XsPxk3l(ZhWx=7G[Uk4z:g<r3p-<EE4}U9;,d}%}k}z}^;I?*<zJ^\8~zf
+D(s:2^}H&}?dQ>hN1*$8vP}R;Ku}e}"}F}r;IEgrq6^Lw;hL
+D]}U}d>jM,GFn-bToYn~=:Lqsk.rl,G}|}FzL|GC}y;4i}*Q}u}?}q;Iw*p&^ONoQ
+D:'(-;F'}SfS=}~R:|Tdh9+"A}"#j9"EQB"/8""${Tt"JK;Ibjd&{0s!&Bnb<P
+DYT6Ze2kjb[wu.7fqD.6LCA]4tu'3%;g.;T`%(v%P)K@H?RD"k-"Wd4"U",":{3".;I=,?&M2+B&a
+DN>8knn}kC|WV6GRUj;M-r6#E@+]Q@g,oTo^Z~X^"'\|"f>3"7RQ"#nNt"#4#"=^l;I.l&{z&u^
+
+
+Grammars:
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'number', u'semiCol', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: "
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: &
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DUj|"o6p"@'0)Qn,wph\_{KU=Nk@8x'Pib&0's+@gL'vtt7nFJt[{[^6X=E;IN,L,b1
+D~I7p^p@X5`zIehm}#+}4['#ezpe+JCyncNWZ}k(;5_}Hh}/}w}(L;I7*,B^ZKy
+Dl"DHI5<}k}I7zbPd3PQ8Mq"80v=0p?RBVLj<|P}]f;e}[}V\}f}d;IQ%Qr$^_`|]\
+Dz![Kyw<}xe}a(K|XsPxk3l(ZhWx=7G[Uk4z:g<r3p-<EE4}U9;,d}%}k}z}^;I?*<zJ^\8~zf
+D(s:2^}H&}?dQ>hN1*$8vP}R;Ku}e}"}F}r;IEgrq6^Lw;hL
+D]}U}d>jM,GFn-bToYn~=:Lqsk.rl,G}|}FzL|GC}y;4i}*Q}u}?}q;Iw*p&^ONoQ
+D:'(-;F'}SfS=}~R:|Tdh9+"A}"#j9"EQB"/8""${Tt"JK;Ibjd&{0s!&Bnb<P
+DYT6Ze2kjb[wu.7fqD.6LCA]4tu'3%;g.;T`%(v%P)K@H?RD"k-"Wd4"U",":{3".;I=,?&M2+B&a
+DN>8knn}kC|WV6GRUj;M-r6#E@+]Q@g,oTo^Z~X^"'\|"f>3"7RQ"#nNt"#4#"=^l;I.l&{z&u^
+D}X:\VBa#'2;B>GIA*"V"F-c""^">D"CH-"2L;I\&[v&PP
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: `
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: #
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D]}U}d>jM,GFn-bToYn~=:Lqsk.rl,G}|}FzL|GC}y;4i}*Q}u}?}q;Iw*p&^ONoQ
+D:'(-;F'}SfS=}~R:|Tdh9+"A}"#j9"EQB"/8""${Tt"JK;Ibjd&{0s!&Bnb<P
+DYT6Ze2kjb[wu.7fqD.6LCA]4tu'3%;g.;T`%(v%P)K@H?RD"k-"Wd4"U",":{3".;I=,?&M2+B&a
+DN>8knn}kC|WV6GRUj;M-r6#E@+]Q@g,oTo^Z~X^"'\|"f>3"7RQ"#nNt"#4#"=^l;I.l&{z&u^
+D}X:\VBa#'2;B>GIA*"V"F-c""^">D"CH-"2L;I\&[v&PP
+D~V5">>--WVVe',%dnj,&l5.b7>.=<Y{}8<)c;Ls{:jN>'>9y2&E0z;"|".]D"fi"W$"Oo+g"~;I5s8&8$l&Um""
+DCNusL?75#\cA_%4s#i1D7xp-2n,Af`@6*S;y8C&`/Bl`:1wl;IHb#fe#:3Ppl#%C
+D87HK$M=W;x'i`oK;e3^`F;v#3`Y7;II@#&#.~#-PFA
+D]~Xn`Ln;1nC`uO`G;Iz#FoP#En#?2
+DG0^i61@$D9{TD<s+z`gT+U?;:`W?`}`/Fz+;IC#MQv6Q#h#UJy[
+
+
+Grammars:
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', 'random', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: /
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 20, 'type': 'string'}
+	score: 0
+	separator: (
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dp^Fq@H`#{P\\vlIYC5F&ZYQ}75jn&['PFfYQYaDdF)rS7/zMKuN+w9lMi&k;7<y&5X&LD;I~Ir#<Jo!T#'g#=0Oa|%j
+DM"0pjQC;?&,h\IhdMsdIew?&b/1F3;)tjH&b]C2&S\5!e;IJD#s9A\;H'#16^|O[#Mu\#%:|DQ'
+D]?3A(C[-CKl*>pc'9B>#@gdQ;EPBd[wv=ar]OL'Ae#2!?rVWV@eX&/z?Fv/Q&l,/N@.dQ\f$ZE&;W;j8F0&=&`;Ip~Q*)sC#S/u!'>]#75&aoEf$#(GoH3>5!Py
+D|"D}FR:>&']&}ATMI4x:^nI{I&G9)B_;:dBAs&akg&:~];I'6#k#ME1!6\3,d#NF%<y]uE-
+D1ag@8[J=kh8YHotyCOt;Z#sz?&'tqaa,wL:pRW"#[DO:FE'XZ*Tq~3tOTU4d*mA&J-+<:JK|lJ,HgQL/Tn')dU-dE~&tG5B;9;><N&zD=&z;IgY7TegzfJ#dI7#.[~?J#TG
+De@bXl+!*/zG2!EM!Zk"Ut94e}#wq6!HI;4/2v/'/9(jK0jc'Dv?Q*/H/n=;In/Fhq58X(A-9QtOHb_f$e4j(p:
+D.r+WDHx2]X,;6x/d~/iY/!}`0TPHWT750.5@bCKi0wQ0JE&[zM_R/%o7Oj)/9M/i;I@:W^f,UT+Vf_(K{|xTE'gChxJJQ}V:wI\
+Dm!Vp;FE/4N/o/`Cdv5/://qT;IYh/K({}UtaZ~5"s$uz7:Bxj
+D:mySYH='R2FB2.K;Q/J/?r/TP==;ll})Ngm40`)3oaxGfwT+%H3+5\|i8_8/0/|;I|!aD!q)n=&kZekS()Tii|3ab}v'O/
+D+Q2;f/9/]/rlYF=^O/?/Vm;I=PjbE')'P%?LB(\@0wp_~NF
+
+
+Grammars:
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'number', u'semiCol', 'random', 'random', 'random', u'flag', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: %
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: ?
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D]?3A(C[-CKl*>pc'9B>#@gdQ;EPBd[wv=ar]OL'Ae#2!?rVWV@eX&/z?Fv/Q&l,/N@.dQ\f$ZE&;W;j8F0&=&`;Ip~Q*)sC#S/u!'>]#75&aoEf$#(GoH3>5!Py
+D|"D}FR:>&']&}ATMI4x:^nI{I&G9)B_;:dBAs&akg&:~];I'6#k#ME1!6\3,d#NF%<y]uE-
+D1ag@8[J=kh8YHotyCOt;Z#sz?&'tqaa,wL:pRW"#[DO:FE'XZ*Tq~3tOTU4d*mA&J-+<:JK|lJ,HgQL/Tn')dU-dE~&tG5B;9;><N&zD=&z;IgY7TegzfJ#dI7#.[~?J#TG
+De@bXl+!*/zG2!EM!Zk"Ut94e}#wq6!HI;4/2v/'/9(jK0jc'Dv?Q*/H/n=;In/Fhq58X(A-9QtOHb_f$e4j(p:
+D.r+WDHx2]X,;6x/d~/iY/!}`0TPHWT750.5@bCKi0wQ0JE&[zM_R/%o7Oj)/9M/i;I@:W^f,UT+Vf_(K{|xTE'gChxJJQ}V:wI\
+Dm!Vp;FE/4N/o/`Cdv5/://qT;IYh/K({}UtaZ~5"s$uz7:Bxj
+D:mySYH='R2FB2.K;Q/J/?r/TP==;ll})Ngm40`)3oaxGfwT+%H3+5\|i8_8/0/|;I|!aD!q)n=&kZekS()Tii|3ab}v'O/
+D+Q2;f/9/]/rlYF=^O/?/Vm;I=PjbE')'P%?LB(\@0wp_~NF
+D'Y)$Mj`Tc4gKp96fAb($*#&:WsjX:r(x@;v1%Jf%s]%C`WWTxpt1Yldf\75gOJ?%7a%Q:;Ix^&%m!:r"K?[ip=<Br(
+Dq'ixB.s1ySj==^_<m;H(;-%zh%p%B,^9"M0$vhb3wrw~PW{#gjOhxya%od%>v;I2b?n,6;:_6K<
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: {
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dq'ixB.s1ySj==^_<m;H(;-%zh%p%B,^9"M0$vhb3wrw~PW{#gjOhxya%od%>v;I2b?n,6;:_6K<
+D~?G*#?JyL;6c%S(%*%Tx,?D8uAMDVv6_Z![E*tY%s%Nb;IqK##'dD]Vc?L#]LQ1ktG
+Do`LH;"trT.Qcm!l\V|(usbKyr|3$U("bZ;a%"m%Q;%6b[-m|H3vIpAN}Vo?5{hhjy}3H7Jm%XP%-;Ir@p0;?Y
+DQ9gGLIDyRF=r6F'C`d0xJ"FM6;,24i3e%z;+%FM%vj%.i%t7%'q;IyBva'g-o??mGK
+Depb|N_~BQ!>rJxHf3}T}O.FV`YDXpqci36D|9}_&}p}1~}"s;6:}3;ILQx<AEr^Q#~%`|K#
+DqrP~Z006Z_chkhnE9}~3JYi''p1Iyt\?+}c#};[}a}4T}ns}ou;d}K;I%G7~)i9R>^]
+DV*P.Oiz]!{HE('H/']15.,Q{4D}b}SyF!`Kk[CNl?Y}v}h}{}5~;Ig}bI;I#^0/pJ%;
+Dl0:Y.Y#JvqX{x$suf.TWNQ`WsD%<du^53$}I3}:-[<~q>Bw.qo-pu'JIS}o}(}@}m0;)x}(;I`#mF>gQ^r>0Pp/x}{x
+Djy7N9}-{}8Nj!:`vSz]VO)J}|X}G}]}8V;As}9;Iu<}^I}[`'}@N
+D*D3s@~&{#rz{mW@tt/*1QW{h;N{L{j_Z6{n;I&~!F
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: '
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ]
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dl0:Y.Y#JvqX{x$suf.TWNQ`WsD%<du^53$}I3}:-[<~q>Bw.qo-pu'JIS}o}(}@}m0;)x}(;I`#mF>gQ^r>0Pp/x}{x
+Djy7N9}-{}8Nj!:`vSz]VO)J}|X}G}]}8V;As}9;Iu<}^I}[`'}@N
+D*D3s@~&{#rz{mW@tt/*1QW{h;N{L{j_Z6{n;I&~!F
+Dc^OC+[Ln{]vW{{XZxE{O]KDuF+sn/470p]^|xv7|0u'{3XHm;(V5{&R{s{S<?;IGp~>\
+Dca>6N(|`'-|1Mo[:'2#%FP)F~go3[0{/{P@.${--ASy8l:_EZZ7}l3^j{9lZ;({:!5{m*A${,R?2;I+~q
+DX7vp$Tzfxs9dSjHLmYEHaqT{YchR:>#{3]{Ji;CSa1pbri~}6%(>yD3_wi~u3gxm:eiS{Pk;JT{|V~{P`3{nNZ;IP~`
+Db&^P%U`i@{#e{8CSE}ex}`7a4H9%!t?z`{8^R-:{i{?;^eH{PY#){xn{];IY~k
+D].DGD1U%x3HXb?#'@Qz^pWhB5;~M)lqH>~o(fAy9^,"*H_)L4'ShR@'qTyb'!q;pT-[''K;I+H]m\
+Db&>GH-OcM/Ep%;4_'Qw$Od;r7u3a'^'{?'?;%|''wl#;I,]U
+D6af\a]sxSgL5o:UA'`b9]weh__0u:;-Y@5y[3s/HQF4E>cHFDs'f*'*')L.='g:;4R7a''Lh(;I.]C
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: .
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: '
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DecF}_]XSZ5i=pKVasCD.jQN'Lrd>'~7'd'B>'uB'M?;;K'g;IZ\)Yg`k!&%Z%1BBWv
+D,LxiiNNtj1%o'C{i#+i}hfiNu:#GkHz,<fE'`J'+'!'Sp'u;,'rx;IGrATv$}
+DG4B_*1:P1~3Nx)];@=qC'j{AR't'C2'}D't'G>;\'#n;IM8;?\93A28VC%6=NS
+D%WI6'=)d-asy:%'63"q'yZL5'^9'~'\M'5'{;i'&;IcczkKq,*}:w+$7@
+DhX8s3|(b+[/[KTB8g8\,^rN:'.#@~`WXR]f?(mB#4t`3e0x^eh(g/[UIs'l<'$b'x'6q't;0.'_D;I;}3K>MqK{v:5I`y,nW
+D8'3Hz2$Lv.U>V{]_a2!3CW>wXMy$F=.HmPi}.?Xz.bm6.K.9;Wc.I.8;IRn
+DQ/3.GlG2<im)u*P-5bz:e'=^~Izp@Kh!0X10[.),-B.)S:Do.j*8ZS.-+A.gI;>m!@.r)`.J6`!;IUq/B
+DAyU-vJ)"Sq1D[gNx?.m]rZZfKZ/UY[]<tbQTtp!`EC.O<Ws.x.!N9.<tXp."PAP;?|B9._nUcv.OzgH;Il*/:)
+D+2+(y=Ia.*c7_Qo*`Z5n*k&.Tn{@.T.&.O.;x7!;5p\,).._K).AotP.;IQR*Q*]G
+D7:^3dZmls_,01}712BCTG{P?6)n.[U7!KOoR=iODMA1Pa|W~4)6@.'.Y.D.r.C%;+Hc14.X\;pG.d;I{,hBD/GY.
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 20, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: )
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ,
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DjG>M&%YAN<wg)S@7<5/FC8Ev:<;?|7>l*'g>C=U?}{w4/;IWk,dM5DjX,'O0tN9h}f
+D_<@l$QcQ<}#<-FWM50D*Y(zH;IAh,"jp,7"ZX.
+D?*e[S<B[<A4RWGcM8@0%u-\PXtg<dUYJsd|)kmo,f2iBe;I\r'R",][Ad,^Gl?~HD9
+DS?w@3k/9{26-1XH`cO<pI_(Y68GP<rOrRGA<?5Rx;'Mzob;I?K)ES9,FNQ\Ez/,g$
+Dlp<P"![S]ZTh<}}$<ZwFbPa)r||BT;~{Ra(<otJG>T2B&:$B~V=;I.EI33EwX,,I,^Y
+Df:6aW.\Sm"08XbO$;G?w)|6!0hy6:qp4W\7Li>)|:9Z3;oY1X)QpO2)x"2g/'J=,>/W[Oz|S%!;I%Z,*UaS?,u*
+DzVl)6!)2ZA/S{.dl5n9S_>)xd)M2i6/CjZ%,Q;I&Oy;",D.15,X(
+DXs[J\6]"YCd!:VB\7rAa8B(Ez9/B)H=QU3c^uR<)hr:d|[Wck)Zh/=C)wX;IYqd,lW,}
+Dq'bd.{g~sDq3j2nXtnebH}<;p2e5CB`od)o;cU)|}\e|FM>4Hb:b*)n)?Orypa?$Z;IRxX9,3*7,X
+DGgZN$cwdU][:Cu*"b~F)uZflH{y)$>bTz[/stU\zQ,jc&)[.V7Y!)>pBH@`uHF>oz?;IdV,VZw,{$9R
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', u'flag', 'random', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: }
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: ^
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dq'bd.{g~sDq3j2nXtnebH}<;p2e5CB`od)o;cU)|}\e|FM>4Hb:b*)n)?Orypa?$Z;IRxX9,3*7,X
+DGgZN$cwdU][:Cu*"b~F)uZflH{y)$>bTz[/stU\zQ,jc&)[.V7Y!)>pBH@`uHF>oz?;IdV,VZw,{$9R
+D'?h:S9Q|"K6l@>X>u9$avL]&s"hV]Vn0Cxhl1OTH;+\t|@P>lf>#>6|%+>PI?k;o}&0>:m';I&"<5^f~c-Loee>%|-#4JV
+D&eEvsH+OKCkE.pEE!Hcz3PV>1EI0>[S,a585W-k-->F-[>@7f;>x>;HP";hl9I>=Lv;IA0x|wgcY6DMLQgD^<B
+DW8CT/r);wB%-#c6Myck2Fruz(9LBiv>s:Qv>$w(>o>I>T>Nx;x>PCg;IM^|\L1~/
+D6(Gl&~>(t>]3}1>)LC>'l">>RC}>:;P}>G>08T;IhpU]Mpor+Z^:8x[846J?~DVBfW%J
+DAZ$tJJ\7i2v'97kwfln]p}">o0?>"C@nR9BJWq3:\fBjD9qY?>~Zwr>?>bT:p>tH;.8aH>hU;;I}$?E/6<(t^zB+=1pm=
+D/~Aj}R}O4nO<*kaN$3+:g4'H3U-xR2C^Z}w7}98AN4}z}<rK42}&5js;th#.W}=Vw?;I]5:sc^$'e/
+D(BWF*@.9gb6cp3tO})bAIX5=5u}kf|}uo=45\n)/yFT:&d^C,^cnU6j8%[}G[&$@}Gwj1$}j*!>H}R}#iP+c;vMj}h-Y~;IVN-^N:o
+D{rdIcv=P!?xAlMw|}o9Z\X&bU;'Yg}$oc/?}6}P.X|Tq;32c[|<mgST\=y?'"5W;(v-@!}iDJc}#!}xES^}[}w]%;I};kLVq;Io`q+^j'
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: .
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: @
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DT1Jai+Yv/y_S/'y#,6qLgg%LeNgsxIEp6Jni/N.eR/VYc/i;bY/pS`};I*
+DyS/7HAsNe6e,JO)6]]<Ro)L9a@Xv%*NAfqH"7fc/<:Mp/"e9~/}Ws;C&#/7;IXcY\
+DGPt]n/8\i/V#u/HY/V";@VT/bK;IX
+DV:Lq5C6&S8mYz.@>e.JI{}o0mop34J>bCtJ$/Qs\X}r(ljb3jI_1W#xFbRez92dX/eNs</%/w<;U:YU/ZVLR;IHy
+D|nV.HzZJ5(a|R~k8]ds~[P;IrR[;(p2/d-U.[p~Ir[5*;^Fam(8hR{[SPn]&f/8}][Vv\[kp_&;IQ(>5
+D%GlS`=|ra-gK[uwf8K;?p\CTtMxwmQ?a@!%>{e_48.!YNuws=Rl[?l[g@ie]F|,w[H%7J+#;oLa7@\kAo&[]I[g[d\>;I6L>(
+D)-:gH1"w|xbrv?BpgVWf[--(6y{zWwIMf[=Yf-S@[[$[Yc?^;XJImwG[F3q>hdDdo[MT;m>!OnWG[e>Nzo4;Iu>yj
+DU6d?E$[Xf9zpBt<@CN\YU`-V@H4jy<I;f[[HE2\_'}kU[k),[6[4m3;K0ylk[MgA+`pu:S=[?Y[\`);IxB>8
+D@gmfpvOI^M;4i)DNd#Hh|41U[56Dr,=[k*[$Q{[}[(Y|LF#I}?;`Vake@zs%[4_a^'QZE43[%&Ooyg~[gh@I`"7;I0>d`
+Dt>Xc$/hIXO2m'<l~5h6={^YOcqaK.BcN/a(2//^:D^&b+c8},YkB2HU%x`oMQR9.w.S)Jp.?.(g.T;+a2V.AV`.0LW;I2#7/_%CL
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', u'flag', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: {
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: :
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dh{2%+"fE_HhUt?wR7[)^@*'N%>|~F[A>`}LDA!4%3.($h<D#Okv+`E([0mqMu2[>r>?;T>;CJ;#>"`9>g:JqJ;W>3j-;I.N'1^+kRZ+N
+DOE0lV,TjAOt'>=`>N]@w-"''6plagoSBHm2J#tf>wh>T>z?/1>&aN>V;0SY>,;IJ:zl+Apv2
+Dz4hm@laGm4z<hMTHwEv>}>#1H9z1S}O9YxuE<I;dUB>m>>>/Jy}>`]14>?;F=~>u{m;I^</x+.s
+Dj-u'L|:dp.)0qlst<7#b1b=4=sYV!Or/d>A>@6uOju89IIt:;7\~%7b.p<Xg;~|RtD>7Ab>1>JZ>upI>>wO<.m;Dqx>p.a;I(JL+w0
+DJ`vw':~CAqJL[{dq!oc\AU0qO?4;!57^3UT}|1Xfe*MdJQ{^^ur)q@3g!Pp"lmH^lXx}n@/!l}}qoZ9?g9h}hmjr}GD^(J4}!'ZFs:Zv;/`H}5A|YBR!F;;IoM[s'c)7[&r3
+D0({SXeX|CrRjE~EpzPp8)"RQN4\.z}/Kt}8&}+XjkK}z.`<}I?~Qeb)85}'l};E}}uc{]#6;IJ!{/[S0a[RI
+DjB=)UsAp-q}kjKjd49f>C..}%tOUQ)T}cCM({Bn}u}5)GkYxJZ}.@;KEh|m`S}#Z'FAXcs;I<ul'[k=#[w,$h=
+DV6xM~v/dG8RECI5^6laIFD45lVr_pc)}A&&$]p^Pi:hn46.<=V?;u;+`XI\H%v2T}ccI?}e~5:M}{s2G}c!&i%}B.y&Rc}'U\Jj;e*dC(B}&o}nKlar;I|[.fM[]{Nc
+D"0KE=?v{}G-x,kwf;y"|J(zVCfFa.&tTGWVB/qGjz}IOA}%@@2_Y(u<}.Dj}=<B'u}u25sveMa$H}0zXhjnYC;fYR[u|E}T1VesvU;Ic_.Ij[+QY[nWJY@
+D8pTV)!cAZLQv7<`)[:;]$h$:3#vn^h{~{KMR]3rKP]MeBTG>x'AJ}.){A"@(UPau.;`1E{n{_<r{oU;I+bD:an,
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 5, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'fixed'}
+	score: 0
+	separator: ~
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D%FV::){&{{=}v1z,d;uc{(i9{4<uv{K&&;Iq:p
+D0b01E<r0{l}yuDEkFZKBP3Wm20f9ID9TYC!#;!&j34!6Bkk;QK(=/!9!]@-!!1N=P!G^uP;;Ix(%c~;d~vW%zR9rSC|
+D4U5\Dk[V@"PnNw4E>%J8!`~y^z!KWYrU!$,o;k"!!5B"]K!b?U^*B!7?R6t!B{B8C;I?u3?^*Im~+~Y!
+DebjK4[)YavF!E7(I?Nvw@0n_*fsO&T>T/!srr3q!:}mbW!K.k8;?uX<]!cmg$I!2'aMYvZb~YgSA5m!^E3#~!53;;I_Rb,z(){~QrS:-~sYe\!j
+DoA_Wk{'%>~kv]1RFhwH]+Dje|c1]c:#bL\!0!@Z!3y;Z!"n!A!\g\uhN[+w^%k,I5LU@NX_!B!y:;Ii35K}n<S~<9C*~6W'.
+DX6rtHftr!)|-{~!e^_kf!0H';P]oz!:j[rl!8[!(!${-,;I6~%0~p^gIfd"~SCgXZL]o
+DkbWqWd_7juNiXQ&.CP#03VY*_W-VQ;~I~}~H~f$9~\;w/+J&~M;ICt
+DnNr,WI}QD"M>=2xMBf~Kwv~M~o~XO$)e;;VP~"g;I.
+DvN]?i82~G~-|C~ENY~v~E`;>,N7~2+|K;I]c
+Dv9!TtS.1Xado'{uk%ro3:]~I~~~RY!I[~-{f+~z{SQ;/&;+/~=;IG
+
+
+Grammars:
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'fixed', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: *
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: !
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DV+gxmqRh'hPDF}@ua"zaWv~Ljqo.^$P)=!VaW3b"BEf8[@,G@Rgz@Y4)@bZk@Z;IJH=/$+
+D*g2F~d^h@}42~]Mqx*{76'@T2@\@pL@$e@c;I~zs
+D~b@soC1o0?ktI/YPxZh|2+9*~fZK.G4Sgt@9h5@](@Iknc@z@NtI4;IFqOu
+D:tDq*@93ZjG<l@?{@3@o,0@!Me)@]2;I>2Pez
+D[Y/Ml|V9;!c!K|m-T4|!=haK!(;}/i!k7;I^
+DT5GppzGD~az!~C`H/d3F|UH$b:%x6z-*RDK,mw[!74Eg!nMrN;.<?c!e0Q;I0
+Dx@RMgmjvwU;I:7LfNuZ#cIYlqd"`.p`hpv~!-5_kriZn!Z!bN;`HCV!"Ia0;Iz
+DIa_nv,61{B")CS"NE!^(%=iPK(x%~M#tq7B~!(.W71`!B^1@30x*>j'NUP`t#}=!|i!S;HG!g;IoP
+D~0Vf#%0zU=zjRjY:%HAcVP[s!|WSv\tOG|fX-mV,*+Z8W!~j7^!xnA;D?!g~Gp;I9g'J
+D"\?r\y(d.<I+Nxrq/h0D1*=yb-*G*Ae'*"b*UlDg*xb2-TX;#/*RZGKv;WuI{;Ir
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', u'semiCol', 'random', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 72, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'fixed', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: ~
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dx@RMgmjvwU;I:7LfNuZ#cIYlqd"`.p`hpv~!-5_kriZn!Z!bN;`HCV!"Ia0;Iz
+DIa_nv,61{B")CS"NE!^(%=iPK(x%~M#tq7B~!(.W71`!B^1@30x*>j'NUP`t#}=!|i!S;HG!g;IoP
+D~0Vf#%0zU=zjRjY:%HAcVP[s!|WSv\tOG|fX-mV,*+Z8W!~j7^!xnA;D?!g~Gp;I9g'J
+D"\?r\y(d.<I+Nxrq/h0D1*=yb-*G*Ae'*"b*UlDg*xb2-TX;#/*RZGKv;WuI{;Ir
+DyH^;'XM<<*:SjB3RFc*r>*H*B].Kc;wQ<2^A~d:K*7-PwXc6At;Ipq5
+D7MEKm"z`2T8hxe`M%$Z"?F=OPxN&G{L)*ki?\@6[!b\*mP56z*@s/0f\vk*}]!dx)K*J_;;*a3R>k;I@F.D
+D"BT+IkxcVC{*5RNG6~\_"3#U`PYnvbq>pds0*ki?\@6[!b\*$f*Ex],*oD*A=<DQs*iTBd}$W;,-r::mv**./~$;I|}
+DRX&][D'^KN*lhZO|0K*W_/Dl*l>}7*iGM?*|E;d%kYd%%6V*CPsl'xH0f;I;l
+D_ERg(;yU;iM;E;B};t;PhCq;9i;IO%
+DH)J%LuG(`jgkXb-ofj;G;A^H;drE;-4!;U;=rL;:J5;IW
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random', 'random', 'random', u'semiCol', u'flag', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: .
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: /
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DyH^;'XM<<*:SjB3RFc*r>*H*B].Kc;wQ<2^A~d:K*7-PwXc6At;Ipq5
+D7MEKm"z`2T8hxe`M%$Z"?F=OPxN&G{L)*ki?\@6[!b\*mP56z*@s/0f\vk*}]!dx)K*J_;;*a3R>k;I@F.D
+D"BT+IkxcVC{*5RNG6~\_"3#U`PYnvbq>pds0*ki?\@6[!b\*$f*Ex],*oD*A=<DQs*iTBd}$W;,-r::mv**./~$;I|}
+DRX&][D'^KN*lhZO|0K*W_/Dl*l>}7*iGM?*|E;d%kYd%%6V*CPsl'xH0f;I;l
+D_ERg(;yU;iM;E;B};t;PhCq;9i;IO%
+DH)J%LuG(`jgkXb-ofj;G;A^H;drE;-4!;U;=rL;:J5;IW
+DKlSg$%'bmj#yG=CTar=Ceen`{;I;\k;";W;y}[;yL;U;I7
+DIr^L4!;aO5l5gj:gMRq?FJqhK!V>;ki?\@6[!b\;h{O;,\;z02?;A;i;vpq;I*x
+DyY;XiM6#h4U#bM*@xY6U<Y)FaLnAd6#k&o?{dP0m9}ba?uW$^^M:["XiIG;suxLU.li;ki?\@6[!b\;y=K$j;7v;VmP;f;D`=;XTj0/;IHX
+D)ndEyxl,6Ru{x_GGIy.:!>].To>N!.B.d.y.Lg';P}{-647R]'IUX}pRl;i.~^.4.DS;I1/=
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', 'random', 'random', u'flag', 'random', 'random', u'semiCol', 'random', 'random', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: .
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: >
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DIr^L4!;aO5l5gj:gMRq?FJqhK!V>;ki?\@6[!b\;h{O;,\;z02?;A;i;vpq;I*x
+DyY;XiM6#h4U#bM*@xY6U<Y)FaLnAd6#k&o?{dP0m9}ba?uW$^^M:["XiIG;suxLU.li;ki?\@6[!b\;y=K$j;7v;VmP;f;D`=;XTj0/;IHX
+D)ndEyxl,6Ru{x_GGIy.:!>].To>N!.B.d.y.Lg';P}{-647R]'IUX}pRl;i.~^.4.DS;I1/=
+D{X.BS8].}u.k|w0;.e-Z.h[&.:lO;M#QRkg$'wRi$V@e21c6WLiE"P7M.N}.^#b.P|a;I-/Ki,
+D;6*K\X@_uy]#4'rj6Q8LP'^{{`|;V.3aWYY.v.B.p.Gg2[X.';A%^kOH2%'yxI~4QR>+1U.{BJAs.o)Z>X.eV;I#/{sk/C
+D&TWjl1';2R39HJzT=X/qg@G.;[`.I\Id..T3tD.>.R.KKSE;}m|)/Xfb_=.a8jEw.2.K;Ixng$f/xXy/r
+Dy9vA~X~q.,J,m.}.x-<.\_m.'qlb.]KOa\;LM8o|dkx*v*[Cn%)ND8K&hf<V\)W5hN`.+.#l.+Zq;Io/I(
+D~f3c*!bjWU:|N[fP'|Bu5)kK8'cDcLu!67.LH./uE.T*.96v;]gn;}@Y7U:LBJP%'cXWuQRx)1R4,.r.S;Z6jEp.dU.B/:u.Hov`F;I=?Ymj>cc9F>`Qs
+D-|%_!yL*p"pk~7;V6kn|Ck;J&l2u.$y.o/PZ.$.0r.x[Y'U17U|lV8."Ny<i.ki4:f;sZ.p;f.rj.T=K2Y;I9>!{>`b~k
+DAG]!._D7Vv;"2k<3AXe8e.}E8.B9).K.d.nIOZ.7;w.*0*H.g.%r=N|;I^fOK;>x&W>z:\*v
+
+
+Grammars:
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'number', 'random', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: ;
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: /
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D-|%_!yL*p"pk~7;V6kn|Ck;J&l2u.$y.o/PZ.$.0r.x[Y'U17U|lV8."Ny<i.ki4:f;sZ.p;f.rj.T=K2Y;I9>!{>`b~k
+DAG]!._D7Vv;"2k<3AXe8e.}E8.B9).K.d.nIOZ.7;w.*0*H.g.%r=N|;I^fOK;>x&W>z:\*v
+Dk.p\kn4vv[SQ'*Re86.$cd.iG.A'B{.Y<LxWk^uDfm!"P\=D.CeV]8.>>mP6;r4.>~.L9X._M;IC<r"[>a9@Y>H
+D51aC3-'-~5p8w#Xo0@&s[==-:}D+F%eu`Rmo.$.U.f")9.*J{0R.Ekvi.el7c.F);pzZ.3?wQ.F.Y"~;I{PP4p>P\G#+>p$ls
+DI{5{m&p_KDRb1TsJ9`FTPN{Pv{R{T{K{q!;lV{yJ;IJa-S+K6lh
+D~DeC/p00K2gJcq66o|I/`VX>{h{:qu{[{U2{<y{${SV;+~{(9;IJ$+J
+D{0j=6kvC.P\ySVs.:IS`HXH%ku6o!0M$A{rJ{>zpG5$Tl?#3dG+ey7{_&{;'{~{kn{8;0T{_;I!u_.C+t
+Di3:.IhEds&w6^nn2&:`'m\r{{!{*&vDq=DPf{={78{+{8V{N);U{Ri;Ivtk+W8x;.
+DYXifAET.89wL5pn,z4D.WI3#Lr]'U6)>{4j{'fkk.e9,`^eRv0jyIL2,}WG#Ry0sQw{I{5{Y<{ua{-H;a{o;IY!+Bi)u
+D&uk:[jWc~p;1$P;3Pu0=SFK`K);4]e*?;H;GQ;%;d[7c;d,j;INA/b2L5dR">
+
+
+Grammars:
+	random: {'length': 8, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: =
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: %
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D~DeC/p00K2gJcq66o|I/`VX>{h{:qu{[{U2{<y{${SV;+~{(9;IJ$+J
+D{0j=6kvC.P\ySVs.:IS`HXH%ku6o!0M$A{rJ{>zpG5$Tl?#3dG+ey7{_&{;'{~{kn{8;0T{_;I!u_.C+t
+Di3:.IhEds&w6^nn2&:`'m\r{{!{*&vDq=DPf{={78{+{8V{N);U{Ri;Ivtk+W8x;.
+DYXifAET.89wL5pn,z4D.WI3#Lr]'U6)>{4j{'fkk.e9,`^eRv0jyIL2,}WG#Ry0sQw{I{5{Y<{ua{-H;a{o;IY!+Bi)u
+D&uk:[jWc~p;1$P;3Pu0=SFK`K);4]e*?;H;GQ;%;d[7c;d,j;INA/b2L5dR">
+DVW!X;l-^;3LiS:`|x^OTl8hk,U;`W-hPckzCcCq"cp;%T"-;HTZ6;VIBB;8b;K;,T;Il!/O
+DfaZwD"~GgRIzaz'"PNlEQ)m~=!bH?#a-2(;t@;1avp&V6iu;`VMvo;i;oMp[;jWe;^+;.;IP67.Z1-./l/E
+Dl"lWg;Hey$^n"r*y4+qS<P{K?Z:8;X;8&'eie+%Gw1qco;MWJ;,Mm;];8;<e5;Hg4;I|/GDa
+DU2A,X~WLX-JY.;O~;''Cz;;;:O;Htq;/rIMR;h%;ab>;JXl,;InHhOa/J_r2A;Niy{
+DoYxZ#F$=`z|dRJM)8q!q*q9b-/U|uuCi(QW`h=/V(BS=g~U%<P{\;'sI$tx=ew]Y;I:
+
+
+Grammars:
+	random: {'length': 8, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 39, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: =
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: %
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D{0j=6kvC.P\ySVs.:IS`HXH%ku6o!0M$A{rJ{>zpG5$Tl?#3dG+ey7{_&{;'{~{kn{8;0T{_;I!u_.C+t
+Di3:.IhEds&w6^nn2&:`'m\r{{!{*&vDq=DPf{={78{+{8V{N);U{Ri;Ivtk+W8x;.
+DYXifAET.89wL5pn,z4D.WI3#Lr]'U6)>{4j{'fkk.e9,`^eRv0jyIL2,}WG#Ry0sQw{I{5{Y<{ua{-H;a{o;IY!+Bi)u
+D&uk:[jWc~p;1$P;3Pu0=SFK`K);4]e*?;H;GQ;%;d[7c;d,j;INA/b2L5dR">
+DVW!X;l-^;3LiS:`|x^OTl8hk,U;`W-hPckzCcCq"cp;%T"-;HTZ6;VIBB;8b;K;,T;Il!/O
+DfaZwD"~GgRIzaz'"PNlEQ)m~=!bH?#a-2(;t@;1avp&V6iu;`VMvo;i;oMp[;jWe;^+;.;IP67.Z1-./l/E
+Dl"lWg;Hey$^n"r*y4+qS<P{K?Z:8;X;8&'eie+%Gw1qco;MWJ;,Mm;];8;<e5;Hg4;I|/GDa
+DU2A,X~WLX-JY.;O~;''Cz;;;:O;Htq;/rIMR;h%;ab>;JXl,;InHhOa/J_r2A;Niy{
+DoYxZ#F$=`z|dRJM)8q!q*q9b-/U|uuCi(QW`h=/V(BS=g~U%<P{\;'sI$tx=ew]Y;I:
+D9FqB/h*B}=w,)\l~4PB;.f#-s$wS?A<5<ju,El5%=>K0S1LSv=eaX]x@*;FIU6P'\=!(;IF
+
+
+Grammars:
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	semiCol: ;
+	flag: {u'type': 'string', 'length': 78, u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\']}
+	score: 0
+	separator: !
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 4, 'type': 'string'}
+	score: 0
+	separator: .
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DfaZwD"~GgRIzaz'"PNlEQ)m~=!bH?#a-2(;t@;1avp&V6iu;`VMvo;i;oMp[;jWe;^+;.;IP67.Z1-./l/E
+Dl"lWg;Hey$^n"r*y4+qS<P{K?Z:8;X;8&'eie+%Gw1qco;MWJ;,Mm;];8;<e5;Hg4;I|/GDa
+DU2A,X~WLX-JY.;O~;''Cz;;;:O;Htq;/rIMR;h%;ab>;JXl,;InHhOa/J_r2A;Niy{
+DoYxZ#F$=`z|dRJM)8q!q*q9b-/U|uuCi(QW`h=/V(BS=g~U%<P{\;'sI$tx=ew]Y;I:
+D9FqB/h*B}=w,)\l~4PB;.f#-s$wS?A<5<ju,El5%=>K0S1LSv=eaX]x@*;FIU6P'\=!(;IF
+DEp+d]=WIBs{>^Jh{FHH@R}.u>0f|uIv`]{#zr=]uV^=f;2+i+GJh=2Wvs(z4p;I\"
+De=w'yr.(s8%Qgxvw]wnp"Pac=C_==|tqHr7hm_o0@XDKy/#*YzBl:@p<=#z%=*%;is=,9wbJ;II
+Dgl9k_==VJ[9F){d5&>wgJ8)D@l<\cNEsZ@*a|1wI6=4=TCa].;T=+eci};I{
+Dp:*x3Lbr"<Yoh$M%;a;SGev:4W-!8mgV'w)}mSy4N8HG.z1cPtsI,hbYF&8t.x@ClkXL8u)R-$oP2rlk+%b5B/%E)l8/*(!87U}!;7;-}6;I*]
+Dg<Vk"D&1-PXJi!y@<@T=I:BZw]UrbW9swE(rdhtq]lcm-I!X>EZ3pY}!nC!"}EM;J@\;Iae
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 18, u'type': 'string'}
+	random: {'length': 8, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: $
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random']
+	random: {'length': 2, 'type': 'string'}
+	score: 0
+	separator: %
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dy[lIO=})3qj6qI7bqG,w=Ndty_&noF;{;y;2;F;y;w3;{;;IL|-i
+Dfmw.2;4t;(I;i[;{$;L;'%;;IY-ar
+DF*d2~C]I_qMwq->W;{IJefDgD1mi"\0G6>$DuLRP_>ZB;k;,;;;#;j;6R;;IXq-Xp
+D1}Hl9Y1VbGhfYS1!/0"'Qt5n1pZm8wqH0o-$6];I;-;~L;^W;=;cO;=;;I}i-g^
+D3h3njNUdX.twdmSpelHjCKKK*Qy'<6asQ,{Y$&S\)&)MB3){IxUjd7DE('gD?,Z6oAxL%I;:;e;U;\O;+;Vg;;I"-+
+D8_qpgmQ$o\!6[f%0KUr&.7uAU#nQH55|bMhhU%_LF<I$k\z"L*$sO~6~;{+$JL|k\,,4;Ih
+DZG&DvjKEzDZ_X$WyFy+;Z2Wb,V[5G{`$<j]A%I$}ak]IYa;bGw,F{|$0(%BU.9z;Id
+DC$|7D<yP$?{JTS.T{4OO$@uf{$jXK;bvD;J$VP%i(}(";IS
+Dt[covddr$Bpn,g/4Kjq:khVEy?&$]j:$0${;13P*b~$^YvsQ|u;I0
+Di/0O,$`7oJ_-C:r{IH9Rw$KS+ncr$Qs^(y~<%;sOU$FZs<;Iwf
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 4, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: =
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 5, 'type': 'string'}
+	score: 0
+	separator: %
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dfmw.2;4t;(I;i[;{$;L;'%;;IY-ar
+DF*d2~C]I_qMwq->W;{IJefDgD1mi"\0G6>$DuLRP_>ZB;k;,;;;#;j;6R;;IXq-Xp
+D1}Hl9Y1VbGhfYS1!/0"'Qt5n1pZm8wqH0o-$6];I;-;~L;^W;=;cO;=;;I}i-g^
+D3h3njNUdX.twdmSpelHjCKKK*Qy'<6asQ,{Y$&S\)&)MB3){IxUjd7DE('gD?,Z6oAxL%I;:;e;U;\O;+;Vg;;I"-+
+D8_qpgmQ$o\!6[f%0KUr&.7uAU#nQH55|bMhhU%_LF<I$k\z"L*$sO~6~;{+$JL|k\,,4;Ih
+DZG&DvjKEzDZ_X$WyFy+;Z2Wb,V[5G{`$<j]A%I$}ak]IYa;bGw,F{|$0(%BU.9z;Id
+DC$|7D<yP$?{JTS.T{4OO$@uf{$jXK;bvD;J$VP%i(}(";IS
+Dt[covddr$Bpn,g/4Kjq:khVEy?&$]j:$0${;13P*b~$^YvsQ|u;I0
+Di/0O,$`7oJ_-C:r{IH9Rw$KS+ncr$Qs^(y~<%;sOU$FZs<;Iwf
+D%F`LD-n~nYx6}"(<9A8,=zfH6.tE4GzFJ?TTo;:Srv0/YfR3=2=4F;/Xu=)f;I*%78
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'fixed'}
+	score: 0
+	separator: \
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+Dt[covddr$Bpn,g/4Kjq:khVEy?&$]j:$0${;13P*b~$^YvsQ|u;I0
+Di/0O,$`7oJ_-C:r{IH9Rw$KS+ncr$Qs^(y~<%;sOU$FZs<;Iwf
+D%F`LD-n~nYx6}"(<9A8,=zfH6.tE4GzFJ?TTo;:Srv0/YfR3=2=4F;/Xu=)f;I*%78
+Dzr=16GFb%An[^k6lj<IL\j8+Ak%O;9YezWH"e:JW.=n=vg;D='po;I}2L2%l]$
+D^nPA2a}]wiT~gu@,th4z}@goZNX(_s:wY<EQ=YHDsTOiw_t&kTJ=B=NHd;fN=yo:;I6%=
+DjJhU?K8f'Own/ia=Mxf]}LW=d-%)]b?|\,@vF]9sPfP'tT=D%-=mS4d;|=k<+;IQ%<5
+D{y(gccr3wjS8=*`pn^=y~1|Ml/&JSyC+D$^_rzJ#@k{8<=U=#u>;9!=Y,S;Is{%>h\%
+DduiV"HOx(R@9/.F0[`yIxnG])?!I+\{S?i;\ki?\@6[!b\\=T#DQQ%p\#y"it\k|Td\?r.[.;bVWqrv\F<EHZe;IZuw+=64`mL-%V&YktU
+D($rAJ,Kb;"JEx)!!qFpf|3I%oQB4>QC9IZsZ\ki?\@6[!b\\4qt#oe_I\.'XjS\rmZ\h8Oj;E&GNdZyy\~'/:;I@{_qQ|Vt&o-U
+DSc-(Iw`6i\ki?\@6[!b\\x>gVvI$sJ/\c^5IZf:u)\X\h!R&Ma4zR;ymP;,Z}X\a;I7q^-~~70T9
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', u'flag', 'random', 'random', 'random', 'random', u'semiCol', 'random', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'fixed'}
+	score: 0
+	separator: \
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 10, 'type': 'string'}
+	score: 0
+	separator: -
+	arg: ['random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+D%F`LD-n~nYx6}"(<9A8,=zfH6.tE4GzFJ?TTo;:Srv0/YfR3=2=4F;/Xu=)f;I*%78
+Dzr=16GFb%An[^k6lj<IL\j8+Ak%O;9YezWH"e:JW.=n=vg;D='po;I}2L2%l]$
+D^nPA2a}]wiT~gu@,th4z}@goZNX(_s:wY<EQ=YHDsTOiw_t&kTJ=B=NHd;fN=yo:;I6%=
+DjJhU?K8f'Own/ia=Mxf]}LW=d-%)]b?|\,@vF]9sPfP'tT=D%-=mS4d;|=k<+;IQ%<5
+D{y(gccr3wjS8=*`pn^=y~1|Ml/&JSyC+D$^_rzJ#@k{8<=U=#u>;9!=Y,S;Is{%>h\%
+DduiV"HOx(R@9/.F0[`yIxnG])?!I+\{S?i;\ki?\@6[!b\\=T#DQQ%p\#y"it\k|Td\?r.[.;bVWqrv\F<EHZe;IZuw+=64`mL-%V&YktU
+D($rAJ,Kb;"JEx)!!qFpf|3I%oQB4>QC9IZsZ\ki?\@6[!b\\4qt#oe_I\.'XjS\rmZ\h8Oj;E&GNdZyy\~'/:;I@{_qQ|Vt&o-U
+DSc-(Iw`6i\ki?\@6[!b\\x>gVvI$sJ/\c^5IZf:u)\X\h!R&Ma4zR;ymP;,Z}X\a;I7q^-~~70T9
+Dji?9j"<-@wY3Pc-p<!'z0%"*0G\G\a7\lzT\YV{\1<2Sa[!\6Ik3h"1NI;}r2Qx_\{S^WM'S"u;I!Bpl9'WhZ-vF4$hRq
+D_)>(itWIl#*zv[wj;aR%Qxz]|,Es|uB?{Jec\G\R(,#w\6\5O=CJ\LIV'Vn:9\fM|v];>9ZJ_szG\L.:*;IS~r,NfBE,-7hxFc|rq^m
+
+
+Grammars:
+	semiCol: ;
+	struct: [u'cmd', u'number', 'random', 'random', 'random', 'random', 'random', 'random', u'semiCol', u'flag', 'random']
+	cmd: ATD
+	number: {u'length': 36, u'type': 'string'}
+	random: {'length': 10, 'type': 'string'}
+	flag: {u'values': [u'I', u'G', u'null', 'ki?\\@6[!b\\'], 'length': 39, u'type': 'string'}
+	score: 0
+	separator: $
+	arg: [u'number', u'flag', 'random', 'random', 'random', 'random', 'random', 'random', 'random', 'random']
+
+	cmd: ATI
+	struct: [u'cmd', 'random', 'random']
+	random: {'length': 20, 'type': 'string'}
+	score: 0
+	separator: /
+	arg: ['random', 'random', 'random', 'random', 'random', 'random']
+
+Commands: 
+DC6tNtbWi&X*ki?\@6[!b\*j,f*{kS-*nO";q~*yfps*3Y;I/k
+D(MZ#Ix)Uf`:gh:;;];ZXCCCDa{|x2;{;O;w;k3;Z@;c;<;IZ=KuzlZ
+DrMa"@I5L=K;n;z{\7XFAAI`IUgEkb.6E;BP;um;=;\;+F;s_;*;ID(x@q{|
+D9}6_}V}n3JWRa;#)h;f?n;V;@Ul6K[G;|;r;h;7k;V;e-;%e;I;#\w
+D<b|O8Nd;DQ;+_J=XD+pjIoC}TJ46k.:jvI,:?yx):j"7ASbX;QE;t;|;[;Q;~K;@!;IDy^m,44
+Duu,r[/M;HG=cwqB5\H^3ONKnF;c;q*:oX'wfk+qLK*Nz}ZGAtvYbD7j;?;Ko;F+;1;<";~=;EJ;c-;Iy_&
+D)WbI@X~u/b'q7g&Bepy:1$'gh5oJ$JGC)$MT5$"{Aa]sZ$ENh$ghQcLRO~y;U[vc6T|`%4G@\B!pE)a,$KHf,Mu;|;I}Ej}4OSt>9;/}&eynJ6Z%]Z+
+Dwzwsg>(I`O$[/dU$$&$_s$MKv4'J.G"-$@Im?RK$Q)sG;:7k'JnudM{>U}4AwF3usy5F0CI}[jBPa+S21g$Z;9=Sfw+I";IPbZ{>KzcX*@O%/"
+Djy'fZi-.[vv6^&fkK[);@7$18VtU^uT$4#YhR]o&$s$j{?yB(r?$qM?$tk0Ly#)uN$OZt|GEMb5;,VD^4%<7v`c@z<,*Q^Z(h*,Z+u|$SQ=Gms{n;I3b94;7T%0/d_ubq2
+DM#Ju)P"z)*!^so|2KfD>uWI#>L$Qo$'?+4V$<gHE4ZDB$sI$L~;K+$U5O==;6+k:J[(!~j@3$2,*Td`;I3K|oW2X/kcF
+
+

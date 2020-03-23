@@ -12,7 +12,7 @@ import utilityFunctions
 from numpy import setdiff1d
 
 
-def gram_crossover(cmd_gram, move_command=0):
+def in_gram_crossover(cmd_gram, move_command=0):
     #print ('--- gram_crossover method')
     gram_struct = cmd_gram['struct']
     if len(gram_struct) > 2:
@@ -20,6 +20,15 @@ def gram_crossover(cmd_gram, move_command=0):
         i, j = random.randint(start, len(gram_struct) - 1), random.randint(start, len(gram_struct) - 1)
         gram_struct[i], gram_struct[j] = gram_struct[j], gram_struct[i]
     return cmd_gram
+
+
+def multi_gram_crossover(grams_set):
+    gram1, gram2 = random.choices(grams_set, k=2)
+    print (gram1, gram2)
+    arg1 = random.choice(gram1['arg'])
+    arg2 = random.choice(gram2['arg'])
+    print (arg1, arg2)
+    gram1[arg1], gram2[arg2] = gram2[arg2], gram1[arg1]
 
 
 def add_field(cmd_gram):
@@ -234,7 +243,6 @@ def fixed_integers(cmd_gram):
 
 
 
-
 # Method that alters the symbols used for connecting grammars and fields with grammars
 def alter_connectors(cmd_gram):
     #print ('--- alter_connectors method')
@@ -251,10 +259,10 @@ def alter_connectors(cmd_gram):
 #   where each of the fields can be 0/1
 def modify_grammar(cmd_gram, settings, move_command=0):
     #print ('--- modify_grammar')
-    settings =  settings.split(',')
-    if settings[1] == '1': # crossover
-        gram_crossover(cmd_gram, move_command)
-    
+    settings = settings.split(',')
+    # setting[0] is for feedback
+    if settings[1] == '1': # in grammar crossover
+        in_gram_crossover(cmd_gram, move_command)
     if settings[2] == '1' and settings[3] == '1': # both add_field and remove_field
         if utilityFunctions.flip_coin() == 1:
             gram_random_add_delete(cmd_gram, move_command)

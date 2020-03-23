@@ -94,7 +94,7 @@ def create_population_back(grammars, diversification_factor=1):
             # 3 steps:
             # 1. random crossover
             # check if no crossover fuzzer
-            new_gram = utilityFunctions.copy_dict(gram_crossover(cmd_gram, move_command)) if fuzz_type != 2 else utilityFunctions.copy_dict(cmd_gram)
+            new_gram = utilityFunctions.copy_dict(in_gram_crossover(cmd_gram, move_command)) if fuzz_type != 2 else utilityFunctions.copy_dict(cmd_gram)
             
             if fuzz_type != 3:  # check if no mutation fuzz
                 # 2. random add or delete
@@ -113,16 +113,15 @@ def create_population_back(grammars, diversification_factor=1):
 
 def create_population(grammars, diversification_factor=1):
     mutated_grams = []
+
+    if fuzz_settings[1] == '1': # crossover
+        multi_gram_crossover(grammars)
+
     for g in grammars:
         cmd_gram = utilityFunctions.copy_dict(g)
         update_current(cmd_gram)
         generated = 0
         while generated < diversification_factor:
-            ''' 
-            global move_command
-            if move_command == 0:
-                move_command = 1 if utilityFunctions.flip_coin(10) == 1 else 0
-            '''
             new_gram = utilityFunctions.copy_dict(cmd_gram)
 
             modify_grammar(new_gram, fuzz_settings, move_command)
@@ -214,47 +213,45 @@ def preprocess_gram_set_up(gram):
         } 
 
 
-def evaluate_grammars(input_grams):
-    gram_to_fuzz = input_grams.split(',')
-
+def evaluate_grammars(input_gram):
     grammars = read_conf()
-    for gram in gram_to_fuzz:
-        try:
-            test_cmd_gram = grammars[gram]
-        except:
-            raise Exception('Error: unknown grammar')
+    
+    try:
+        test_cmd_gram = grammars[input_gram]
+    except:
+        raise Exception('Error: Unknown grammar')
 
-        preprocess_gram_set_up(test_cmd_gram)
-        global standard_grammar
-        if len(test_cmd_gram['struct']) > 3:
-            standard_grammar = test_cmd_gram
-        else:
-            global move_command
-            move_command = 1
+    preprocess_gram_set_up(test_cmd_gram)
+    global standard_grammar
+    if len(test_cmd_gram['struct']) > 3:
+        standard_grammar = test_cmd_gram
+    else:
+        global move_command
+        move_command = 1
 
-        for count in range(RESTART_TRESHOLD):
-            gram_population = create_population([test_cmd_gram], 10)
+    for count in range(RESTART_TRESHOLD):
+        gram_population = create_population([test_cmd_gram], 10)
 
-            grammar_scores = {}
-            for i in range(ATTEMPTS):
-                print('Attempt counter: ', i)
-                global current_population
-                current_population = gram_population
-                j = 0
-                for gram in gram_population:
-                    update_current(gram)
-                    grammar_scores[j] = {}
-                    grammar_scores[j]['grammar'] = gram
-                    grammar_scores[j]['score'] = evaluate_grammar(gram)
-                    j += 1
+        grammar_scores = {}
+        for i in range(ATTEMPTS):
+            print('Attempt counter: ', i)
+            global current_population
+            current_population = gram_population
+            j = 0
+            for gram in gram_population:
+                update_current(gram)
+                grammar_scores[j] = {}
+                grammar_scores[j]['grammar'] = gram
+                grammar_scores[j]['score'] = evaluate_grammar(gram)
+                j += 1
 
-                selected_gram = select_population(grammar_scores)
-                gram_population = create_population(selected_gram, 2)
-            print('Execution restart counter: ', count)
-            print('__________________________________________________\n')
+            selected_gram = select_population(grammar_scores)
+            gram_population = create_population(selected_gram, 2)
+        print('Execution restart counter: ', count)
+        print('__________________________________________________\n')
 
 
-def main(channel, input_grams, input_device, settings, blu_addr, input_port):
+def main(channel, input_gram, input_device, settings, blu_addr, input_port):
     global fuzz_channel
     fuzz_channel = channel
     global device
@@ -269,7 +266,7 @@ def main(channel, input_grams, input_device, settings, blu_addr, input_port):
 
     start_time = time.time()
     try:
-        evaluate_grammars(input_grams)
+        evaluate_grammars(input_gram)
         print('\nExecution time: ', (time.time() - start_time))
     except:
         exc_type, exc_value, exc_traceback = sys.exc_info()
