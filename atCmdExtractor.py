@@ -21,10 +21,7 @@ file_telit = 'ATCmd_manuals/Telit_AT_Commands_Reference_Guide_r24_B.pdf'
 # ATCMD=<par>[,<par>[,<par>]][,<par>]   - ex. AT+CAMM=<acmmax>[,<passwd>], AT+CBST=<speed>[,<name>[,<ce>]]
 # ATCMD=[<par>[,<par>[,<par>]]][,<par>] - ex.          
 # #
-
-
 regex = '(?P<cmd>AT[!@#$%^&*+]?[A-Z\d]+)(?P<arg>(\?|=\?|(=|\s|\[[<>\["+:;%,?\s\w\d]+\]+|[<>]+[;\s\w\d]+>|,))*)'
-#regex = '([^!@#$%^&*+\-_A-Za-z0-9]|^)(AT[!@#$%^&*+\-_A-Za-z0-9]+)(( |\?|=\?|(=|)((\[[ _<>\["+=:;%,?a-zA-Z0-9]+\]+)*|(<[ _;a-zA-Z0-9]+>)*|,)*)*)'
 
 
 def replaceMultiple(mainString, toBeReplaces, newString):
