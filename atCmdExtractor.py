@@ -32,7 +32,9 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 
 
 def clean_cmd(cmd):
-    cmd = replaceMultiple(str(cmd), [' ', '\n'] , '')
+    cmd = replaceMultiple(str(cmd), [' ', '[', ']', '\n'] , '')
+    if cmd[-1:] == ',':
+        cmd = cmd[:-1]
     if cmd[-1:] == '?':
         cmd = cmd[:-1]
     if cmd[-1:] == '=':
@@ -46,13 +48,13 @@ def at_cmd_extractor(input_file, tables_flag):
     print ('Analyzing ' + input_file + '\n')   
     commands = []
 
-    if tables_flag == 1:
+    if tables_flag == '1':
         tables = camelot.read_pdf(input_file, pages = '1-end')
         for t in tables:
             if input_file == file_3gpp:           
                 if str(t.df[0][0]) == 'Command':
                     cmd = clean_cmd(t.df[0][1])
-                    if cmd not in commands:
+                    if cmd != '' and cmd not in commands:
                         commands.append(cmd)
             #input_file == file_telit
             else:
@@ -60,10 +62,10 @@ def at_cmd_extractor(input_file, tables_flag):
                     cmd = str(t.df[0][i])    
                     if cmd[:2] == 'AT':
                         cmd = clean_cmd(cmd)
-                        if cmd not in commands:
+                        if cmd != '' and cmd not in commands:
                             commands.append(cmd)
 
-    else:
+    elif tables_flag == '0':
         read_pdf = PyPDF2.PdfFileReader(input_file)
         NumPages = read_pdf.getNumPages()  
         for i in range(1, NumPages):
@@ -77,10 +79,13 @@ def at_cmd_extractor(input_file, tables_flag):
                 if tup[1] != '?' and tup[1] != '=?':
                     cmd = tup[0] + tup[1]
                     cmd = clean_cmd(cmd)
-                    if cmd not in commands:
+                    if cmd != '' and cmd not in commands:
                         commands.append(cmd)
-                    
+    else:
+        print ('Error: Non valid argument.\n')
+        exit()                
     
+    commands.sort()
     output = input_file + '_extracted_ATCmd'
     with open(output, 'w') as f:
         for cmd in commands:
@@ -95,8 +100,7 @@ def at_cmd_extractor(input_file, tables_flag):
 usage_message = 'Usage: ./atCmdExtractor.py \t <file.pdf> \t <commads_in_tables_flag>\n'
 
 if __name__ == "__main__":
-    '''
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         print ('Error: missing argument')
         print (usage_message)
         sys.exit()
@@ -105,16 +109,12 @@ if __name__ == "__main__":
         print (usage_message)
         sys.exit()
     else:
-        #input_file = file_gtm
         input_file = sys.argv[1]
-        at_flag = sys.argv[2]
-        tables_flag = sys.argv[3]
-        if at_flag == 0 and tables_flag == 0:
-            print ('It is not possible to automatically retrieve AT commands from a pdf file if they are not structured in tables or identified by the perfix AT')
+        tables_flag = sys.argv[2]
     '''
-
     input_file = file_telit
     tables_flag = 0
+    '''
     print ('--- AT Commands Extractor ---\n')
     at_cmd_extractor(input_file, tables_flag)
     print ('--- Execution Terminated ---\n')
