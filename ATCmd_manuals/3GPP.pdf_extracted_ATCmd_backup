@@ -1,0 +1,129 @@
++CGMI
++CGMM
++CGMR
++CGSN
++CIMI
++CMUX=<mode>,<subset>,<port_speed>,<N1>,<T1>,<N2>,<T2>,<T3>,<k>
+Z<value>
++CBST=<speed>,<name>,<ce>
++CRLP=<iws>,<mws>,<T1>,<N2>,<ver>,<T4>
++CHSD
++CHSN=<wAiur>,<wRx>,<topRx> ,<codings>
++CV120=<rah>,<mfm>,<mode>,<llineg>,<assign>,<negtype>
++CSDF=<mode>,<auxmode>
++CSIL=<mode>
+D<dial_string>;
++DS=<dir>,<neg>,<P1>,<P2>
++CECALL=<type_of_eCall>
++CNUM
++COPS=<mode>,<format> ,<oper>,<AcT>
++CLCK=<fac>,<mode>,<passwd>,<class>
++CPWD=<fac>,<oldpwd>,<newpwd>  +CME ERROR: <err>
++CCFC=<reason>,<mode>,<number>,<type>,<class> ,<subaddr>,<satype>,<time>
++CCWA=<n>,<mode>,<class>  +CME ERROR: <err>
++CAOC=<mode>
++CLCC
++CPOL=<index>,<format>,<oper>,<GSM_AcT>,<GSM_Compact_AcT>,<UTRAN_AcT>,<E-UTRAN_AcT>
++CPLS=<list>
++COPN
++CAEMLPP=<priority>
++CPPS
++CFCS=<priority>,<status>
++CAAP=<priority>,<status>
++CUUS1=<n>,<m>,<message>,<UUIE>,<message>,<UUIE>,...
++CPSB=<n>
++CNEM=<reporting>
++CPAS
++CFUN=<fun>,<rst>
++CPIN=<pin>,<newpin>
++CBC
++CSQ
++CMEC=<keyp>,<disp>,<ind>,<tscrn>
++CDIS=<text>,<text>,...
++CIND=<ind>,<ind>,...
++CMER=<mode>,<keyp>,<disp>,<ind>,<bfr>>,<tscrn
++CPBS=<storage>,<password>
++CPBR=<index1>,<index2>
++CPBF=<findtext>
++CPBW=<index>,<number>,<type>,<text>,<group>,<adnumber>,<adtype>,<secondtext>,<email>,<sip_uri>,<tel_uri>,<hidden>
++CCLK=<time>
++CALA=<time>,<n>,<type>,<text>,<recurr>,<silent>
++CSIM=<length>,<command>
++CRSM=<command>,<fileid>,<P1>,<P2>,<P3>,<data>,<pathid>
++CSCC=<mode>,<cmd_set>,<token>
++CALM=<mode>
++CRSL=<level>
++CVIB=<mode>
++CMUT=<n>
++CAMM=<acmmax>,<passwd>
++CPUC=<currency>,<ppu>,<passwd>
++CCWE=<mode>
++CPWC=<class>,<band>
++CLAN=<code>
++CLAE=<mode>
++CSGT=<mode>,<text>
++CSVM=<mode>,<number>,<type>
++CRMC=<index>,<volume>,<call type>,<profile>
++CRMP=<call type>,<volume>,<type>,<index>
++CLAC
++CALD=<n>
++CAPD=<sec>
++CTZU=<onoff>
++CTZR=<onoff>
++CPROT=<proto>,<version>,<lsap1>,...<lsapN>
++CGLA=<sessionid>,<length>,<command>
++CRLA=<sessionid>,<command>,<fileid>,<P1>,<P2>,<P3>,<data>,<pathid>
++CCHO=<dfname>
++CCHC=<sessionid>
++CEAP=<dfname>,<EAPMethod>,<EAP packet data>,<DFeap>
++CERP=<EAPsessionid>,<EAPparameter>
++CMOLR=<enable>,<method>,<hor-acc-set>,<hor-acc>,<ver-req>,<ver-acc-set>,<ver-acc>,<vel-req>,<rep-mode>,<timeout>,<interval>,<shape-rep>,<plane>,<NMEA-rep>,<third-party-address>
++CBKLT=<state>,<duration>
++CSO=<orientation>
++CSS
++CPOS<CR> text is entered <ctrl-Z/ESC>
++CBCAP=<reporting>,<reporting_interval>
++CGPIAF=<IPv6_AddressFormat>,<IPv6_SubnetNotation>,<IPv6_LeadingZeros>,<IPv6_CompressZeros>
++CEN=<reporting>
++CESQ
++CGDCONT=<cid>,<PDP_type>,<APN>,<PDP_addr>,<d_comp>,<h_comp>,<IPv4AddrAlloc>,<emergency indication>,<P-CSCF_discovery>,<IM_CN_Signalling_Flag_Ind>
++CGDSCONT=<cid>,<p_cid>,<d_comp>,<h_comp>,<IM_CN_Signalling_Flag_Ind>
++CGTFT=<cid>,<packet filter identifier>,<evaluation precedence index>,<source address and subnet mask>,<protocol number (ipv4) / next header (ipv6)>,<destination port range>,<source port range>,<ipsec security parameter index (spi)>,<type of service (tos) (ipv4) and mask / traffic class (ipv6) and mask>,<flow label (ipv6)>,<direction>
++CGTFT=?
++CGQREQ=<cid>,<precedence>,<delay>,<reliability>,<peak>,<mean>
++CGQMIN=<cid>,<precedence>,<delay>,<reliability>,<peak>,<mean>
++CGEQREQ=<cid>,<Traffic class>,<Maximum bitrate UL>,<Maximum bitrate DL>,<Guaranteed bitrate UL>,<Guaranteed bitrate DL>,<Delivery order>,<Maximum SDU size>,<SDU error ratio>,<Residual bit error ratio>,<Delivery of erroneous SDUs>,<Transfer delay>,<Traffic handling priority>,<Source statistics descriptor>,<Signalling indication>
++CGEQMIN=<cid>,<Traffic class>,<Maximum bitrate UL>,<Maximum bitrate DL>,<Guaranteed bitrate UL>,<Guaranteed bitrate DL>,<Delivery order>,<Maximum SDU size>,<SDU error ratio>,<Residual bit error ratio>,<Delivery of erroneous SDUs> ,<Transfer delay>,<Traffic handling priority>,<Source statistics descriptor>,<Signalling indication>
++CGEQNEG=<cid>,<cid>,...
++CGATT=<state>
++CGACT=<state>,<cid>,<cid>,...
++CGCMOD=<cid>,<cid>,...
++CGDATA=<L2P>,<cid>,<cid>,...
++CGPADDR=<cid>,<cid>,...
++CGANS=<response>,<L2P>,<cid>
++CGCLASS=<class>
++CGEREP=<mode>,<bfr>
++CGSMS=<service>
++CGCONTRDP=<cid>
++CGSCONTRDP=<cid>
++CGEQOS=<cid>,<QCI>,<DL_GBR>,<UL_GBR>,<DL_MBR>,<UL_MBR
++CGEQOSRDP=<cid>
++CEMODE=<mode>
++CGDEL=<cid>
++CSCON=<n>
++CAULEV=<mode>
++CALCC=<mode>
++CACSP=<mode>
++CANCHEV=<mode>
++COTDI=<message>,<OTDIE>,<message>,<OTDIE>
++CEPTT=<mode>,<data>,<dataid>,<dist-param>
++CGIPC
++CGCS=<GId>,<status>
++CBCS=<GId>,<status>
++CUSATR=<profile_storage>
++CUSATW=<profile_storage>,<profile>
++CUSATD=<d_action>,<n_action>
++CUSATA=<a_action>
++CUSATE=<envelope_command>
++CBC
++CBC

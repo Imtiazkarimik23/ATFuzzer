@@ -1,0 +1,1846 @@
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode', u'AcT']
+	format: {u'range': [-9223372036854775807, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: @
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=w|:(2N]f55@-2391095215608915723@4@6
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': 'digit', 'length': 14}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [8, 107], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=71191515829498,2,/&#+vg.kRy,14
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'format', u'AcT']
+	format: {u'range': [0, 2], u'type': 'letters', 'length': 58}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3,0rr"{OQ,G{\#CwcJ,rxltrgzcueapucdbdurkdcbmcfe,0
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', u'oper', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.24359339088
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=6,1,Z$6<s\I?(/,0,z$k}u5\uf
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', u'oper', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.24359339088
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=5,0,gKPZmf1sTU:9,2,>Bojj,svrs
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'mode', u'format']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.97214909027
+	separator: @
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=mI{,@1@5215748730770393121
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT', u'oper', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.83838026395
+	separator: |
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=1|1|2+=F\?,|0|s|
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.8999070049
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [-9223372036854775807, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=/hV5EU=;dmm"*E!,2,-5200489593277242728,1,zVoSmin
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode', u'oper', u'format', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.8999070049
+	separator: #
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=0#1#(M<yE@1O]=:)|wE&/sS0CWUT3uVK]q#1#:U^0`;{'
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86767804843
+	separator: @
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 9}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3956711223935314411@672@]AwY`VOl@`
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode', 'random', u'format', u'oper']
+	format: {u'range': [-9223372036854775807, 2], u'type': 'letters', 'length': 88}
+	cmd: AT+COPS
+	equal: =
+	score: 2.13008045175
+	separator: ~
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 62}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=r7w..BvimV",2$~L{SBEr^_`'^:i.0t}}/[<:B~4~o~lnwtjjnzqahcyikyexxissplcejntcafndjiyiykpzllmoswrarbmfrrguigejuydekmazkhkbvatpgmorg~CW
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode', 'random', u'oper', u'format', 'random', 'random']
+	format: {u'range': [-9223372036854775807, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.13008045175
+	separator: *
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 62}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=DG_a|j4k*4*Mu*<G8TC8D;nzadlw_4$-*-9134307265524912921*<t*v[
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.93023507862
+	separator: >
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 9}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=7030574>0&{q>#5gplkP9"z)R=OiW3U{MsO@VuMW/X=
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'oper', u'format', 'random']
+	format: {u'range': [-100, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.75068607123
+	separator: #
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=5#d<`bF#921530223460711707#kcgr
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.04527722136
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=W)%?b;$-5915012670578003085
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode', u'AcT']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.98148656132
+	separator: \
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 9}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=aR%EM}H\7!o+Arv.}u\#jq_Oax=$}N{m|$uGc2.na&&Nf.T~F9o#(eBJLuWwq{!&a4uZ'{l0"]L^,\617\4243295678770429554
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'oper', 'random', u'format']
+	format: {u'range': [-200, -101], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94322977036
+	separator: [
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=5[Rc2aW&jz@=LG(Z1x!\)5Q<i[B(5=_Ncy[-112
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 2.10508249431
+	separator: :
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 9}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=907471491:.K.Mi!0ewJ+[:yy.oC`&G}~zR[2\p:1
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'oper', u'mode', 'random']
+	format: {u'range': [-100, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.02489981936
+	separator: #
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=6#j+eJAob#1#!Z]i|$h
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', 'random', u'oper', u'AcT', u'format']
+	format: {u'range': [-200, -101], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.81577477179
+	separator: [
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=vA.M[&YuX=!QP.Rv*}.UQwvd?ugP1bQ2o8=[6[-128
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', 'random', u'oper', u'AcT', u'format']
+	format: {u'range': [-200, -101], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.81577477179
+	separator: [
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=gL_7/-,XL[}D(9rCkbH$E%0%0,SXhdu_oI+u$[5[-106
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.25415327928
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94698248635
+	separator: >
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'letters', 'length': 2}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=p
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-9223372036854775807, 9223372036854775807], u'type': 'digit', 'length': 56}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86018967337
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [8, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=242423034363696266423557800328291088860685915$5649477720723005321
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-9223372036854775807, 9223372036854775807], u'type': 'digit', 'length': 56}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86018967337
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [8, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=58669407284368545541048810030483454392772$3580237491483388650
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-9223372036854775807, 9223372036854775807], u'type': 'digit', 'length': 56}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86018967337
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [8, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=499385555018807242$4145016437348893240
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', 'random']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-100, 9223372036854775807], u'type': 'fixed', 'length': 2}
+	cmd: AT+COPS
+	equal: =
+	score: 1.68498953594
+	separator: ;
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 69}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=TmF]=t.;-9223372036854775807;,%[ZI;'?~+'{T-Q|0&]<B
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', 'random', u'AcT', u'oper', u'format', 'random']
+	format: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 4}
+	cmd: AT+COPS
+	equal: =
+	score: 1.61943285165
+	separator: .
+	mode: {u'range': [-9223372036854775807, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=-2865506584713962028.G0g=.0.wU,{{)'}SHRXK;&.QBrP)f#8J.4944..:
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', 'random', u'mode', u'AcT']
+	format: {u'range': [-300, -201], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.57038651651
+	separator: ~
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=Xr~49~-85
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', 'random', 'random', u'oper', u'format', u'AcT', 'random']
+	format: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 4}
+	cmd: AT+COPS
+	equal: =
+	score: 2.2290402632
+	separator: .
+	mode: {u'range': [105, 204], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=111.;5tg2.r<.g<(BRE:NgJHum.1954.3.)OXb
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-9223372036854775807, 9223372036854775807], u'type': 'digit', 'length': 28}
+	cmd: AT+COPS
+	equal: =
+	score: 2.17233362041
+	separator: ~
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [8, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=276043423268566520056261
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'AcT', u'format', 'random']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-100, 9223372036854775807], u'type': 'fixed', 'length': 2}
+	cmd: AT+COPS
+	equal: =
+	score: 1.97217264375
+	separator: ,
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 69}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=Z9n(g8$,?a150@Q\OKIz,<,Ko%,-9223372036854775807,l)
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.87243524107
+	separator: $
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'letters', 'length': 4}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=uwu
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', 'random', 'random', 'random', u'format', u'AcT', u'oper']
+	format: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 4}
+	cmd: AT+COPS
+	equal: =
+	score: 2.10842528308
+	separator: .
+	mode: {u'range': [105, 204], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=185."vIR.nL.8>ov8H-.3.2.wx06Yb2aV;n*-;Y$ct/~G+^Gu
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', 'random', u'AcT', u'oper', u'format', 'random', 'random']
+	format: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 4}
+	cmd: AT+COPS
+	equal: =
+	score: 1.9716551987
+	separator: ;
+	mode: {u'range': [-9223372036854775807, 104], u'type': u'ranged'}
+	AcT: {u'range': [8, 107], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=Va6cK;60;=IkUA;269;RcZ;0S<c
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 20, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'oper', u'format', 'random']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-100, 9223372036854775807], u'type': 'fixed', 'length': 2}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94566768185
+	separator: ;
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 69}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=RGF\(o#5!pk(?LH&zE*YdiPpZ|W;DM~Gz}c*CcUg`@;oJr&i=LD;9223372036854775807;8y
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT']
+	format: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.77735214545
+	separator: _
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'letters', 'length': 4}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=xi
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3,1,O
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'format', u'AcT', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-100, -1], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-13,P0Y0(g{@'_#z1,2,3,Io<
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', u'oper', u'mode']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [0, 4], u'type': 'letters', 'length': 55}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=1,0,a*w`,yrae
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-8752511783337857136,2,Mdbz9s05[3eMQL:ya,3
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-2105142744860692134,2,b,2
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-2129948179260802853,2,>N*{/,1
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.95725321953
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=4,{v|H
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89100203334
+	separator: .
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=3pI5/]rS[zR:E%Zr.101.7638427219047301055.2.u)
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89100203334
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=1,61,87W>lK4,2
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode']
+	format: {u'range': [0, 2], u'type': 'letters', 'length': 31}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86784828161
+	separator: )
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-100, -1], u'type': 'fixed', 'length': 52}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=J@/s=6c)shxorakwksn)9223372036854775807)4
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86696099026
+	separator: $
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=1$2$r:H!6MxOvgFY@grb$-82
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', u'mode', u'oper', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86696099026
+	separator: ]
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=694358967184242399]1]4]/Bf[]KjV
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'AcT', u'oper', 'random']
+	format: {u'range': [-100, -1], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.30649252353
+	separator: ]
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=3]-86]7046407052255608222]j!V#]9
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.21792479528
+	separator: <
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3<91<.88^H\t0F.-3<cU"7lWQDG2^b(Y_G*2DsSs\PKV*,f+"[-J`._3s2i@:aL6Js(Xn~ei66<>h6$"s2g3+*|)G}|wc\&b
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.21792479528
+	separator: |
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 27}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=695967907388|-29|2*)}
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.05792861896
+	separator: ,
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=18,!%|]jUG+q`,1
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'format']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.90121104154
+	separator: /
+	mode: {u'range': [5, 104], u'type': 'letters', 'length': 75}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=rifarxgzxghbesc/Y;/4816200207173132932
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'format']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.90121104154
+	separator: /
+	mode: {u'range': [5, 104], u'type': 'letters', 'length': 75}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=oraypepldzwrqryvr/8;$utlgh/57670260367037588
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper', u'format']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.90121104154
+	separator: /
+	mode: {u'range': [5, 104], u'type': 'letters', 'length': 75}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=uqzccmrutuqzmlirislknqvdtfakxfixskjhj/4(Ikz#ogrg!E:L/7711102864662498329
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper', u'AcT']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.90121104154
+	separator: ^
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=98^4^V!o,823a6^-5
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.30587474454
+	separator: |
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 27}
+	AcT: {u'range': [-200, -101], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-170|67689|)XDqn,YUAnXuk)N0^
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT', u'oper', 'random']
+	format: {u'range': [-100, -1], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.20397287473
+	separator: @
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=3483528605460810520@-24@L)VJp@8!Ns
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.16056730739
+	separator: !
+	mode: {u'range': [5, 104], u'type': 'letters', 'length': 150}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=xryvtfcfulsbmezrlqzvskusmuu!6063765008354449653
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT', u'oper', u'format', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89068213206
+	separator: -
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=1149300151544056431-q"T-0XX0H)(-Z-98-)
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT', u'oper', u'format', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89068213206
+	separator: -
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=4343317238228666690-P>9rs`(@U2AUL8t}=B(T-ia7hGN_NY@zq(c!IZD#D%:'$3/dY1?n[-51-kco
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.03179821989
+	separator: |
+	mode: {u'range': [0, 4], u'type': 'digit', 'length': 13}
+	AcT: {u'range': [-200, -101], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=9|wNRd*d?.
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', u'AcT', u'mode', 'random', 'random']
+	format: {u'range': [-100, -1], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73492513343
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=(eLY/6oW,G/.=18*[T4T1Tl29IHlgKGs}T}1267156859214212442}4034563491941206893}o$nn6}UD
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', u'AcT', u'mode', 'random', 'random']
+	format: {u'range': [-100, -1], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73492513343
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=-_I-s6r^3ue!`JLb9)}FBv#vw"?f{q<jcF,Vr21;L@]:kSZ[}`4G<i]x}3681071466891030342}346968061963808289}Y==p<}^B
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'AcT', u'oper', 'random']
+	format: {u'range': [-100, -1], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73492513343
+	separator: &
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=N$?!r|q"7.t(Nc!<;b$r+vXxLrcD?AO&4783889609264092957&2257162412709595567&b`G&Bk
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 4, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'AcT', u'oper', 'random']
+	format: {u'range': [-100, -1], u'type': 'string', 'length': 90}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73492513343
+	separator: &
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=N'YqBvFawR!_P}5&!NXvvWnXYmU|O`RH)q*U{4wFcaXeS`48_&1245209290599558125&1359856159714327777&_{r&(
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', u'mode', u'oper', 'random', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.05456369811
+	separator: :
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=qs^Wr)rs"{zi%Y.<,%0+&qd[}S$`o1WuAMGf`Y:13:35:T,?::N_sv:5L/Y=
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.03669177506
+	separator: |
+	mode: {'values': [-9223372036854775807, 9223372036854775807], u'range': [0, 4], u'type': 'letters', 'length': 48}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=lqxpjilmdpecszdervmbpyxdojnwmzmrpvabhlhviuoys|-44
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.03669177506
+	separator: |
+	mode: {'values': [-9223372036854775807, 9223372036854775807], u'range': [0, 4], u'type': 'letters', 'length': 48}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=hvsiwozhijodalvhgwqolzawrmiklych|-91
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.76983753561
+	separator: (
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=6/[|#r(-4319369228032798737(O<
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', 'random', u'oper', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.76680171191
+	separator: :
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=LVY!_cH1/g>4@elFrOd*O$DR7w#Xtk@j$Y&F~x$^U21mNvo:49:*9:sV+eZ:4`h:-90:PtB
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', 'random', u'mode', u'oper', 'random', u'format']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.76680171191
+	separator: :
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=9V2$!sp!Y!nN*l}O*P1K8jeS<)2EwTzqZK)ZsdulsTO@4,qa3g}Q][0Z"~XZ]5:p+>w,[hz=Atz&&|:3i:50:A:1C:<.:56
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', 'random', u'mode', u'oper', 'random', u'format']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.76680171191
+	separator: :
+	mode: {u'range': [5, 104], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=E4u.!]*C7V^Lm3?q:.U&[XSJkViQwa3p37VtKi}CPbH\%oK'rUNi.p*Nn[BxK$#gq|pyF:|y:17:AV|`lJ<a+:4D\:75
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', 'random', u'oper', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.23417599357
+	separator: <
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=4>*zZ2TzODJb|=<9T9ZB<tUOvt=nV7(%s-ie$0pThfuF8Hz?03Snm*&'66JM\0x:`2a|pv#@z/XM[/ux7~hV:]6$hfyBjGu}SP\h6ai)EaPckdI9me2M&Nj[b|4;qiuBN$Og$KbwQ&EyBSLo~Y9qOg:2'*_6xF{*gWk,;v780<91<$zk<74<%a=Q<-57<*!
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'format', 'random', u'oper', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.23417599357
+	separator: <
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=4YmE"^\E@WUu6tNe!x2|SOhZQf&1MMTTJ#AXTfWA=jxG1}Ot.I5cj-Kc)pJc`Uq<86<)ZzQ<`4<B+k<-44<yCY)
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT', 'random', u'oper', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.23417599357
+	separator: :
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=85:S,8PyS?z5&5>EPW)3{W8X<8Sdk0"lY`:IC72tzEc^|C0:<PuJ5:tjfm!?sP:ZYwG:-71:$qE
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.06482116216
+	separator: {
+	mode: {'values': [-9223372036854775807, 9223372036854775807, [-9223372036854775807, 9223372036854775807]], u'range': [0, 4], u'type': 'string', 'length': 87}
+	AcT: {u'range': [-200, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=d9N{ZvV#D[obQOYQU$yk@[w^RZ{PTFDP}7kb:V1TJxF$p"c60V*-6tg/0>3e`5Z6MTj@lF^<V6o?E{Ty{2399773916544643840
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.06482116216
+	separator: {
+	mode: {'values': [-9223372036854775807, 9223372036854775807, [-9223372036854775807, 9223372036854775807]], u'range': [0, 4], u'type': 'string', 'length': 87}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-29{R+GP/xU@DLP=wdhnWjU<JMFo\m[TqskB@Y0ZCBWQ6+a@=(leblE{qF[zZ>AVDfR~W6w,
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'mode', u'format', u'AcT']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89343152359
+	separator: ]
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=q`1<]-5078899100434413133]1CYhv)(2@lRi6MF_S"UBWMtQ:]`q-^'62dY7$).P9Wn]\'s"O"v`t#:8YHy{WVe@}}`1tpG{*zJ\F]z'bSJ2%Ta1K;oJ+Ma31r,m[)p[(
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.89343152359
+	separator: ;
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=\}[qOtefF*%;-2930636403533128865;B3*/
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT', u'oper', 'random', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94449589273
+	separator: :
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=36:v@.LM>^?e~=.+$^0_v[`:'OzOo'o{2G>-Kg#{9}^ku.\MzE}+H-O8:e.>x&-qXOA(+zxy-^QWk6~:2U&wKbC:h=f:I3DYA:-62:\d
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', 'random', u'AcT', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94449589273
+	separator: "
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=42"0+n"1W9m$",=K!/1RE9q]0,Z,St5\sg2K1ez-l}es}=4LaC,z1H"SqYCu"-52"A#
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', 'random', u'AcT', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.94449589273
+	separator: "
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=14"{7"9">/q1A@fn0>|42LMjD"H!"-31"4"A]
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'AcT', 'random', u'oper', 'random', u'mode', u'format']
+	format: {u'range': [103, 202], u'type': 'string', 'length': 70}
+	cmd: AT+COPS
+	equal: =
+	score: 1.88912848299
+	separator: {
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=1e/XiyKmO)hYw~mjK+.%4{2&Rd2U8enG-:_!d>Ij3|RnvQ9GN;3h0H@q2NdW<b3jC4(h,Pj{I{XQ>Af=L{Y{-28{l@EH7A>E(C(b<:8vV>u1Q/kj_PlS.{I$
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'mode', u'format', u'AcT']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.84365066931
+	separator: /
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=(/-8702413911565086167/F\"Jez1F`)t24gKOq{Rg5/xj"1OB?@D?0/7v)eBgFG@>!qCQz7mFO\_DPm""{y$-e,
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.78800018925
+	separator: ;
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-5565429378256603175;$}51v(J5<YZcqU-d=yiO*scEXtBjJDm)66i/(/N.<~{I9~)z%'X$)#
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.78800018925
+	separator: ;
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-3772109560633526345;#af[f'nPc@:Gx*bm&jP~Yg_2O.`|sacS&H;J)P.RoBIS]h{{lu>%grc~75GI)`$12fpC)"/H@
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 86}
+	cmd: AT+COPS
+	equal: =
+	score: 1.78800018925
+	separator: ;
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-5296212863768945659;m`^#`mQx@c#+]pFih_/5x,m![E?-\pcl'~vMVU4L"FrsE2iUF.Lxw.MXfuDwN>6c'6({=ER8]U{I,n~
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 43}
+	cmd: AT+COPS
+	equal: =
+	score: 1.78800018925
+	separator: .
+	mode: {u'range': [-9223372036854775807, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-6579974425161502758.L8hhw.4
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format']
+	format: {u'range': [-97, 2], u'type': 'string', 'length': 43}
+	cmd: AT+COPS
+	equal: =
+	score: 2.18958260735
+	separator: $
+	mode: {u'range': [-9223372036854775807, 4], u'type': 'string', 'length': 75}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=7idu&#VlM#1`OVFOm}WW6f=#2/9(fBJW:K4k#t/>_2V#MkWe11%YW.F!$k'"y$x>'oz/wtCS^+Cd\rn7+On!_
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', 'random', 'random', u'mode', 'random']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.04387969292
+	separator: &
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 87}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=94&!&zEY&{aM(8$_&-29&T
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', u'AcT', 'random', u'oper', u'mode', 'random', 'random', 'random']
+	format: {u'range': [3, 102], u'type': 'string', 'length': 31}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73602542703
+	separator: )
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=s>i?21kb[%-@[>=jN4)qj:"@B`d{C}>aSlza}u\}ag!zaH~*\vq0~=9Kc7/hvmc;CD(h6).7{Zk5bv.hGeppGj^q$/Ip)wRHu)2lsj7)-64)#Iy)HzT).Fg
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', 'random', 'random', u'oper', u'AcT', u'mode', 'random', 'random']
+	format: {u'range': [3, 102], u'type': 'string', 'length': 31}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73602542703
+	separator: }
+	mode: {u'range': [-95, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 174}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=i[}G}W}Dxo}vQ%wc?74r6NJ3kdl="=hp@Q:tcD31\s]VCjA&@Q0w>q*,%[auY}.n!w>rN[0yAy_Qb4I_4ebCf":Q_WH_em73,YD8>{qz(TP(i5im4tlM:'ch!Ukt<iriRZ|H%Wfd=#eX9}-LP51n^&^zyAzF2G9i\zx^+:UxXAw$v$$<%4}-71}u}]B>
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=Y)X2oh?d7+!b,0,4,6
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-100, -1], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-58,0,d2lBLi,0,I&Oh
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 0
+	separator: ,
+	mode: {u'range': [-100, -1], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-67,1,xF#ZcQe,@u{NU,4,U`
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'AcT', u'mode', u'oper', u'format']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.21889429031
+	separator: ,
+	mode: {u'range': [-100, -1], u'type': 'string', 'length': 67}
+	AcT: {u'range': [8, 107], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=89,!B&]nm<\y<q19^$W9!SR\$sFx)*L+L1d})u(b\wrE.|jP*5z)`#NOUiXd}Tqg_t,YZg}T0N2`,1
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode', u'AcT', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.72518331325
+	separator: =
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': 'string', 'length': 77}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=spkT?mK=0=1=M{WBa0W46S0E-1^B;*/!LcRP'c`tugnIId0$o)v*xm@=S2=[FjtT:6=zl
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.72518331325
+	separator: \
+	mode: {u'range': [0, 4], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=2\j01R|YJq7\3\-14
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.61496415761
+	separator: |
+	mode: {u'range': [-100, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3577781545119746731|0|8@
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.61496415761
+	separator: ?
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 26}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=0`vk?2?37938642670800549320732701
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.92874033601
+	separator: |
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=]2{N"mVw?r|1|2590148849759901523|-13
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.77426325899
+	separator: |
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 33}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=2|3169802076439247233112354358631|'?]8N\D/ne
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.77426325899
+	separator: |
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'string', 'length': 33}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=7fDXmj^Q{hw+S@0-|0|/:R4Y[F"Hbg\h4l?dh
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.77426325899
+	separator: |
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'string', 'length': 33}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=WkIYiAUl2hpA#AdB?G7j5qj|2|~nZ;-OA
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.73976887379
+	separator: :
+	mode: {u'range': [-100, -1], u'type': u'ranged'}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=-84:3953742959105518505:^#q:0:5@-NI)IY$f:J6:WWiXh
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'mode']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.72004760008
+	separator: ?
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 26}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=2121629690364830817?288808
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.11069184654
+	separator: ?
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 13}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=7
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'mode', u'AcT', u'format', 'random']
+	format: {u'range': [0, 2], u'type': 'digit', 'length': 28}
+	cmd: AT+COPS
+	equal: =
+	score: 2.02149651678
+	separator: }
+	mode: {u'range': [-100, -1], u'type': 'string', 'length': 33}
+	AcT: {u'range': [8, 107], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=#E'9~Wk}x+vcKt(VKgN=vDqnY}l?oHM=o^$a4/io:PZTW<~[ti}13}2064}6B>pE
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'oper']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.9475306153
+	separator: <
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'string', 'length': 33}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=eX]x>)QR55ye-Cw(Irz<2<CL\}V
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'AcT', u'mode', u'format', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86551691547
+	separator: %
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS={;lQJb7o%'L%-59%8578796986633553176%2%aA=me
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'AcT', u'mode', u'format', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.86551691547
+	separator: %
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=-FMi4GY~Wsv%-51%7614326634533878933%2%$'>9=
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.12542539241
+	separator: :
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 16}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=3588883598347024978:{S("VfcC,y?U
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'AcT', u'format', u'mode', 'random', 'random']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.03591477877
+	separator: `
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=QwnQxP^^TVr,CZPXw`-70`7653292877845203147`1925627819658365870`G`P
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode']
+	format: {u'range': [3, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.9871536244
+	separator: ?
+	mode: {'values': [-9223372036854775807, 9223372036854775807], u'range': [-100, 9223372036854775807], u'type': 'fixed', 'length': 13}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=-9223372036854775807
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', 'random', u'mode', u'AcT', u'format', u'oper']
+	format: {'values': [-9223372036854775807, 9223372036854775807], u'range': [0, 2], u'type': 'fixed', 'length': 28}
+	cmd: AT+COPS
+	equal: =
+	score: 1.90984664209
+	separator: }
+	mode: {u'range': [-100, -1], u'type': 'string', 'length': 33}
+	AcT: {u'range': [8, 107], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=x0R}7*$R-b6#9`icqcS4&LA}81}-9223372036854775807}eA[_W(\l|<@
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', 'random', u'AcT', u'format', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.07111519669
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=n3Y|X_LE,Y7p2L}U*UU}sT?}>rdZL4}1}7819628063198607592}>
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', 'random', u'format', 'random', u'AcT']
+	format: {u'range': [3, 102], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.07111519669
+	separator: ]
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=nJ:e&iB`w>NHO]Fsf\o]21]s%:*]w]<{X3PJq|cpF[*:2c'cF{n<,H.@Tlv;RKQ}N^][3}VL`$bk
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.02924864757
+	separator: %
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'letters', 'length': 66}
+	AcT: {u'range': [8, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=bakbkppijrkggxltsznmgim%0%2538149442509369454
+
+Grammar:
+	oper: {u'length': 4, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'format', u'oper', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.02924864757
+	separator: |
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 66}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=1|M|5
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'format', 'random', u'oper', 'random', u'AcT']
+	format: {u'range': [3, 102], u'type': 'string', 'length': 53}
+	cmd: AT+COPS
+	equal: =
+	score: 2.47870628994
+	separator: ]
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=/F4'M^.<Ic7ZBw4q5Sv5rt1&o0rauojSKX)sBey^o;y]9\?ZV]]`]M%t<P!4G$mQ1"!]jU.f]Empq^wCVmxsfn4d*!c%6gI
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	struct: [u'cmd', u'equal']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.23952630147
+	separator: :
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'digit', 'length': 16}
+	AcT: {u'range': [0, 7], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'AcT', u'oper']
+	format: {u'range': [0, 2], u'type': 'string', 'length': 10}
+	cmd: AT+COPS
+	equal: =
+	score: 1.95131755497
+	separator: $
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'letters', 'length': 66}
+	AcT: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT']
+Command: +COPS=tpodsrngfazklabsjiwczajmjefvvt$J$8196210509530093465$\)A:`p*'(
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', 'random', 'random', u'mode', u'AcT']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.91241024742
+	separator: }
+	mode: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random']
+Command: +COPS=IvZ?ie}0}<G}"\dL!}2999123978069338123}GGAY.fjLBeQJ\\[gtw8+%KB'hTDS{j%>f_UlNXwC
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', 'random', u'mode', 'random', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.88135883816
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=p^XjPcal<C~TV#+8}0}]Y-/]]kCX_}Y&}7855460089666993091}N}Gg}i
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random', 'random', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.88135883816
+	separator: !
+	mode: {u'range': [0, 9223372036854775807], u'type': 'letters', 'length': 85}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=aG0PZDVIO!t"txVg4g!1!\qY,(\5W9X&E_=/qI+Vl2!a*8JkFQfGmp:sWC#}Nl#d@*_W"BB8^3}4?gY|^f-SS*N8+!omkrslcgtbpggikoahrrkfcvfferfizxllhelfuxyctgjvajfhprmnxacgxjdidyqxjrhhxobmgf!z\[b)kr!$|G]!^Sa!zn@m}!J4VS
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', 'random', u'mode', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.11118297911
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=9/}0}ve)/:"Y<hhVNV&<u_laoUmb(^R$QvxYBkDP"}3/}6452205565285191790}/q}M_
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.11118297911
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=]dB#:QxqZ}1}T2j0YHHI\Z[sfy~u!u6Bw]YFT}8417544130647716922}6S}|s}$3
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', 'random', u'mode']
+	format: {u'range': [0, 2], u'type': 'string', 'length': 10}
+	cmd: AT+COPS
+	equal: =
+	score: 2.01720006898
+	separator: .
+	mode: {u'range': [-100, 9223372036854775807], u'type': 'ranged', 'length': 66}
+	AcT: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random']
+Command: +COPS=E.[.5241577118694942148.I/r|.6867924114672148084
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'mode', u'format', u'AcT', u'oper', 'random', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.99775103207
+	separator: !
+	mode: {u'range': [0, 9223372036854775807], u'type': 'letters', 'length': 85}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=xnmhdzwxdakptcaagrcijotowffuboakkbvgouxwzylv!2!w,HK^6gY*[>p*G6jVw<}-u`v,rpIzFP.({!*'(3Z>R!m!<Db!p#]vkk9yY%
+
+Grammar:
+	oper: {u'length': 9, u'type': u'string'}
+	random: {'length': 10, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.99775103207
+	separator: }
+	mode: {u'range': [0, 9223372036854775807], u'type': 'letters', 'length': 85}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=n}0}eq}h+v!ws_l>6}tqmaajorewxnrrgrsuhrnguomsdbdylrvgjfnmofroqczfzvapjx}}#N2j\L?EN}[Fw-$R7B}jX3h/VB
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', 'random', 'random', u'AcT', u'mode', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.9190232168
+	separator: }
+	mode: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=lih=lSGqc9b1;4F4}2}I}[kI=}wSK0j]nBh3g}-799138619627153968}`l
+
+Grammar:
+	oper: {u'length': 18, u'type': u'string'}
+	random: {'length': 5, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', 'random', u'mode', 'random', 'random']
+	format: {u'range': [0, 2], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 1.9190232168
+	separator: }
+	mode: {u'range': [-9223372036854775807, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 148}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random']
+Command: +COPS=Vf0||PT-dLs[d[}2}=g86#a/%9|C8\=kE,6VOBp`|y-#r%L=:5%P[F3Za$YI||}8}7341742757544899334}\js2}r2(J
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random', 'random']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.13804709864
+	separator: <
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=~1)I6O81,t#}5d~tEdL`<2874014601605122456<egJv1r_>XB;Svzh)&+Lqzoy*0h5e`KPH{mp]X<5591742287066944348<*F<8
+
+Grammar:
+	oper: {u'length': 36, u'type': u'string'}
+	random: {'length': 2, 'type': 'string'}
+	struct: [u'cmd', u'equal', u'oper', u'format', u'AcT', u'mode', 'random', 'random']
+	format: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	cmd: AT+COPS
+	equal: =
+	score: 2.13804709864
+	separator: <
+	mode: {u'range': [0, 9223372036854775807], u'type': u'ranged'}
+	AcT: {u'range': [-100, -1], u'type': 'string', 'length': 74}
+	arg: [u'mode', u'format', u'oper', u'AcT', 'random', 'random', 'random', 'random']
+Command: +COPS=_q<4781195752914843434<jh{4Pk`oXo_B:];hHY#t1!KdLo9U(YS8:Dja3(_<7997544848042026710<mH<0
+
